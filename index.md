@@ -1,7 +1,7 @@
 ## About Me
 I am a Ph.D. student in Computer Science at the University of Maryland, College Park. I am advised by [Dr. Leilani Battle](https://www.cs.umd.edu/~leilani/bio.html). My research work lies in the fields of Information Visualization, Interactive Data Analytics and Computer Graphics. I am interested in understanding how people perceive visualizations, and leveraging advancements in graphics and database systems to create scalable visualization systems for large scale data.
 
-I earned my Master's Degree in Computer Science at the University of Maryland, College Park in December 2020, and Bachelor's Degree in Computer Science at BITS-Pilani Goa, India in May 2016. Besides my research area, I have also completed coursework in Databases, Computer Vision and Machine Learning.
+I earned my Master's Degree in Computer Science at the University of Maryland, College Park in December 2020. Before starting my graduate studies, I worked at NVIDIA, Pune as a System Software Engineer in the Gaming Products team. Prior to that, I received my Bachelor's Degree in Computer Science at BITS-Pilani Goa, India in May 2016. Besides my research area, I have also completed coursework in Databases, Computer Vision and Machine Learning.
 
 ## Research
 1. Data Pre-fetching for Concurrent Multi-user Environments
