@@ -1,3 +1,17 @@
 .header {
-    font-family: Lato;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+#menu-ribbon {
+    background-color: #B05B3B;
+    height: 8%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+  }
