@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato">
-        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link href="bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="main.css" rel="stylesheet">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="logo.ico">
+
+        <title>Ameya Patil</title>
     </head>
     
     <body>
-        <h2>Lumos Board Game</h2>
-        <h3>Designed for INST728 by Ameya Patil and Yi Cai</h3>
-        <div>
-            <div class="row">
-                <div class="column">
+        <div class="container">
+            <h2>Lumos Board Game</h2>
+            <h4>Designed for INST728 by Ameya Patil and Yi Cai</h4>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-sm-12 text-center">
                     <figure>
-                        <img src="lumos_board.png" style="width: 100%">
+                        <img src="lumos_board.png" class="img-fluid mx-auto d-block">
                         <figcaption>Fig 1: Game board for 6 players showing all the pieces and a turn in progress</figcaption>
                     </figure>
                 </div>
-                <div class="column">
+                <div class="col-md-6 col-sm-12 text-center">
                     <figure>
-                        <img src="light_behavior.png" style="width: 100%">
+                        <img src="light_behavior.png" class="img-fluid mx-auto d-block">
                         <figcaption>
                             Fig 2: Examples for how a light ray (left column) and a light beam of certain width (right column), 
                             would interact with the mirror (top row), a convex lens (middle row) and a prism (bottom row)
@@ -27,52 +38,55 @@
                     </figure>
                 </div>
             </div>
-            <h4>Gameboard & Pieces</h4>
-            <p>
-                Lumos contains a circular board with the circumference divided into 60 arcs. The area of the circular board is divided into 
-                as many sectors as there are players which defines the playing area for each player. The 60 arcs are equally and randomly 
-                assigned to the players. The board has a light source at the centre which emits light in one single radial direction randomly 
-                chosen at each turn. Each player is also given a fixed set of mirrors, lenses and prisms, called ‘pieces’ hereon. (Shown in Fig.1 and Fig.2)
-            </p>
-            <h4>Rules & Mechanics</h4>
-            <p>
-                The game is played by turns. At each turn, the board is hidden and all you can see is your assigned sector. All the players 
-                arrange their pieces in their allotted playing sector. Once everyone is done arranging their pieces, the board is revealed to 
-                everyone. The light source is triggered. It emits light in a randomly chosen radial direction, interacts with the pieces placed 
-                by the players in their respective sectors, and eventually hits the circumference of the board along one or more arcs. Those arcs 
-                are ‘set’ and the game proceeds to the next round. The objective of the game is to light up all the allocated arcs before everyone 
-                else within 20 turns. If the game reaches 20 turns and no one has set all of their arcs, the person with the most arc set wins. 
-            </p>
-            <p>
-                No player is allowed to see how the other players have arranged their pieces. No changes in the piece arrangement can be made 
-                after the board is revealed to everyone. If the light hits an arc directly, i.e. without interacting with any of the pieces, 
-                that hit does not count if that arc was in a ‘reset’ state, and it gets ‘reset’ if it was in a ‘set’ state. To prevent any player 
-                from gaining unfair advantages of interacting with the light the most, circular tracks are marked on the board which restrict the 
-                number of pieces that can be placed in them. Specifically, the darker grey area in the center prohibits any placement of pieces, 
-                and the light grey area around the center can only have one piece placed in it for each player. 
-            </p>
-            <h4>Genre, Premise & Story</h4>
-            <p>
-                Lumos is a strategic board game that has random elements implemented in the game. The premise of the game is set in a wizarding world, 
-                all the players are prisoners trapped in a magic castle by a dark wizard. The lock of each prison cell can be opened from a hidden 
-                inaccessible circular room by deflecting a certain light that flashes once in a while, onto certain bricks in the wall. Each of these 
-                bricks correspond to one lock of your prison cell. You, being a wizard, can place objects that interact with the light, in that room, 
-                using magic. However the light in that room is very bright/harsh so it will not affect the locks if it falls on the brick directly. 
-                To successfully open the locks to your cell, you need to light up all your bricks only with deflected light which reduces the light 
-                intensity. You need to make sure that you do so before the others because the opening of one prison cell will alert the guards and 
-                the rest will not be able to get out of the prison in time. There is only enough time for one wizard to escape the prison.
-            </p>
-            <h4>Challenges & Nuances</h4>
-            <p>
-                The challenge in the game is to understand how light would interact with the pieces arranged by the players and making sure it hits 
-                the desired arcs while avoiding other arcs. Since the light is emitted in a randomly chosen direction, there is unpredictability in 
-                terms of how things would turn out after each turn. All that can be done is to arrange the pieces such that the chances of hitting 
-                the desired arcs are maximised. Since the arcs allotted to the players need not be adjacent to each other, and in fact different 
-                players may have their arcs adjacent to each other, this encourages players to try and create alliances to improve the changes of 
-                light hitting their arcs. Further, once an arc is ‘set’, it becomes the responsibility of the owner of that arc to protect it from 
-                getting hit directly. However, the arcs of one player (A) can lie in the sector of another player (B), this further calls for more 
-                forced alliances to be created and previous alliances to be broken.
-            </p>
+            <div class="row d-flex">
+                <h4>Gameboard & Pieces</h4>
+                <p>
+                    Lumos contains a circular board with the circumference divided into 60 arcs. The area of the circular board is divided into 
+                    as many sectors as there are players which defines the playing area for each player. The 60 arcs are equally and randomly 
+                    assigned to the players. The board has a light source at the centre which emits light in one single radial direction randomly 
+                    chosen at each turn. Each player is also given a fixed set of mirrors, lenses and prisms, called ‘pieces’ hereon. (Shown in Fig.1 and Fig.2)
+                </p>
+                <h4>Rules & Mechanics</h4>
+                <p>
+                    The game is played by turns. At each turn, the board is hidden and all you can see is your assigned sector. All the players 
+                    arrange their pieces in their allotted playing sector. Once everyone is done arranging their pieces, the board is revealed to 
+                    everyone. The light source is triggered. It emits light in a randomly chosen radial direction, interacts with the pieces placed 
+                    by the players in their respective sectors, and eventually hits the circumference of the board along one or more arcs. Those arcs 
+                    are ‘set’ and the game proceeds to the next round. The objective of the game is to light up all the allocated arcs before everyone 
+                    else within 20 turns. If the game reaches 20 turns and no one has set all of their arcs, the person with the most arc set wins. 
+                </p>
+                <p>
+                    No player is allowed to see how the other players have arranged their pieces. No changes in the piece arrangement can be made 
+                    after the board is revealed to everyone. If the light hits an arc directly, i.e. without interacting with any of the pieces, 
+                    that hit does not count if that arc was in a ‘reset’ state, and it gets ‘reset’ if it was in a ‘set’ state. To prevent any player 
+                    from gaining unfair advantages of interacting with the light the most, circular tracks are marked on the board which restrict the 
+                    number of pieces that can be placed in them. Specifically, the darker grey area in the center prohibits any placement of pieces, 
+                    and the light grey area around the center can only have one piece placed in it for each player. 
+                </p>
+                <h4>Genre, Premise & Story</h4>
+                <p>
+                    Lumos is a strategic board game that has random elements implemented in the game. The premise of the game is set in a wizarding world, 
+                    all the players are prisoners trapped in a magic castle by a dark wizard. The lock of each prison cell can be opened from a hidden 
+                    inaccessible circular room by deflecting a certain light that flashes once in a while, onto certain bricks in the wall. Each of these 
+                    bricks correspond to one lock of your prison cell. You, being a wizard, can place objects that interact with the light, in that room, 
+                    using magic. However the light in that room is very bright/harsh so it will not affect the locks if it falls on the brick directly. 
+                    To successfully open the locks to your cell, you need to light up all your bricks only with deflected light which reduces the light 
+                    intensity. You need to make sure that you do so before the others because the opening of one prison cell will alert the guards and 
+                    the rest will not be able to get out of the prison in time. There is only enough time for one wizard to escape the prison.
+                </p>
+                <h4>Challenges & Nuances</h4>
+                <p>
+                    The challenge in the game is to understand how light would interact with the pieces arranged by the players and making sure it hits 
+                    the desired arcs while avoiding other arcs. Since the light is emitted in a randomly chosen direction, there is unpredictability in 
+                    terms of how things would turn out after each turn. All that can be done is to arrange the pieces such that the chances of hitting 
+                    the desired arcs are maximised. Since the arcs allotted to the players need not be adjacent to each other, and in fact different 
+                    players may have their arcs adjacent to each other, this encourages players to try and create alliances to improve the changes of 
+                    light hitting their arcs. Further, once an arc is ‘set’, it becomes the responsibility of the owner of that arc to protect it from 
+                    getting hit directly. However, the arcs of one player (A) can lie in the sector of another player (B), this further calls for more 
+                    forced alliances to be created and previous alliances to be broken.
+                </p>
+            </div>
         </div>
+    </div>
     </body>
 </html>
