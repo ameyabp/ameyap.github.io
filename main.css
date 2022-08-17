@@ -37,9 +37,13 @@ footer:before {
 }
 
 .zoom:hover {
-    transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.08); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .list-group-item {
     background-color: #eef0f2;
+}
+
+.card {
+    padding: 10px;
 }

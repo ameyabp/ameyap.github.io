@@ -117,8 +117,7 @@
                             <b>September 2021</b> - Started PhD at University of Washington, Seattle with Dr. Leilani Battle
                         </li>
                         <li class="list-group-item">
-                            <b>June 2021 to September 2021</b> - Research Intern at INRIA Saclay, France with 
-                            <a href=https://www.aviz.fr/~fekete/ target="_blank" rel="noopener noreferrer">Dr. Jean-Daniel Fekete</a>
+                            <b>June 2021 to September 2021</b> - Research Intern at INRIA Saclay, France with Dr. Jean-Daniel Fekete
                         </li>
                         <li class="list-group-item">
                             <b>January 2021</b> - Started PhD in Computer Science at University fo Maryland, College Park with Dr. Leilani Battle
@@ -155,9 +154,140 @@
 
             <section id="projects">
                 <div class="rounded-3 p-3 panel">
-                    <h3>Projects</h3>
+                    <h3>Selected Projects</h3>
                     <hr style="height:2px; width:100%; color:#0d6efd;"></hr>
-                    <ul>
+                    <div class="row">
+                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
+                            <h5 class="card-header">Physically Based Clustering Visualization</h5>
+                            <img class="card-img-top" src="cmsc828x_teaser.png" alt="Basic interface of the physically based word vector encoding visualization tool">
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
+                                <p class="card-text">
+                                    Implemented a data analysis/visualization tool with interactions modelled on real-life physical forces 
+                                    using the D3-Force API. The specific use case targeted was evaluating word embeddings created by different 
+                                    methods, where words closer in the vector space belonged to the same cluster.
+                                </p>
+                                <a href="pbcv.html" class="btn btn-primary">Details</a>
+                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+                            </div>
+                        </div>
+                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
+                            <!--img class="card-img-top" src="..." alt="Card image cap"-->
+                            <h5 class="card-header">Adding shadows to a scene using CNN</h5>
+                            <div class="row d-flex justify-content-center">
+                                <figure>
+                                    <img src="11imageGrid.png" class="img-fluid mx-auto d-block">
+                                    <figcaption>Input to the model - scene without shadows; light source map; object depth map from 8 orthographic views; ground truth image</figcaption>
+                                </figure>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-3 text-center">
+                                    <figure>
+                                        <img src="scene2_good_real.png" class="img-fluid mx-auto d-block">
+                                        <figcaption>Sample ground truth</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <figure>
+                                        <img src="scene2_good_fake.png" class="img-fluid mx-auto d-block">
+                                        <figcaption>Corresponding sample model output</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-3 text-center">
+                                    <figure>
+                                        <img src="scene5_bad_real.png" class="img-fluid mx-auto d-block">
+                                        <figcaption>Sample ground truth</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <figure>
+                                        <img src="scene5_bad_fake.png" class="img-fluid mx-auto d-block">
+                                        <figcaption>Corresponding sample model output</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Course Project for Advanced Computer Graphics - CMSC740</h6>
+                                <p class="card-text">
+                                    Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and 
+                                    the lightsource position map. Used the <a href=https://phillipi.github.io/pix2pix/ target="_blank" rel="noopener noreferrer">pix2pixmodel</a> for the task.
+                                </p>
+                                <a href="https://github.com/ameyabp/pytorch-CycleGAN-and-pix2pix" class="btn btn-primary">Details</a>
+                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
+                            <!--img class="card-img-top" src="..." alt="Card image cap"-->
+                            <h5 class="card-header">"Lumos" - Board and Video Game</h5>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-3 text-center">
+                                    Lumos Board Game
+                                    <img src="lumos_board.png" class="img-fluid mx-auto d-block">
+                                </div>
+                                <div class="col-3 text-center">
+                                    Lumos Video Game
+                                    <img src="lumos_video_3.png" class="img-fluid mx-auto d-block">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Course Project for Game Design - INST728E</h6>
+                                <p class="card-text">
+                                    Designed a board game and a video game based on the theme of propagating light in a 2D space. Click on the links for more details about the games.
+                                </p>
+                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+                                <a href="lumos.html" class="btn btn-primary">Details</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
+                            <!--img class="card-img-top" src="..." alt="Card image cap"-->
+                            <h5 class="card-header">Virtual Music Instrument Dashboard</h5>
+                            <div class="row d-flex justify-content-center text-center">
+                                <div id="carouselExampleControls" class="carousel slide col-md-8 col-sm-12" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="homePanel.png" class="d-block w-100" alt="Home Panel">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="tunebox_drums.png" class="d-block w-100" alt="Virtual drums">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="tunebox_harp.png" class="d-block w-100" alt="Virtual harp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="tunebox_keyboard.png" class="d-block w-100" alt="Virtual keyboard">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
+                                        </div>
+                                        <!--div class="carousel-item">
+                                            <iframe src="Tunebox Advertisement.mp4" class="d-block w-100" alt="Teaser video"></iframe>
+                                        </div-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Course Project for Creative Multimedia - BITSF398</h6>
+                                <p class="card-text">
+                                    Created a gesture based virtual music instrument dashboard using LEAP Motion. Implemented string instruments like piano and harp,
+                                    and percussion instrument like drums. Implementation done using Java Swing and LEAP Motion SDK
+                                </p>
+                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--ul>
                         <li>
                             <h5>Physically Based Clustering Visualization</h5>
                             <h6>Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
@@ -175,8 +305,8 @@
                                     </div>
                                 </div>
                             </p>
-                        </li>
-                        <li>
+                        </li-->
+                        <!--li>
                             <h5>Adding shadows to a scene using CNN</h5>
                             <h6>Course Project for Advanced Computer Graphics - CMSC740</h6>
                             <p>
@@ -217,8 +347,8 @@
                                     </div>
                                 </div>
                             </p>
-                        </li>
-                        <li>
+                        </li-->
+                        <!--li>
                             <h5>"Lumos" Board and Video Game</h5>
                             <h6>Course Project for Game Design - INST728E</h6>
                             <p>
@@ -234,8 +364,8 @@
                                     <img src="lumos_video_3.png" class="img-fluid mx-auto d-block">
                                 </div>
                             </div>
-                        </li>
-                        <li>
+                        </li-->
+                        <!--li>
                             <h5>Virtual Music Instrument Dashboard</h5>
                             <h6>Course Project for Creative Multimedia - BITSF398</h6>
                             <p>
@@ -260,9 +390,9 @@
                                         <div class="carousel-item">
                                             <img src="tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
                                         </div>
-                                        <!--div class="carousel-item">
+                                        <div class="carousel-item">
                                             <iframe src="Tunebox Advertisement.mp4" class="d-block w-100" alt="Teaser video"></iframe>
-                                        </div-->
+                                        </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -275,7 +405,7 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>
+                    </ul-->
                 </div>
             </section>
 
