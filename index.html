@@ -22,8 +22,8 @@
     <body>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient" style="background-color: #0d6efd;">
             <div class="container">
-                <a class="navbar-brand" href="#home">
-                    <img src="logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top zoom">
+                <a class="navbar-brand zoom" href="#home">
+                    <img src="logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                     Ameya Patil
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,27 +32,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active zoom" aria-current="page" href="#home">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item zoom">
                             <a class="nav-link" aria-current="page" href="#news">News</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item zoom">
                             <a class="nav-link" aria-current="page" href="#publications">Publications</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item zoom">
                             <a class="nav-link" aria-current="page" 
                             href="Ameya_Patil_CV.pdf" 
                             target="_blank">CV</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item zoom">
                             <a class="nav-link" aria-current="page" href="#projects">Projects</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item zoom">
                             <a class="nav-link" aria-current="page" href="#extra">Extra-Curricular</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                            <a class="nav-link zoom" aria-current="page" href="#contact">Contact</a>
                         </li>
                         <!--li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -80,9 +80,9 @@
                         <img src="bio.jpg" alt="Portrait of Ameya Patil" class="img-responsive rounded-circle mx-auto d-block">
                         <br>
                         <div class="justify-content-center" align="center">
-                            <a href="https://scholar.google.com/citations?user=uI02O94AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="zoom">Google scholar</a> | 
-                            <a href="https://orcid.org/0000-0002-9743-4264" target="_blank" rel="noopener noreferrer" class="zoom">ORCID</a> | 
-                            <a href="https://github.com/ameyabp" target="_blank" rel="noopener noreferrer" class="zoom">Github</a>
+                            <a class="link zoom" href="https://scholar.google.com/citations?user=uI02O94AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google scholar</a> | 
+                            <a class="link zoom" href="https://orcid.org/0000-0002-9743-4264" target="_blank" rel="noopener noreferrer">ORCID</a> | 
+                            <a class="link zoom" href="https://github.com/ameyabp" target="_blank" rel="noopener noreferrer">Github</a>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-12">
@@ -156,163 +156,26 @@
                 <div class="rounded-3 p-3 panel">
                     <h3>Selected Projects</h3>
                     <hr style="height:2px; width:100%; color:#0d6efd;"></hr>
-                    <div class="row">
-                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
-                            <h5 class="card-header">Physically Based Clustering Visualization</h5>
-                            <img class="card-img-top" src="cmsc828x_teaser.png" alt="Basic interface of the physically based word vector encoding visualization tool">
-                            <div class="card-body">
-                                <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
-                                <p class="card-text">
-                                    Implemented a data analysis/visualization tool with interactions modelled on real-life physical forces 
-                                    using the D3-Force API. The specific use case targeted was evaluating word embeddings created by different 
-                                    methods, where words closer in the vector space belonged to the same cluster.
-                                </p>
-                                <a href="pbcv.html" class="btn btn-primary">Details</a>
-                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                            </div>
-                        </div>
-                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
-                            <!--img class="card-img-top" src="..." alt="Card image cap"-->
-                            <h5 class="card-header">Adding shadows to a scene using CNN</h5>
-                            <div class="row d-flex justify-content-center">
-                                <figure>
-                                    <img src="11imageGrid.png" class="img-fluid mx-auto d-block">
-                                    <figcaption>Input to the model - scene without shadows; light source map; object depth map from 8 orthographic views; ground truth image</figcaption>
-                                </figure>
-                            </div>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-3 text-center">
-                                    <figure>
-                                        <img src="scene2_good_real.png" class="img-fluid mx-auto d-block">
-                                        <figcaption>Sample ground truth</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-3 text-center">
-                                    <figure>
-                                        <img src="scene2_good_fake.png" class="img-fluid mx-auto d-block">
-                                        <figcaption>Corresponding sample model output</figcaption>
-                                    </figure>
+                    <div class="container">
+                        <div class="row">
+                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
+                                <h5 class="card-header">Physically Based Clustering Visualization</h5>
+                                <img class="card-img-top mt-2" src="cmsc828x_teaser.png" alt="Basic interface of the physically based word vector encoding visualization tool">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
+                                    <p class="card-text">
+                                        Implemented a data analysis/visualization tool with interactions modelled on real-life physical forces 
+                                        using the D3-Force API. The specific use case targeted was evaluating word embeddings created by different 
+                                        methods, where words closer in the vector space belonged to the same cluster.
+                                    </p>
+                                    <a href="pbcv.html" class="btn btn-primary">Details</a>
+                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
                                 </div>
                             </div>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-3 text-center">
-                                    <figure>
-                                        <img src="scene5_bad_real.png" class="img-fluid mx-auto d-block">
-                                        <figcaption>Sample ground truth</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-3 text-center">
-                                    <figure>
-                                        <img src="scene5_bad_fake.png" class="img-fluid mx-auto d-block">
-                                        <figcaption>Corresponding sample model output</figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h6 class="card-subtitle">Course Project for Advanced Computer Graphics - CMSC740</h6>
-                                <p class="card-text">
-                                    Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and 
-                                    the lightsource position map. Used the <a href=https://phillipi.github.io/pix2pix/ target="_blank" rel="noopener noreferrer">pix2pixmodel</a> for the task.
-                                </p>
-                                <a href="https://github.com/ameyabp/pytorch-CycleGAN-and-pix2pix" class="btn btn-primary">Details</a>
-                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
-                            <!--img class="card-img-top" src="..." alt="Card image cap"-->
-                            <h5 class="card-header">"Lumos" - Board and Video Game</h5>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-3 text-center">
-                                    Lumos Board Game
-                                    <img src="lumos_board.png" class="img-fluid mx-auto d-block">
-                                </div>
-                                <div class="col-3 text-center">
-                                    Lumos Video Game
-                                    <img src="lumos_video_3.png" class="img-fluid mx-auto d-block">
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h6 class="card-subtitle">Course Project for Game Design - INST728E</h6>
-                                <p class="card-text">
-                                    Designed a board game and a video game based on the theme of propagating light in a 2D space. Click on the links for more details about the games.
-                                </p>
-                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                                <a href="lumos.html" class="btn btn-primary">Details</a>
-                            </div>
-                        </div>
-                        <div class="card col-md-6 col-sm-12 mb-2 mr-2 ml-2">
-                            <!--img class="card-img-top" src="..." alt="Card image cap"-->
-                            <h5 class="card-header">Virtual Music Instrument Dashboard</h5>
-                            <div class="row d-flex justify-content-center text-center">
-                                <div id="carouselExampleControls" class="carousel slide col-md-8 col-sm-12" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="homePanel.png" class="d-block w-100" alt="Home Panel">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_drums.png" class="d-block w-100" alt="Virtual drums">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_harp.png" class="d-block w-100" alt="Virtual harp">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_keyboard.png" class="d-block w-100" alt="Virtual keyboard">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
-                                        </div>
-                                        <!--div class="carousel-item">
-                                            <iframe src="Tunebox Advertisement.mp4" class="d-block w-100" alt="Teaser video"></iframe>
-                                        </div-->
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h6 class="card-subtitle">Course Project for Creative Multimedia - BITSF398</h6>
-                                <p class="card-text">
-                                    Created a gesture based virtual music instrument dashboard using LEAP Motion. Implemented string instruments like piano and harp,
-                                    and percussion instrument like drums. Implementation done using Java Swing and LEAP Motion SDK
-                                </p>
-                                <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                            </div>
-                        </div>
-                    </div>
-                    <!--ul>
-                        <li>
-                            <h5>Physically Based Clustering Visualization</h5>
-                            <h6>Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
-                            <p>
-                                Implemented a data analysis/visualization tool with interactions modelled on real-life physical forces 
-                                using the D3-Force API. The specific use case targeted was evaluating word embeddings created by different 
-                                methods, wherewords closer in the vector space belonged to the same cluster. For more details, click on the 
-                                <a href=pbcv.html target="_blank" rel="noopener noreferrer">link</a>
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-md-6 col-sm-12">
-                                        <figure>
-                                            <img src="cmsc828x_teaser.png" class="img-fluid mx-auto d-block border">
-                                            <figcaption>Basic interface of the physically based word vector encoding visualization tool</figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </p>
-                        </li-->
-                        <!--li>
-                            <h5>Adding shadows to a scene using CNN</h5>
-                            <h6>Course Project for Advanced Computer Graphics - CMSC740</h6>
-                            <p>
-                                Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and 
-                                the lightsource position map. Used the <a href=https://phillipi.github.io/pix2pix/ target="_blank" rel="noopener noreferrer">pix2pixmodel</a> for the task.
-                                <div class="row d-flex justify-content-center">
+                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
+                                <!--img class="card-img-top" src="..." alt="Card image cap"-->
+                                <h5 class="card-header">Adding shadows to a scene using CNN</h5>
+                                <div class="row d-flex justify-content-center text-center mt-2">
                                     <figure>
                                         <img src="11imageGrid.png" class="img-fluid mx-auto d-block">
                                         <figcaption>Input to the model - scene without shadows; light source map; object depth map from 8 orthographic views; ground truth image</figcaption>
@@ -346,66 +209,86 @@
                                         </figure>
                                     </div>
                                 </div>
-                            </p>
-                        </li-->
-                        <!--li>
-                            <h5>"Lumos" Board and Video Game</h5>
-                            <h6>Course Project for Game Design - INST728E</h6>
-                            <p>
-                                Designed a board game and a video game based on the theme of propagating light in a 2D space. Click on the links for more details about the games.
-                            </p>
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-md-2 col-sm-11 text-center">
-                                    <a href="lumos_board.html" target="_blank" rel="noopener noreferrer">Lumos Board Game</a>
-                                    <img src="lumos_board.png" class="img-fluid mx-auto d-block">
-                                </div>
-                                <div class="col-md-3 col-sm-11 text-center">
-                                    <a href="lumos_video.html" target="_blank" rel="noopener noreferrer">Lumos Video Game</a>
-                                    <img src="lumos_video_3.png" class="img-fluid mx-auto d-block">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle">Course Project for Advanced Computer Graphics - CMSC740</h6>
+                                    <p class="card-text">
+                                        Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and 
+                                        the lightsource position map. Used the <a href=https://phillipi.github.io/pix2pix/ target="_blank" rel="noopener noreferrer">pix2pixmodel</a> for the task.
+                                    </p>
+                                    <a href="https://github.com/ameyabp/pytorch-CycleGAN-and-pix2pix" class="btn btn-primary">Details</a>
+                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
                                 </div>
                             </div>
-                        </li-->
-                        <!--li>
-                            <h5>Virtual Music Instrument Dashboard</h5>
-                            <h6>Course Project for Creative Multimedia - BITSF398</h6>
-                            <p>
-                                Created a gesture based virtual music instrument dashboard using LEAP Motion. Implemented string instruments like piano and harp,
-                                and percussion instrument like drums. Implementation done using Java Swing and LEAP Motion SDK
-                            </p>
-                            <div class="row d-flex justify-content-center text-center">
-                                <div id="carouselExampleControls" class="carousel slide col-md-8 col-sm-12" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="homePanel.png" class="d-block w-100" alt="Home Panel">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_drums.png" class="d-block w-100" alt="Virtual drums">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_harp.png" class="d-block w-100" alt="Virtual harp">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_keyboard.png" class="d-block w-100" alt="Virtual keyboard">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <iframe src="Tunebox Advertisement.mp4" class="d-block w-100" alt="Teaser video"></iframe>
-                                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
+                                <!--img class="card-img-top" src="..." alt="Card image cap"-->
+                                <h5 class="card-header">"Lumos" - Board and Video Game</h5>
+                                <div class="row d-flex justify-content-center mt-2">
+                                    <div class="col-3 text-center">
+                                        Lumos Board Game
+                                        <img src="lumos_board.png" class="img-fluid mx-auto d-block">
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
+                                    <div class="col-3 text-center">
+                                        Lumos Video Game
+                                        <img src="lumos_video_3.png" class="img-fluid mx-auto d-block">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle">Course Project for Game Design - INST728E</h6>
+                                    <p class="card-text">
+                                        Designed a board game and a video game based on the theme of propagating light in a 2D space. Click below for more details about the games.
+                                    </p>
+                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+                                    <a href="lumos.html" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
-                        </li>
-                    </ul-->
+                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
+                                <!--img class="card-img-top" src="..." alt="Card image cap"-->
+                                <h5 class="card-header">Virtual Music Instrument Dashboard</h5>
+                                <div class="row d-flex justify-content-center text-center mt-2">
+                                    <div id="carouselExampleControls" class="carousel slide col-md-8 col-sm-12" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="homePanel.png" class="d-block w-100" alt="Home Panel">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="tunebox_drums.png" class="d-block w-100" alt="Virtual drums">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="tunebox_harp.png" class="d-block w-100" alt="Virtual harp">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="tunebox_keyboard.png" class="d-block w-100" alt="Virtual keyboard">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
+                                            </div>
+                                            <!--div class="carousel-item">
+                                                <iframe src="Tunebox Advertisement.mp4" class="d-block w-100" alt="Teaser video"></iframe>
+                                            </div-->
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle">Course Project for Creative Multimedia - BITSF398</h6>
+                                    <p class="card-text">
+                                        Created a gesture based virtual music instrument dashboard using LEAP Motion. Implemented string instruments like piano and harp,
+                                        and percussion instrument like drums. Implementation done using Java Swing and LEAP Motion SDK
+                                    </p>
+                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
