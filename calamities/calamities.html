@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato">
+        <link href="../bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="../main.css" rel="stylesheet">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../images/logo.png">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js" integrity="sha256-Bsj9aso0jyDIJBXgbh/g/fbzMHA9cOBX4sd9CeUSUE4=" crossorigin="anonymous"></script>
+        
+        <!-- Vis specific imports -->
+        <script src="d3RangeSlider.js"></script>
+        <script src="mapViz.js"></script>
+        <script src="barChartViz.js"></script>
+        <script src="a3.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="d3RangeSlider.css" type="text/css" />
+        <link href="style.css" rel="stylesheet">
+
+        <title>Ameya Patil</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h2>Natural Calamities Visualization Tool</h2>
+            <h4>Designed and Implemented for CMSC828D by Ameya Patil</h4>
+            <div class="row-d-flex">
+                <p>
+                    The dataset includes details about natural calamities that occurred in the United States from 1950 upto current time. 
+                    This dataset was curated by National Oceanic and Atmospheric Administration and is available 
+                    <a href=" https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/">here</a>. It has around 20 distinct attributes 
+                    which includes attributes like the type of event that occurred, location of occurrence - state and county along with lat-lng, 
+                    time of occurrence, injuries or fatalities caused by the incident and some more nominal data like news headlines in which the 
+                    incident was featured. The number of records in the dataset is ~1,500,000. The dataset is split into 70 csv files which were 
+                    merged together into one 'compositeStorms.csv' file
+                </p>
+                <h5>Visualization design</h5>
+                <p>
+                    Natural calamities have more to do with the geographical locations of places and not just names and numbers. Accordingly, I chose a map 
+                    visualization which shows how many incidents had occurred in every state. This kind of visualization would 
+                    help the user to understand which regions of the country experience more incidents, something which a simple bar chart or pie chart would 
+                    not have been able to convey effectively. Some of the records had the county names/fips garbled while some other records simply had no lat-lng information. Dropping 
+                    these rows was significantly reducing the dataset size and hence I was restricted to visualize only the state level instance count and 
+                    could not implement the county level breakdown. One conscious design choice that was made here was to use d3.interpolateGreys for the 
+                    color scale since it is known that differences in black/white or the value component of HSV are better perceived than those in color scales.
+                <br>
+                <br>
+                    My initial plan was to provide a radio checkbox for the user to select what kind of events to see - tornadoes, avalances, thunder storms, etc. 
+                    However as I scanned through the dataset, I realised that there were around 20 to 30 different types of incidents recorded which made the 
+                    checkbox widget unfavorable. This led me to keep this breakdown of incidents by type for a detail-on-demand kind of interaction and show 
+                    only the aggregate incident count on the main map visualization. Since the data for time of occurrence of the events was also available, 
+                    a time slider was also a natural choice. Instead of using a single time slider, I opted for a time range slider so that it would be possible 
+                    to view the details of incidents over a time range and not just in a single year or so. The time range slider was linked with the map 
+                    visualization to dynamically update it. Tooltip was also used on the map to help the user identify which state the user is looking at 
+                    and what is the value that the map is visualizing. Without assuming any intuitiveness of my interface, a pointer was also provided on 
+                    the tooltip as to what to do next to see more details.
+                <br>
+                <br>
+                    The Details panel shows the breakdown of the incidents as per the type of incident, for the chosen state and for the chosen time range. 
+                    Additionally, radio checkboxes were also provided to get an idea of the damage caused by different kinds of incidents. 
+                    One design choice was made here to not sort the fetched values by the value, but to sort it by the event name. The idea was that this 
+                    would help the user to scan through the incidents and the damage it caused in a flow, without having to search the event name again 
+                    on toggling between 'Instances', 'Injuries' and 'Deaths'. The initial plan was to also link the time range slider with the details panel 
+                    for dynamic update, but that was putting a lot of load on the database causing visible lag. This plan was thus dropped and instead to 
+                    refresh the details panel, the user would need to click on a state or toggle between 'Instances', 'Injuries' and 'Deaths'.
+                <br>
+                <h5>Backend design</h5>
+                <p>
+                    Postgresql was used as recommended for the backend. Web server was implemented using python flask library and the connection between web server 
+                    and the database was implemented using the psycopg2 library. For the communication between the web pages and the server, d3.json() was used as 
+                    it encapsulates the javascript fetch API within itself.
+                </p>
+                <!-- <h5>How to use</h5>
+                <p>
+                    1. The default view of the map is set to show the instance count for the time range - 1990 to 2000. Both ends of the slider can be moved, or the entire slider can be moved to change the time range<br>
+                    2. Hover over a state of interest to see the instance count and click on it to see breakdown and more details in the Details panel<br>
+                    3. In the details panel, toggle between 'Instances', 'Injuries' and 'Deaths' to see the requried information
+                </p> -->
+            </div>
+            <br>
+            <div class="col-md-12 col-sm-12 text-center">
+                <figure>
+                    <img src="teaser.png" class="img-fluid mx-auto d-block">
+                    <figcaption>Snapshot of the interface. Interactive version soon!</figcaption>
+                </figure>
+            </div>
+            <!--div class="panel">
+                <h2>Map Visualization - Number of instances</h2>
+                <div id="map"></div>
+    
+                <table class="slid">
+                  <col width="2%">
+                  <col width="96%">
+                  <col width="2%">
+                  <tr>
+                    <td>1950</td>
+                    <td><div id="slider"></div></td>
+                    <td>2022</td>
+                  </tr>
+                </table>
+                <div id="slider-text"></div>
+    
+                <h2>Details panel</h2>
+                <div id="radioBox">
+                    <input type="radio" name="dependentVariable" id="instances" value="instances" class="checkbox" checked>Instances</input>
+                    <input type="radio" name="dependentVariable" id="injuries" value="injuries" class="checkbox" >Injuries</input>
+                    <input type="radio" name="dependentVariable" id="deaths" value="deaths" class="checkbox" >Deaths</input>
+                </div>
+                <div id="barChart"></div>
+            </div-->
+        </div>
+    </div>
+    </body>
+</html>

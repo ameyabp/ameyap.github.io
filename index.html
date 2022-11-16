@@ -14,7 +14,7 @@
 
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="logo.png">
+        <link rel="icon" href="images/logo.png">
 
         <title>Ameya Patil</title>
     </head>
@@ -23,7 +23,7 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient" style="background-color: #0d6efd;">
             <div class="container">
                 <a class="navbar-brand zoom" href="#home">
-                    <img src="logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="images/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                     Ameya Patil
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,7 +77,7 @@
             <section id="home">
                 <div class="row rounded-3 p-3">
                     <div class="col-md-3 col-sm-12">
-                        <img src="bio.jpg" alt="Portrait of Ameya Patil" class="img-responsive rounded-circle mx-auto d-block">
+                        <img src="images/bio.jpg" alt="Portrait of Ameya Patil" class="img-responsive rounded-circle mx-auto d-block">
                         <br>
                         <div class="justify-content-center" align="center">
                             <a class="link zoom" href="https://scholar.google.com/citations?user=uI02O94AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google scholar</a> | 
@@ -165,8 +165,24 @@
                     <div class="container">
                         <div class="row">
                             <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
+                                <h5 class="card-header">Natural Calamities Visualization Tool</h5>
+                                <img class="card-img-top mt-2" src="calamities/teaser.png" alt="Basic interface of the natural calamities visualization tool">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle">Course Project for Interactive Data Analytics - CMSC828D</h6>
+                                    <p class="card-text">
+                                        Implemented a geo data analysis/visualization tool with interactions to understand the natural calamities that happened in the US
+                                        over 20 years from 1950 to 2022. Front end was designed using d3, server was setup using python Flask and Postgres was used for <thead>
+                                        backend.
+                                        </thead>
+                                    </p>
+                                    <a href="calamities/calamities.html" class="btn btn-primary">Details</a>
+                                    <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
+                                </div>
+                            </div>
+
+                            <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
                                 <h5 class="card-header">Physically Based Clustering Visualization</h5>
-                                <img class="card-img-top mt-2" src="cmsc828x_teaser.png" alt="Basic interface of the physically based word vector encoding visualization tool">
+                                <img class="card-img-top mt-2" src="pbcv/cmsc828x_teaser.png" alt="Basic interface of the physically based word vector encoding visualization tool">
                                 <div class="card-body">
                                     <h6 class="card-subtitle">Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X</h6>
                                     <p class="card-text">
@@ -174,29 +190,32 @@
                                         using the D3-Force API. The specific use case targeted was evaluating word embeddings created by different 
                                         methods, where words closer in the vector space belonged to the same cluster.
                                     </p>
-                                    <a href="pbcv.html" class="btn btn-primary">Details</a>
+                                    <a href="pbcv/pbcv.html" class="btn btn-primary">Details</a>
                                     <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="row">
                             <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
                                 <!--img class="card-img-top" src="..." alt="Card image cap"-->
                                 <h5 class="card-header">Adding shadows to a scene using CNN</h5>
                                 <div class="row d-flex justify-content-center text-center mt-2">
                                     <figure>
-                                        <img src="11imageGrid.png" class="img-fluid mx-auto d-block">
+                                        <img src="shadowGan/11imageGrid.png" class="img-fluid mx-auto d-block">
                                         <figcaption>Input to the model - scene without shadows; light source map; object depth map from 8 orthographic views; ground truth image</figcaption>
                                     </figure>
                                 </div>
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-3 text-center">
                                         <figure>
-                                            <img src="scene2_good_real.png" class="img-fluid mx-auto d-block">
+                                            <img src="shadowGan/scene2_good_real.png" class="img-fluid mx-auto d-block">
                                             <figcaption>Sample ground truth</figcaption>
                                         </figure>
                                     </div>
                                     <div class="col-3 text-center">
                                         <figure>
-                                            <img src="scene2_good_fake.png" class="img-fluid mx-auto d-block">
+                                            <img src="shadowGan/scene2_good_fake.png" class="img-fluid mx-auto d-block">
                                             <figcaption>Corresponding sample model output</figcaption>
                                         </figure>
                                     </div>
@@ -204,13 +223,13 @@
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-3 text-center">
                                         <figure>
-                                            <img src="scene5_bad_real.png" class="img-fluid mx-auto d-block">
+                                            <img src="shadowGan/scene5_bad_real.png" class="img-fluid mx-auto d-block">
                                             <figcaption>Sample ground truth</figcaption>
                                         </figure>
                                     </div>
                                     <div class="col-3 text-center">
                                         <figure>
-                                            <img src="scene5_bad_fake.png" class="img-fluid mx-auto d-block">
+                                            <img src="shadowGan/scene5_bad_fake.png" class="img-fluid mx-auto d-block">
                                             <figcaption>Corresponding sample model output</figcaption>
                                         </figure>
                                     </div>
@@ -225,19 +244,18 @@
                                     <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
+                        
                             <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
                                 <!--img class="card-img-top" src="..." alt="Card image cap"-->
                                 <h5 class="card-header">"Lumos" - Board and Video Game</h5>
                                 <div class="row d-flex justify-content-center mt-2">
                                     <div class="col-3 text-center">
                                         Lumos Board Game
-                                        <img src="lumos_board.png" class="img-fluid mx-auto d-block">
+                                        <img src="lumos/lumos_board.png" class="img-fluid mx-auto d-block">
                                     </div>
                                     <div class="col-3 text-center">
                                         Lumos Video Game
-                                        <img src="lumos_video_3.png" class="img-fluid mx-auto d-block">
+                                        <img src="lumos/lumos_video_3.png" class="img-fluid mx-auto d-block">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -246,9 +264,12 @@
                                         Designed a board game and a video game based on the theme of propagating light in a 2D space. Click below for more details about the games.
                                     </p>
                                     <!--p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p-->
-                                    <a href="lumos.html" class="btn btn-primary">Details</a>
+                                    <a href="lumos/lumos.html" class="btn btn-primary">Details</a>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="row">
                             <div class="card col-md-6 col-sm-12 mb-3 mr-5 ml-5">
                                 <!--img class="card-img-top" src="..." alt="Card image cap"-->
                                 <h5 class="card-header">Virtual Music Instrument Dashboard</h5>
@@ -256,19 +277,19 @@
                                     <div id="carouselExampleControls" class="carousel slide col-md-8 col-sm-12" data-bs-ride="carousel">
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
-                                                <img src="homePanel.png" class="d-block w-100" alt="Home Panel">
+                                                <img src="tunebox/homePanel.png" class="d-block w-100" alt="Home Panel">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="tunebox_drums.png" class="d-block w-100" alt="Virtual drums">
+                                                <img src="tunebox/tunebox_drums.png" class="d-block w-100" alt="Virtual drums">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="tunebox_harp.png" class="d-block w-100" alt="Virtual harp">
+                                                <img src="tunebox/tunebox_harp.png" class="d-block w-100" alt="Virtual harp">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="tunebox_keyboard.png" class="d-block w-100" alt="Virtual keyboard">
+                                                <img src="tunebox/tunebox_keyboard.png" class="d-block w-100" alt="Virtual keyboard">
                                             </div>
                                             <div class="carousel-item">
-                                                <img src="tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
+                                                <img src="tunebox/tunebox_xylo.png" class="d-block w-100" alt="Virtual xylophone">
                                             </div>
                                             <!--div class="carousel-item">
                                                 <iframe src="Tunebox Advertisement.mp4" class="d-block w-100" alt="Teaser video"></iframe>
@@ -294,6 +315,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -330,7 +352,7 @@
 
         <footer>
             <div class="card-footer text-muted d-flex justify-content-center" style="font-size: 15px;">
-                Created using bootstrap. Last updated on 24 October 2022.
+                Created using bootstrap. Last updated on 16 November 2022.
             </div>
         </footer>
 
