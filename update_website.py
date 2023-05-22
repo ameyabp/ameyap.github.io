@@ -41,4 +41,4 @@ if __name__ == '__main__':
 
     # git push
     cmd = "git push"
-    # os.system(cmd)
+    os.system(cmd)
