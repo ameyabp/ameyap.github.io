@@ -21,9 +21,12 @@ if __name__ == '__main__':
     f = open('index.html', 'r+')
     lines = f.readlines()
     lines[-6] = f"\t\t\t\tCreated using bootstrap. Last updated {timestamp}\n"
-    f.truncate(0)
-    f.writelines(lines)
     f.close()
+    os.remove('index.html')
+
+    g = open('index.html', 'w')
+    g.writelines(lines)
+    g.close()
 
     # git add
     cmd = "git add index.html"
