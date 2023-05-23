@@ -21,7 +21,7 @@
         <title>Ameya Patil</title>
     </head>
     
-    <body  onload="load_news()">
+    <body  onload="onload()">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient" style="background-color: #0d6efd;">
             <div class="container">
                 <a class="navbar-brand zoom" href="#home">
@@ -114,35 +114,7 @@
                         <button id="news-expand-contract" type="button" class="expand-contract-button" value="contracted" onclick="expandContractNews()">+</button>
                     </h3>
                     <hr style="height:2px; width:100%; color:#0d6efd;"></hr>
-                    <ul id="news-list" class="list-group list-group-flush">
-                        <!-- <li class="list-group-item">
-                            <b>April 2023</b> - Presented my work - "WhaleVis: A New Visualization Tool for the IWC Catch Database" at the International Whaling Commission Scientific Committeee meeting
-                        </li>
-
-                        <li class="list-group-item">
-                            <b>October 2022</b> - Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022
-                        </li>
-
-                        <li class="list-group-item">
-                            <b>July 2022</b> - Paper accepted at IEEE VIS 2022
-                        </li>
-                        
-                        <li class="list-group-item">
-                            <b>September 2021</b> - Transferred to University of Washington, Seattle with Dr. Leilani Battle
-                        </li>
-                        
-                        <li class="list-group-item">
-                            <b>June 2021 to September 2021</b> - Research Intern at INRIA Saclay, France with Dr. Jean-Daniel Fekete
-                        </li>
-                        
-                        <li class="list-group-item">
-                            <b>January 2021</b> - Started PhD in Computer Science at University of Maryland, College Park with Dr. Leilani Battle
-                        </li>
-
-                        <li class="list-group-item">
-                            <b>December 2020</b> - Graduated with a Masters in Computer Science from University of Maryland, College Park
-                        </li> -->
-                    </ul>
+                    <ul id="news-list" class="list-group list-group-flush"></ul>
                 </div>
             </section>
 
@@ -345,42 +317,12 @@
 
             <section id="blogs">
                 <div class="rounded-3 p-3 panel">
-                    <h3>Blogs</h3>
+                    <h3>
+                        Blogs
+                        <button id="blogs-expand-contract" type="button" class="expand-contract-button" value="contracted" onclick="expandContractBlogs()">+</button>
+                    </h3>
                     <hr style="height:2px; width:100%; color:#0d6efd;"></hr>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <a href="https://medium.com/hcil-at-umd/a-bifocal-view-data-visualization-research-of-the-past-and-present-46e23e24cba7" target="_blank" rel="noopener noreferrer">A bifocal view of data visualization research of the past and present</a><br />
-                            by Deepthi Raghunandan, Ameya Patil
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://ameyabp.wordpress.com/2017/06/09/devkund/" target="_blank" rel="noopener noreferrer">Devkund - a travelgogue</a><br />
-                            by Ameya Patil
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://ameyabp.wordpress.com/2016/12/03/the-secret-of-cycling/" target="_blank" rel="noopener noreferrer">The Secret of Cycling</a><br />
-                            by Ameya Patil
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://ameyabp.wordpress.com/2016/10/16/of-humans-and-festivals/" target="_blank" rel="noopener noreferrer">Of Humans and Festivals</a><br />
-                            by Ameya Patil
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://ameyabp.wordpress.com/2016/10/01/kohlis-batting-nuances/" target="_blank" rel="noopener noreferrer">Virat Kohli's Batting Nuances</a><br />
-                            by Ameya Patil
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://ameyabp.wordpress.com/2016/12/31/the-humble-kachchh/" target="_blank" rel="noopener noreferrer">The Humble Kachchh - a travelogue</a><br />
-                            by Ameya Patil
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://ameyabp.wordpress.com/2016/09/18/amdavad/" target="_blank" rel="noopener noreferrer">Amdavad - a travelogue</a><br />
-                            by Ameya Patil
-                        </li>
-                        <li class="list-group-item">
-                            <a href="https://ameyabp.wordpress.com/2016/09/24/himalayan-saga/" target="_blank" rel="noopener noreferrer">Himalayan Saga - a travelogue</a><br />
-                            by Ameya Patil
-                        </li>
-                    </ul>
+                    <ul id="blogs-list" class="list-group list-group-flush"></ul>
                 </div>
             </section>
             
@@ -411,7 +353,7 @@
 
         <footer>
             <div class="card-footer text-muted d-flex justify-content-center" style="font-size: 15px;">
-				Created using bootstrap. Last updated Tuesday, 23 May 2023 09:26:27 IST
+				Created using bootstrap. Last updated Tuesday, 23 May 2023 09:51:08 IST
             </div>
         </footer>
 

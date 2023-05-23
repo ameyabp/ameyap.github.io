@@ -72,7 +72,7 @@ function load_news() {
         .enter()
             .append("li")
             .attr("class", "list-group-item")
-            .append("text").text(d => d.timestamp + " - " + d.event)
+            .append("text").html(d => "<b>" + d.timestamp + "</b> - " + d.event)
 }
 
 function expandContractNews() {
@@ -88,7 +88,7 @@ function expandContractNews() {
             .enter()
                 .append("li")
                 .attr("class", "list-group-item")
-                .append("text").text(d => d.timestamp + " - " + d.event)
+                .append("text").html(d => "<b>" + d.timestamp + "</b> - " + d.event)
     }
     else {
         btn.node().value = "contracted"
@@ -101,4 +101,90 @@ function expandContractNews() {
             })
             .remove()            
     }
+}
+
+blogs = [
+    {
+        'title': 'A Bifocal View of Data Visualization Research of the Past and Present',
+        'url': 'https://medium.com/hcil-at-umd/a-bifocal-view-data-visualization-research-of-the-past-and-present-46e23e24cba7',
+        'authors': 'Deepthi Raghunandan, Ameya Patil'
+    },
+    {
+        'title': 'Devkund - A Travelogue',
+        'url': 'https://ameyabp.wordpress.com/2017/06/09/devkund/',
+        'authors': 'Ameya Patil'
+    },
+    {
+        'title': 'The Secret of Cycling',
+        'url': 'https://ameyabp.wordpress.com/2016/12/03/the-secret-of-cycling/',
+        'authors': 'Ameya Patil'
+    },
+    {
+        'title': 'Of Humans and Festivals',
+        'url': 'https://ameyabp.wordpress.com/2016/10/16/of-humans-and-festivals/',
+        'authors': 'Ameya Patil'
+    },
+    {
+        'title': "Virat Kohli's Batting Nuances",
+        'url': 'https://ameyabp.wordpress.com/2016/10/01/kohlis-batting-nuances/',
+        'authors': 'Ameya Patil'
+    },
+    {
+        'title': 'The Humble Kachchh - A Travelogue',
+        'url': 'https://ameyabp.wordpress.com/2016/12/31/the-humble-kachchh/',
+        'authors': 'Ameya Patil'
+    },
+    {
+        'title': 'Amdavad - A Travelogue',
+        'url': 'https://ameyabp.wordpress.com/2016/09/18/amdavad/',
+        'authors': 'Ameya Patil'
+    },
+    {
+        'title': 'Himalayan Saga - A Travelogue',
+        'url': 'https://ameyabp.wordpress.com/2016/09/24/himalayan-saga/',
+        'authors': 'Ameya Patil'
+    },
+]
+
+function load_blogs() {
+    d3.select("#blogs-list")
+        .selectAll("li")
+        .data(blogs.slice(0,5), d => d.title)
+        .enter()
+            .append("li")
+            .attr("class", "list-group-item")
+            .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors)
+}
+
+function expandContractBlogs() {
+    var btn = d3.select("#blogs-expand-contract")
+    
+    if (btn.node().value === "contracted") {
+        btn.node().value = "expanded"
+        btn.text("-")
+
+        d3.select("#blogs-list")
+            .selectAll("li")
+            .data(blogs, d => d.title)
+            .enter()
+                .append("li")
+                .attr("class", "list-group-item")
+                .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors)
+    }
+    else {
+        btn.node().value = "contracted"
+        btn.text("+")
+
+        d3.select("#blogs-list")
+            .selectAll("li")
+            .select(function(d,i) {
+                return i > 4 ? this : null
+            })
+            .remove()            
+    }
+}
+
+function onload() {
+    load_news()
+    load_blogs()
 }
