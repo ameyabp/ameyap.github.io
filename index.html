@@ -21,7 +21,7 @@
         <title>Ameya Patil</title>
     </head>
     
-    <body>
+    <body  onload="load_news()">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient" style="background-color: #0d6efd;">
             <div class="container">
                 <a class="navbar-brand zoom" href="#home">
@@ -114,14 +114,13 @@
                         <button id="news-expand-contract" type="button" class="expand-contract-button" value="contracted" onclick="expandContractNews()">+</button>
                     </h3>
                     <hr style="height:2px; width:100%; color:#0d6efd;"></hr>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
+                    <ul id="news-list" class="list-group list-group-flush">
+                        <!-- <li class="list-group-item">
                             <b>April 2023</b> - Presented my work - "WhaleVis: A New Visualization Tool for the IWC Catch Database" at the International Whaling Commission Scientific Committeee meeting
                         </li>
 
                         <li class="list-group-item">
-                            <b>October 2022</b> - Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022 - 
-                            <a href="https://www.youtube.com/watch?v=L523gBLIM5c&t=10260s" target="_blank" rel="noopener noreferrer">link</a>
+                            <b>October 2022</b> - Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022
                         </li>
 
                         <li class="list-group-item">
@@ -142,7 +141,7 @@
 
                         <li class="list-group-item">
                             <b>December 2020</b> - Graduated with a Masters in Computer Science from University of Maryland, College Park
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </section>
@@ -412,7 +411,7 @@
 
         <footer>
             <div class="card-footer text-muted d-flex justify-content-center" style="font-size: 15px;">
-				Created using bootstrap. Last updated Monday, 22 May 2023 10:39:06 IST
+				Created using bootstrap. Last updated Tuesday, 23 May 2023 09:26:27 IST
             </div>
         </footer>
 
