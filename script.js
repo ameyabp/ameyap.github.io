@@ -241,11 +241,11 @@ projects = [
     }
 ]
 
-function load_projects() {
+function load_projects(data) {
     var project_cards_div = d3.select("#project-cards")
 
-    for (var i=0; i<projects.length; i++) {
-        const project = projects[i]
+    for (var i=0; i<data.length; i++) {
+        const project = data[i]
 
         var card = project_cards_div.append("div")
                                         .attr("class", "card col-md-6 col-sm-12 mb-3 mr-5 ml-5")
@@ -283,8 +283,30 @@ function load_projects() {
     }
 }
 
+function expandContractProjects() {
+    var btn = d3.select("#projects-expand-contract")
+    
+    if (btn.node().value === "contracted") {
+        btn.node().value = "expanded"
+        btn.text("-")
+
+        load_projects(projects.slice(4))
+    }
+    else {
+        btn.node().value = "contracted"
+        btn.text("+")
+
+        d3.select("#project-cards")
+            .selectAll(".card")
+            .select(function(d,i) {
+                return i > 3 ? this : null
+            })
+            .remove()            
+    }
+}
+
 function onload() {
     load_news()
     load_blogs()
-    load_projects()
+    load_projects(projects.slice(0,4))
 }
