@@ -184,7 +184,107 @@ function expandContractBlogs() {
     }
 }
 
+projects = [
+    {
+        'title': 'WhaleVis',
+        'subtitle': 'Visualization Tool for the IWC Catch Database',
+        'teaser': 'whaleVis/teaser.png',
+       ' teaser-alt-text': 'Snapshot of the WhaleVis interface',
+        'description': 'Created an interactive dashboard for visual analysis of historical commercial whale hunting. The dashboard is aimed to facilitate inferring spatial distribution of whale populations from the catch numbers and the whale search effort, eventually helping in whale conservation efforts.',
+        'url': 'https://observablehq.com/@whales/whale-vis-dashboard-expedition-routes',
+        'button-text': 'Demo'
+    },
+    {
+        'title': 'Lumos! - Board and Video Game',
+        'subtitle': 'Course Project for Game Design - INST728E',
+        'teaser': 'lumos/teaser.png',
+       ' teaser-alt-text': 'Snapshots of the board and video game',
+        'description': 'Designed a board game and a video game based on the theme of propagating light in a 2D space.',
+        'url': 'lumos/lumos.html',
+        'button-text': 'Details'
+    },
+    {
+        'title': 'Natural Calamities Visualization Tool',
+        'subtitle': 'Course Project for Interactive Data Analytics - CMSC828D',
+        'teaser': 'calamities/teaser.png',
+       ' teaser-alt-text': 'Snapshot of the Natural Calamities Visualization Tool',
+        'description': 'Implemented a geo data analysis/visualization tool with interactions to understand the natural calamities that happened in the US over 20 years from 1950 to 2022. Front end was designed using d3, server was setup using python Flask and Postgres was used for backend.',
+        'url': 'calamities/calamities.html',
+        'button-text': 'Details'
+    },
+    {
+        'title': 'Physically Based Clustering Visualization',
+        'subtitle': 'Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X',
+        'teaser': 'pbcv/teaser.png',
+       ' teaser-alt-text': 'Snapshot of the Physically Based Clustering Visualization Tool',
+        'description': 'Implemented a data analysis/visualization tool with interactions modelled on real-life physical forces using the D3-Force API. The specific use case targeted was evaluating word embeddings created by different methods, where words closer in the vector space belonged to the same cluster.',
+        'url': 'pbcv/pbcv.html',
+        'button-text': 'Details'
+    },
+    {
+        'title': 'ShadowGAN',
+        'subtitle': 'Course Project for Advanced Computer Graphics - CMSC740',
+        'teaser': 'shadowGAN/teaser.png',
+       ' teaser-alt-text': 'Sample input and outputs for ShadowGAN',
+        'description': 'Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and the lightsource position map. Used the pix2pixmodel for the task.',
+        'url': 'https://github.com/ameyabp/pytorch-CycleGAN-and-pix2pix',
+        'button-text': 'Details'
+    },
+    {
+        'title': 'Tunebox - Virtual Music Instrument Dashboard',
+        'subtitle': 'Course Project for Creative Multimedia - BITSF398',
+        'teaser': 'tunebox/teaser.png',
+       ' teaser-alt-text': 'Snapshots of the board and video game',
+        'description': 'Created a gesture based virtual music instrument dashboard using LEAP Motion. Implemented string instruments like piano and harp, and percussion instrument like drums. Implementation done using Java Swing and LEAP Motion SDK',
+        'url': null,
+        'button-text': null
+    }
+]
+
+function load_projects() {
+    var project_cards_div = d3.select("#project-cards")
+
+    for (var i=0; i<projects.length; i++) {
+        const project = projects[i]
+
+        var card = project_cards_div.append("div")
+                                        .attr("class", "card col-md-6 col-sm-12 mb-3 mr-5 ml-5")
+
+        card.append("h5")
+            .attr("class", "card-header")
+            .text(project.title)
+
+        card.append("img")
+            .attr("class", "card-img-top mt-2")
+            .attr("src", project.teaser)
+            .attr("alt", project['teaser-alt-text'])
+
+        var card_body = card.append("div")
+                            .attr("class", "card-body")
+            
+        card_body.append("h6")
+                    .attr("class", "card-subtitle")
+                    .text(project.subtitle)
+        
+        card_body.append("br")
+
+        card_body.append("p")
+                    .attr("class", "card-text")
+                    .text(project.description)
+
+        if (project.url) {
+            card_body.append("a")
+                    .attr("href", project.url)
+                    .attr("class", "btn btn-primary")
+                    .attr("target", "_blank")
+                    .attr("rel", "noopener noreferrer")
+                    .text(project['button-text'])
+        }
+    }
+}
+
 function onload() {
     load_news()
     load_blogs()
+    load_projects()
 }
