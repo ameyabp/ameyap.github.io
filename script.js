@@ -192,7 +192,7 @@ projects = [
        ' teaser-alt-text': 'Snapshot of the WhaleVis interface',
         'description': 'Created an interactive dashboard for visual analysis of historical commercial whale hunting. The dashboard is aimed to facilitate inferring spatial distribution of whale populations from the catch numbers and the whale search effort, eventually helping in whale conservation efforts.',
         'url': 'https://observablehq.com/@whales/whale-vis-dashboard-expedition-routes',
-        'button-text': 'Demo'
+        'button-text': 'Dashboard'
     },
     {
         'title': 'Lumos! - Board and Video Game',
@@ -224,7 +224,7 @@ projects = [
     {
         'title': 'ShadowGAN',
         'subtitle': 'Course Project for Advanced Computer Graphics - CMSC740',
-        'teaser': 'shadowGAN/teaser.png',
+        'teaser': 'shadowGan/teaser.png',
        ' teaser-alt-text': 'Sample input and outputs for ShadowGAN',
         'description': 'Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and the lightsource position map. Used the pix2pixmodel for the task.',
         'url': 'https://github.com/ameyabp/pytorch-CycleGAN-and-pix2pix',
