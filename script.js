@@ -305,8 +305,209 @@ function expandContractProjects() {
     }
 }
 
+publications = {
+    'whaleVis': {
+        'title': 'WhaleVis: A New Visualization Tool for the IWC Catch Database',
+        'venue': 'International Whaling Commission, SC/69A/GDR/04, 2023',
+        'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
+        'doi': null,
+        'paper': 'SC_69A_GDR_04_Patil_etal.pdf',
+        'video': 'whaleVis/whaleVis.mp4',
+        'presentation': null,
+        'data': null,
+        'bibtex': '\n\
+        @article{patil2023whalevis,\n\
+            title={WhaleVis: A new visualization tool for the IWC catch database.},\n\
+            author={Patil, Ameya and Rand, Zoe and Branch, Trevor and Battle, Leilani},\n\
+            journal={Scientific Committee of the International Whaling Commission},\n\
+            volume={SC/69A/GDR/04},\n\
+            year={2023}\n\
+        }'
+    },
+    'dancing-bars': {
+        'title': 'Studying Early Decision Making with Progressive Bar Charts',
+        'venue': 'IEEE Transactions on Visualization and Computer Graphics, 2023',
+        'authors': 'A. Patil, G. Richer, C. Jermaine, D. Moritz, J.-D. Fekete',
+        'doi': 'https://dx.doi.org/10.1109/TVCG.2022.3209426',
+        'paper': 'https://hal.archives-ouvertes.fr/hal-03738461/',
+        'video': 'https://youtu.be/ygpu92JMhA0',
+        'presentation': 'https://www.youtube.com/watch?v=L523gBLIM5c&t=10260s',
+        'data': 'https://osf.io/tn2ph/?view_only=5a25891ca4a8431085488a8f3e38affc',
+        'bibtex': '\n\
+        @ARTICLE{patil2023studying,\n\
+            author={Patil, Ameya and Richer, Gaëlle and Jermaine, Christopher and Moritz, Dominik and Fekete, Jean-Daniel},\n\
+            journal={IEEE Transactions on Visualization and Computer Graphics}, \n\
+            title={Studying Early Decision Making with Progressive Bar Charts}, \n\
+            year={2023},\n\
+            volume={29},\n\
+            number={1},\n\
+            pages={407-417},\n\
+            doi={10.1109/TVCG.2022.3209426}\n\
+        }'
+    },
+    'kdGan': {
+        'title': 'Compressing GANs using Knowledge Distillation',
+        'venue': 'CoRR, vol. abs/1902.00159, 2019.',
+        'authors': 'A. Aguinaldo, P.-Y. Chiang, A. Gain, A. Patil, K. Pearson and S. Feizi',
+        'doi': 'https://arxiv.org/abs/1902.00159',
+        'paper': 'https://arxiv.org/pdf/1902.00159.pdf',
+        'video': null,
+        'presentation': null,
+        'data': null,
+        'bibtex': '\n\
+        @article{aguinaldo2019compressing,\n\
+            author       = {Angeline Aguinaldo and Ping{-}Yeh Chiang and Alexander Gain and Ameya Patil and Kolten Pearson and Soheil Feizi},\n\
+            title        = {Compressing GANs using Knowledge Distillation},\n\
+            journal      = {CoRR},\n\
+            volume       = {abs/1902.00159},\n\
+            year         = {2019},\n\
+            url          = {http://arxiv.org/abs/1902.00159},\n\
+            eprinttype    = {arXiv},\n\
+            eprint       = {1902.00159},\n\
+            timestamp    = {Tue, 21 May 2019 18:03:39 +0200},\n\
+            biburl       = {https://dblp.org/rec/journals/corr/abs-1902-00159.bib},\n\
+            bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
+        }'
+    }
+}
+
+publication_keys = [
+    'whaleVis',
+    'dancing-bars',
+    'kdGan'
+]
+
+function load_publications(data) {
+    var publications_list = d3.select("#publications-list");
+
+    for (var i=0; i<data.length; i++) {
+        const publication = publications[data[i]]
+
+        var entry = publications_list.append("li")
+                                    .attr("class", "list-group-item")
+
+        entry.append("h5")
+            .text(publication.title)
+
+        entry.append("i")
+            .text(publication.venue)
+
+        entry.append("br")
+        entry.append("text").text(publication.authors)
+        entry.append("br")
+
+        // doi
+        if (publication.doi) {
+            entry.append("a")
+                .attr("href", publication.doi)
+                .attr("target", "_blank")
+                .attr("rel", "noopener noreferrer")
+                .attr("class", "tab")
+                .append("img")
+                .attr("src", "doi.png")
+                .attr("height", 22)
+                .attr("class", "zoom")
+
+            entry.append("text").text(" DOI ")
+        }
+
+        // paper
+        entry.append("a")
+        .attr("href", publication.paper)
+        .attr("target", "_blank")
+        .attr("rel", "noopener noreferrer")
+        .attr("class", "tab")
+        .append("img")
+        .attr("src", "pdf.png")
+        .attr("height", 22)
+        .attr("class", "zoom")
+
+        entry.append("text").text(" Paper ")
+
+        // video
+        if (publication.video) {
+            entry.append("a")
+            .attr("href", publication.video)
+            .attr("target", "_blank")
+            .attr("rel", "noopener noreferrer")
+            .attr("class", "tab")
+            .append("img")
+            .attr("src", "video.png")
+            .attr("height", 22)
+            .attr("class", "zoom")
+
+            entry.append("text").text(" Video ")
+        }
+
+        // presentation
+        if (publication.presentation) {
+            entry.append("a")
+            .attr("href", publication.presentation)
+            .attr("target", "_blank")
+            .attr("rel", "noopener noreferrer")
+            .attr("class", "tab")
+            .append("img")
+            .attr("src", "presentation.png")
+            .attr("height", 22)
+            .attr("class", "zoom")
+
+            entry.append("text").text(" Presentation ")
+        }
+
+        // data
+        if (publication.data) {
+            entry.append("a")
+            .attr("href", publication.data)
+            .attr("target", "_blank")
+            .attr("rel", "noopener noreferrer")
+            .attr("class", "tab")
+            .append("img")
+            .attr("src", "folder.png")
+            .attr("height", 22)
+            .attr("class", "zoom")
+
+            entry.append("text").text(" Data ")
+        }
+
+        // bibtex
+        entry.append("button")
+        .attr("id", "bibtex-button")
+        .style("border", "none")
+        .attr("type", "button")
+        .attr("onclick", "openModal('" + data[i] + "')")
+        .append("img")
+        .attr("src", "cite.png")
+        .attr("height", 22)
+        .attr("class", "zoom")
+
+        entry.append("text").text(" Bibtex ")
+    }
+}
+
+// When the user clicks on the button, open the modal
+function openModal(publicationKey) {
+    var modal = d3.select("#bibtex-modal-div").node()
+    modal.style.display = "block";
+    d3.select("#bibtex").text(publications[publicationKey].bibtex)
+}
+
+// When the user clicks on <span> (x), close the modal
+function closeModal() {
+    var modal = d3.select("#bibtex-modal-div").node()
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    var modal = d3.select("#bibtex-modal-div").node()
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 function onload() {
     load_news()
-    load_blogs()
+    load_publications(publication_keys)
     load_projects(projects.slice(0,4))
+    load_blogs()
 }

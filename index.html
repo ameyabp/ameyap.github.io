@@ -84,10 +84,10 @@
                     <div class="col-md-3 col-sm-12">
                         <img src="images/bio.jpg" alt="Portrait of Ameya Patil" class="img-responsive rounded-circle mx-auto d-block">
                         <br>
-                        <div class="justify-content-center" align="center">
-                            <a href="https://scholar.google.com/citations?user=uI02O94AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer"><img src="scholar.png" width="30px" height="30px" class="zoom"></a>  |  
-                            <a href="https://orcid.org/0000-0002-9743-4264" target="_blank" rel="noopener noreferrer"><img src="orcid.png" width="30px" height="30px" class="zoom"></a>  |  
-                            <a href="https://github.com/ameyabp" target="_blank" rel="noopener noreferrer"><img src="github.png" width="30px" height="30px" class="zoom"></a>
+                        <div class="justify-content-center" align="center" style="font-size: 20px">
+                            <a href="https://scholar.google.com/citations?user=uI02O94AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer" class="tab"><img src="scholar.png" width="30px" height="30px" class="zoom"></a>  |   
+                            <a href="https://orcid.org/0000-0002-9743-4264" target="_blank" rel="noopener noreferrer" class="tab"><img src="orcid.png" width="30px" height="30px" class="zoom"></a> |  
+                            <a href="https://github.com/ameyabp" target="_blank" rel="noopener noreferrer" class="tab"><img src="github.png" width="30px" height="30px" class="zoom"></a>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-12">
@@ -122,33 +122,39 @@
                 <div class="rounded-3 p-3 panel">
                     <h3>Publications</h3>
                     <hr style="height:2px; width:100%; color:#0d6efd;"></hr>
-                    <ul class="list-group list-group-flush">
+                    <ul id="publications-list" class="list-group list-group-flush">
+                        <!--
                         <li class="list-group-item">
                             <h5>WhaleVis: A New Visualization Tool for the IWC Catch Database</h5>
                             <i>International Whaling Commission, SC/69A/GDR/04, 2023</i><br>
                             A. Patil, Z. Rand, T. Branch, L. Battle<br>
-                            <a href="SC_69A_GDR_04_Patil_etal.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | 
-                            <a href="" target="_blank" rel="noopener noreferrer">DOI</a> |
-                            <a href="whaleVis_new.mp4" target="_blank" rel="noopener noreferrer">Video</a>
+                            <a href="" target="_blank" rel="noopener noreferrer" class="tab"><img src="doi.png" height="22" class="zoom"></a> DOI <b>|</b>   
+                            <a href="SC_69A_GDR_04_Patil_etal.pdf" target="_blank" rel="noopener noreferrer" class="tab"><img src="pdf.png" height="22" class="zoom"></a> Paper   <b>|</b>   
+                            <a href="whaleVis_new.mp4" target="_blank" rel="noopener noreferrer" class="tab"><img src="video.png" height="22" class="zoom"></a>   Video   <b>|</b>   
+                            <button id="bibtex-button" style="border: none" type="button" onclick="openModal('whaleVis')"><img src="cite.png" height="22" class="zoom"></button> Bibtex
                         </li>
 
                         <li class="list-group-item">
                             <h5>Studying Early Decision Making with Progressive Bar Charts</h5>
                             <i>IEEE Transactions on Visualization and Computer Graphics, 2023</i><br>
                             A. Patil, G. Richer, C. Jermaine, D. Moritz, J.-D. Fekete<br>
-                            <a href="https://hal.archives-ouvertes.fr/hal-03738461/" target="_blank" rel="noopener noreferrer">PDF</a> | 
-                            <a href="https://osf.io/tn2ph/?view_only=5a25891ca4a8431085488a8f3e38affc" target="_blank" rel="noopener noreferrer">Data</a> |
-                            <a href="https://dx.doi.org/10.1109/TVCG.2022.3209426" target="_blank" rel="noopener noreferrer">DOI</a> |
-                            <a href="https://youtu.be/ygpu92JMhA0" target="_blank" rel="noopener noreferrer">Teaser video</a> |
-                            <a href="https://www.youtube.com/watch?v=L523gBLIM5c&t=10260s" target="_blank" rel="noopener noreferrer">Live presentation</a>
+                            <a href="https://dx.doi.org/10.1109/TVCG.2022.3209426" target="_blank" rel="noopener noreferrer" class="tab"><img src="doi.png" height="22" class="zoom"></a> DOI <b>|</b>  
+                            <a href="https://hal.archives-ouvertes.fr/hal-03738461/" target="_blank" rel="noopener noreferrer" class="tab"><img src="pdf.png" height="22" class="zoom"></a>   Paper   <b>|</b>  
+                            <a href="https://youtu.be/ygpu92JMhA0" target="_blank" rel="noopener noreferrer" class="tab"><img src="video.png" height="22" class="zoom"></a>   Video   <b>|</b>  
+                            <a href="https://www.youtube.com/watch?v=L523gBLIM5c&t=10260s" target="_blank" rel="noopener noreferrer" class="tab"><img src="presentation.png" height="22" class="zoom"></a>    VIS Presentation <b>|</b>  
+                            <a href="https://osf.io/tn2ph/?view_only=5a25891ca4a8431085488a8f3e38affc" target="_blank" rel="noopener noreferrer" class="tab"><img src="folder.png" height="22" class="zoom"></a> Data <b>|</b>  
+                            <button id="bibtex-button" style="border: none" type="button" onclick="openModal('dancing-bars')"><img src="cite.png" height="22" class="zoom"></button> Bibtex
                         </li>
 
                         <li class="list-group-item">
                             <h5>Compressing GANs using Knowledge Distillation</h5>
                             <i>CoRR, vol. abs/1902.00159, 2019.</i><br>
                             A. Aguinaldo, P.-Y. Chiang, A. Gain, A. Patil, K. Pearson and S. Feizi<br>
-                            <a href=https://arxiv.org/abs/1902.00159 target="_blank" rel="noopener noreferrer">PDF</a>
+                            <a href=https://arxiv.org/abs/1902.00159 target="_blank" rel="noopener noreferrer" class="tab"><img src="doi.png" height="22" class="zoom"></a>   DOI <b>|</b>
+                            <a href=https://arxiv.org/pdf/1902.00159.pdf target="_blank" rel="noopener noreferrer" class="tab"><img src="pdf.png" height="22" class="zoom"></a> Paper   <b>|</b>
+                            <button id="bibtex-button" style="border: none" type="button" onclick="openModal('kdGan')"><img src="cite.png" height="22" class="zoom"></button> Bibtex
                         </li>
+                        -->
                     </ul>
                 </div>
             </section>
@@ -194,21 +200,29 @@
                     <h3>Contact</h3>
                     <hr style="height:2px; width:100%; color:#0d6efd;"></hr>
                     <p>
-                        <img src="mail.png" height="18px"><b>E-mail</b>: ameyap2[at]cs&lt;dot&gt;washington[dawt]edu
+                        <img src="mail.png" height="18px">  <b>E-mail</b>: ameyap2[at]cs&lt;dot&gt;washington[dawt]edu
                     </p>
                     <p>
-                        <img src="linkedin.png" height="18px"><b>Linkedin</b>: <a href="https://www.linkedin.com/in/ameya-patil-15950b149/" target="_blank" rel="noopener noreferrer">linkedin.com/ameya-patil</a>
+                        <img src="linkedin.png" height="18px">  <b>Linkedin</b>: <a href="https://www.linkedin.com/in/ameya-patil-15950b149/" target="_blank" rel="noopener noreferrer">linkedin.com/ameya-patil</a>
                     </p>
                     <p>
-                        <img src="maps.png" height="18px"><b>Location</b>: <a href="https://goo.gl/maps/VwZm7dzkg5Z59jTk7" target="_blank" rel="noopener noreferrer">CSE291, Paul G. Allen Center, 185 E Stevens Way NE, Seattle, WA 98195-2350</a>
+                        <img src="maps.png" height="18px">  <b>Location</b>: <a href="https://goo.gl/maps/VwZm7dzkg5Z59jTk7" target="_blank" rel="noopener noreferrer">CSE291, Paul G. Allen Center, 185 E Stevens Way NE, Seattle, WA 98195-2350</a>
                     </p>
                 </div>
             </section>
         </div>
 
+        <!-- Modal div to show bibtex -->
+        <div id="bibtex-modal-div" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <pre id="bibtex"></pre>
+            </div>
+        </div>
+
         <footer>
             <div class="card-footer text-muted d-flex justify-content-center" style="font-size: 15px;">
-				Created using bootstrap. Last updated Friday, 26 May 2023 10:35:41 IST
+				Created using bootstrap. Last updated Saturday, 27 May 2023 13:00:55 IST
             </div>
         </footer>
 
