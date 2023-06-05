@@ -596,7 +596,7 @@ function load_sample_photograph() {
         photo_paths.push('./photography/panoramas/' + name)
     }
 
-    d3.select("#photo-gallery")
+    d3.select("#sample-photo")
         .selectAll("figure")
         .data(photo_paths)
         .enter()
@@ -604,6 +604,58 @@ function load_sample_photograph() {
         .append("img")
         .attr("src", d => d)
         .attr("width", '100%')
+}
+
+function load_photo_gallery() {
+    // operates on the photography.html page
+    var portraits = photo_list['portraits']
+    var landscapes = photo_list['landscapes']
+    var panoramas = photo_list['panoramas']
+
+    var container_div = d3.select("#photo-gallery")
+
+    var portrait_ctr = 0
+    var landscape_ctr = 0
+    var panorama_ctr = 0
+    
+    while (portrait_ctr < portraits.length ||
+        landscape_ctr < landscapes.length ||
+        panorama_ctr < panoramas.length) {
+        
+        var photo_div = container_div.append("div")
+                                    .attr("class", "row")
+
+        photo_div.selectAll("figure")
+                .data(portraits.slice(portrait_ctr, portrait_ctr+4))
+                .enter()
+                .append("figure")
+                .attr("class", "col-md-3 col-sm-12")
+                .append("img")
+                .attr("src", d => './photography/portraits/' + d)
+                .attr("width", "100%")
+        portrait_ctr = Math.min(portrait_ctr+4, portraits.length)
+
+        photo_div.selectAll("figure")
+                .data(landscapes.slice(landscape_ctr, landscape_ctr+2))
+                .enter()
+                .append("figure")
+                .attr("class", "col-md-6 col-sm-12")
+                .append("img")
+                .attr("src", d => './photography/landscapes/' + d)
+                .attr("width", "100%")
+        landscape_ctr = Math.min(landscape_ctr+2, landscapes.length)
+        
+        photo_div.selectAll("figure")
+            .data(panoramas.slice(panorama_ctr, panorama_ctr+1))
+            .enter()
+            .append("figure")
+            .attr("class", "col-md-12 col-sm-12")
+            .append("img")
+            .attr("src", d => './photography/panoramas/' + d)
+            .attr("width", "100%")
+        panorama_ctr = Math.min(panorama_ctr+1, panoramas.length)
+        console.log(panoramas.slice(panorama_ctr, panorama_ctr+1))
+    }
 }
 
 function onload() {
