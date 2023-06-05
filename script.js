@@ -505,9 +505,111 @@ window.onclick = function(event) {
     }
 }
 
+photo_list = {
+    'landscapes': [
+        'DSC_0002.JPG',
+        'DSC_0004.JPG',
+        'DSC_0024.JPG',
+        'DSC_0025.JPG',
+        'DSC_0051.JPG',
+        'DSC_0109.JPG',
+        'DSC_0147.jpg',
+        'DSC_0166.JPG',
+        'DSC_0180.JPG',
+        'DSC_0193.JPG',
+        'DSC_0221.JPG',
+        'DSC_0261.JPG',
+        'DSC_0339.JPG',
+        'DSC_0392.jpg',
+        'DSC_0436.JPG',
+        'DSC_0446.jpg',
+        'DSC_0449.jpg',
+        'DSC_0463.JPG',
+        'DSC_0488.JPG',
+        'DSC_0569.JPG',
+        'DSC_0693.JPG',
+        'IMG_1702.jpg',
+        'IMG_1838.jpg',
+        'IMG_2166.jpg',
+        'IMG_2297.JPG',
+        'IMG_2785.jpg',
+        'IMG_2786.jpg',
+        'IMG_2805.jpg',
+        'IMG_2814.jpg',
+        'IMG_2874.jpg',
+        'IMG_3061.jpg',
+        'IMG_3265.jpg',
+        'IMG_3446.jpg',
+        'IMG_4063.jpg',
+        'IMG_4303.jpg',
+        'IMG_4306.jpg',
+        'IMG_4320.jpg',
+        'IMG_4325.jpg',
+        'IMG_5492-Edit.jpg',
+        'IMG_5637.jpg',
+        'IMG_5710.jpg',
+        'IMG_7341.jpg',
+        'PXL_20210708_182444148.jpg',
+        'PXL_20210716_180052945.jpg',
+        'PXL_20210716_185055994.jpg',
+        'PXL_20210730_103352598.jpg',
+        'PXL_20210801_152019626.jpg',
+        'PXL_20210801_154645341.jpg'
+    ],
+    'portraits': [
+        'DSC_0111.JPG',
+        'DSC_0118.JPG',
+        'DSC_0217.JPG',
+        'DSC_0277.JPG',
+        'IMG_1242.jpg',
+        'IMG_2354.jpg',
+        'IMG_2800.jpg',
+        'IMG_3465.jpg',
+        'IMG_4322.jpg',
+        'IMG_4411.jpg',
+        'IMG_5419.jpg',
+        'IMG_5585.jpg',
+        'IMG_5927.jpg',
+        'IMG_7356.jpg',
+        'PXL_20210815_074704088.jpg',
+        'PXL_20210918_071117160.jpg',
+        'PXL_20211216_183050367.jpg'
+    ],
+    'panoramas': [
+        'DSC_0110_pano.jpg',
+        'IMG_2489_pano.jpg',
+        'IMG_2794_pano.jpg',
+        'IMG_3309_pano.jpg',
+        'IMG_4579_pano.jpg',
+        'IMG_5257_pano.jpg',
+        'IMG_5347_pano.jpg',
+        'IMG_5552_pano.jpg',
+        'IMG_5593_pano.jpg'
+    ]
+}
+
+function load_sample_photograph() {
+    // select a panorama for the sample photograph
+    var photo_paths = []
+    for (var i=0; i<1; i++) {
+        var name = photo_list['panoramas'][Math.floor(Math.random() * photo_list['panoramas'].length)]
+        photo_paths.push('./photography/panoramas/' + name)
+    }
+
+    d3.select("#photo-gallery")
+        .selectAll("figure")
+        .data(photo_paths)
+        .enter()
+        .append("figure")
+        .append("img")
+        .attr("src", d => d)
+        .attr("width", '100%')
+}
+
 function onload() {
     load_news()
     load_publications(publication_keys)
     load_projects(projects.slice(0,4))
     load_blogs()
+    load_sample_photograph()
 }
