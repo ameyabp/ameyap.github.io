@@ -310,7 +310,7 @@ publications = {
         'title': 'WhaleVis: A New Visualization Tool for the IWC Catch Database',
         'venue': 'International Whaling Commission, SC/69A/GDR/04, 2023',
         'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
-        'doi': null,
+        'doi': 'https://archive.iwc.int/?r=20005&k=46e2592325',
         'paper': 'SC_69A_GDR_04_Patil_etal.pdf',
         'video': 'whaleVis/whaleVis.mp4',
         'presentation': null,
@@ -606,21 +606,35 @@ function load_sample_photograph() {
         .attr("width", '100%')
 }
 
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) { 
+   
+        // Generate random number 
+        var j = Math.floor(Math.random() * (i + 1));
+                   
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+       
+    return array;
+ }
+
 function load_photo_gallery() {
     // operates on the photography.html page
-    var portraits = photo_list['portraits']
-    var landscapes = photo_list['landscapes']
-    var panoramas = photo_list['panoramas']
+    var portraits = shuffleArray(photo_list['portraits'])
+    var landscapes = shuffleArray(photo_list['landscapes'])
+    var panoramas = shuffleArray(photo_list['panoramas'])
 
     var container_div = d3.select("#photo-gallery")
 
     var portrait_ctr = 0
     var landscape_ctr = 0
     var panorama_ctr = 0
-    
+
     while (portrait_ctr < portraits.length ||
-        landscape_ctr < landscapes.length ||
-        panorama_ctr < panoramas.length) {
+            landscape_ctr < landscapes.length ||
+            panorama_ctr < panoramas.length) {
         
         var photo_div = container_div.append("div")
                                     .attr("class", "row")
@@ -635,6 +649,9 @@ function load_photo_gallery() {
                 .attr("width", "100%")
         portrait_ctr = Math.min(portrait_ctr+4, portraits.length)
 
+        var photo_div = container_div.append("div")
+                                    .attr("class", "row")
+
         photo_div.selectAll("figure")
                 .data(landscapes.slice(landscape_ctr, landscape_ctr+2))
                 .enter()
@@ -645,16 +662,20 @@ function load_photo_gallery() {
                 .attr("width", "100%")
         landscape_ctr = Math.min(landscape_ctr+2, landscapes.length)
         
-        photo_div.selectAll("figure")
-            .data(panoramas.slice(panorama_ctr, panorama_ctr+1))
-            .enter()
-            .append("figure")
-            .attr("class", "col-md-12 col-sm-12")
-            .append("img")
-            .attr("src", d => './photography/panoramas/' + d)
-            .attr("width", "100%")
-        panorama_ctr = Math.min(panorama_ctr+1, panoramas.length)
-        console.log(panoramas.slice(panorama_ctr, panorama_ctr+1))
+        if (panorama_ctr < panoramas.length) {
+            var photo_div = container_div.append("div")
+                                        .attr("class", "row")
+
+            photo_div.selectAll("figure")
+                .data([panoramas[panorama_ctr]])
+                .enter()
+                .append("figure")
+                .attr("class", "col-md-12 col-sm-12")
+                .append("img")
+                .attr("src", d => './photography/panoramas/' + d)
+                .attr("width", "100%")
+            panorama_ctr += 1
+        }
     }
 }
 
