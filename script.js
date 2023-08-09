@@ -1,5 +1,13 @@
 news = [
     {
+        'timestamp': 'August 2023',
+        'event': 'Short paper accepted at IEEE VIS 2023 - "WhaleVis: Visualizing the History of Commercial Whaling"'
+    },
+    {
+        'timestamp': 'August 2023',
+        'event': 'Presented a talk and poster for HydroVis - an interactive dashboard for understanding ensemble data assimilation forecasts for the WRF-Hydro hydrology model, at the National Center for Atmospheric Research (NCAR)'
+    },
+    {
         'timestamp': 'May 2023',
         'event': 'Started summer internship at the National Center for Atmospheric Research (NCAR)'
     },
@@ -84,7 +92,7 @@ function expandContractNews() {
 
         d3.select("#news-list")
             .selectAll("li")
-            .data(news, d => d.timestamp)
+            .data(news, d => d.event)
             .enter()
                 .append("li")
                 .attr("class", "list-group-item")
@@ -584,7 +592,6 @@ photo_list = {
         'IMG_4579_pano.jpg',
         'IMG_5257_pano.jpg',
         'IMG_5347_pano.jpg',
-        'IMG_5552_pano.jpg',
         'IMG_5593_pano.jpg'
     ]
 }
