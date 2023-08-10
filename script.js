@@ -314,6 +314,25 @@ function expandContractProjects() {
 }
 
 publications = {
+    'whaleVisShort': {
+        'title': 'WhaleVis: Visualizing the History of Commercial Whaling',
+        'venue': 'IEEE Transactions on Visualization and Computer Graphics, 2024',
+        'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
+        'doi': '',
+        'paper': 'https://arxiv.org/pdf/2308.04552.pdf',
+        'video': null,
+        'presentation': null,
+        'data': null,
+        'bibtex': '\n\
+        @misc{patil2023whalevis,\n\
+            title={WhaleVis: Visualizing the History of Commercial Whaling},\n\
+            author={Ameya Patil and Zoe Rand and Trevor Branch and Leilani Battle},\n\
+            year={2023},\n\
+            eprint={2308.04552},\n\
+            archivePrefix={arXiv},\n\
+            primaryClass={cs.DB}\n\
+        }'
+    },
     'whaleVis': {
         'title': 'WhaleVis: A New Visualization Tool for the IWC Catch Database',
         'venue': 'International Whaling Commission, SC/69A/GDR/04, 2023',
@@ -380,6 +399,7 @@ publications = {
 }
 
 publication_keys = [
+    'whaleVisShort',
     'whaleVis',
     'dancing-bars',
     'kdGan'
