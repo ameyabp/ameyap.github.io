@@ -9,7 +9,7 @@ news = [
     },
     {
         'timestamp': 'May 2023',
-        'event': 'Started summer internship at the National Center for Atmospheric Research (NCAR)'
+        'event': 'Started summer internship in the SIParCS program at the National Center for Atmospheric Research (NCAR)'
     },
     {
         'timestamp': 'April 2023',
@@ -583,7 +583,10 @@ photo_list = {
         'PXL_20210730_103352598.jpg',
         'PXL_20210801_152019626.jpg',
         'PXL_20210801_154645341.jpg',
-        'IMG_8359.jpg'
+        'IMG_8359.jpg',
+        'IMG_8734.jpg',
+        'IMG_8493.jpg',
+        'IMG_8689.jpg'
     ],
     'portraits': [
         'DSC_0111.JPG',
@@ -602,7 +605,8 @@ photo_list = {
         'IMG_7356.jpg',
         'PXL_20210815_074704088.jpg',
         'PXL_20210918_071117160.jpg',
-        'PXL_20211216_183050367.jpg'
+        'PXL_20211216_183050367.jpg',
+        'IMG_8660.jpg'
     ],
     'panoramas': [
         'DSC_0110_pano.jpg',
@@ -612,7 +616,8 @@ photo_list = {
         'IMG_4579_pano.jpg',
         'IMG_5257_pano.jpg',
         'IMG_5347_pano.jpg',
-        'IMG_5593_pano.jpg'
+        'IMG_5593_pano.jpg',
+        'IMG_8618_pano.jpg',
     ]
 }
 
