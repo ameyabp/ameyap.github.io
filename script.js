@@ -318,19 +318,28 @@ publications = {
         'title': 'WhaleVis: Visualizing the History of Commercial Whaling',
         'venue': 'IEEE Transactions on Visualization and Computer Graphics, 2024',
         'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
-        'doi': '',
+        'doi': 'https://doi.org/10.1145/3611650',
         'paper': 'https://arxiv.org/pdf/2308.04552.pdf',
         'video': null,
         'presentation': null,
         'data': null,
         'bibtex': '\n\
-        @misc{patil2023whalevis,\n\
-            title={WhaleVis: Visualizing the History of Commercial Whaling},\n\
-            author={Ameya Patil and Zoe Rand and Trevor Branch and Leilani Battle},\n\
-            year={2023},\n\
-            eprint={2308.04552},\n\
-            archivePrefix={arXiv},\n\
-            primaryClass={cs.DB}\n\
+            @article{10.1145/3611650,\n\
+            author = {Battle, Leilani and Patil, Ameya and Branch, Trevor A. and Rand, Zoe},\n\
+            title = {Visualizing Historical Whaling Voyages over Time},\n\
+            year = {2023},\n\
+            issue_date = {September - October 2023},\n\
+            publisher = {Association for Computing Machinery},\n\
+            address = {New York, NY, USA},\n\
+            volume = {30},\n\
+            number = {5},\n\
+            issn = {1072-5520},\n\
+            url = {https://doi.org/10.1145/3611650},\n\
+            doi = {10.1145/3611650},\n\
+            journal = {Interactions},\n\
+            month = {aug},\n\
+            pages = {22–23},\n\
+            numpages = {2}\n\
         }'
     },
     'whaleVis': {
@@ -618,6 +627,7 @@ photo_list = {
         'IMG_5347_pano.jpg',
         'IMG_5593_pano.jpg',
         'IMG_8618_pano.jpg',
+        'IMG_9086_pano.jpg'
     ]
 }
 
