@@ -8,8 +8,8 @@ news = [
         'event': 'Presented a talk and poster for HydroVis - an interactive dashboard for understanding ensemble data assimilation forecasts for the WRF-Hydro hydrology model, at the National Center for Atmospheric Research (NCAR)'
     },
     {
-        'timestamp': 'May 2023',
-        'event': 'Started summer internship in the SIParCS program at the National Center for Atmospheric Research (NCAR)'
+        'timestamp': 'May 2023 to September 2023',
+        'event': 'Summer internship in the SIParCS program at the National Center for Atmospheric Research (NCAR)'
     },
     {
         'timestamp': 'April 2023',
@@ -198,6 +198,15 @@ function expandContractBlogs() {
 }
 
 projects = [
+    {
+        'title': 'HydroVis',
+        'subtitle': 'Visualization Dashboard for Ensemble Data Assimilation Forecasting using WRF-Hydro',
+        'teaser': 'hydroVis/teaser.png',
+        'teaser-alt-text': 'Snapshot of the HydroVis interface',
+        'description': 'Designed and implemented an interactive dashboard for analyzing ensemble data assimilation forecasts of freshwater floods in river systems. The forecasts are made using the WRF-Hydro hydrology model. This was an internship project in the Data Assimilation Research Section (DAReS) team at the National Center for Atmospheric Research (NCAR).',
+        'url': 'https://github.com/ameyabp/DART/tree/main/hydroVis',
+        'button-text': 'Code'
+    },
     {
         'title': 'WhaleVis',
         'subtitle': 'Visualization Tool for the IWC Catch Database',
