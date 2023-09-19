@@ -652,6 +652,7 @@ function load_sample_photograph() {
         .append("img")
         .attr("src", d => d)
         .attr("width", '100%')
+        .attr("loading", "lazy")
 }
 
 function shuffleArray(array) {
@@ -684,8 +685,7 @@ function load_photo_gallery() {
             landscape_ctr < landscapes.length ||
             panorama_ctr < panoramas.length) {
         
-        var photo_div = container_div.append("div")
-                                    .attr("class", "row")
+        var photo_div = container_div.append("div").attr("class", "row")
 
         photo_div.selectAll("figure")
                 .data(portraits.slice(portrait_ctr, portrait_ctr+4))
@@ -695,6 +695,7 @@ function load_photo_gallery() {
                 .append("img")
                 .attr("src", d => './photography/portraits/' + d)
                 .attr("width", "100%")
+                .attr("loading", "lazy")
         portrait_ctr = Math.min(portrait_ctr+4, portraits.length)
 
         var photo_div = container_div.append("div")
@@ -708,6 +709,7 @@ function load_photo_gallery() {
                 .append("img")
                 .attr("src", d => './photography/landscapes/' + d)
                 .attr("width", "100%")
+                .attr("loading", "lazy")
         landscape_ctr = Math.min(landscape_ctr+2, landscapes.length)
         
         if (panorama_ctr < panoramas.length) {
@@ -722,6 +724,7 @@ function load_photo_gallery() {
                 .append("img")
                 .attr("src", d => './photography/panoramas/' + d)
                 .attr("width", "100%")
+                .attr("loading", "lazy")
             panorama_ctr += 1
         }
     }
