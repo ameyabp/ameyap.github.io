@@ -16,12 +16,30 @@
 
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="logos/logo.png">
+        <link rel="icon" href="../logos/logo.png">
 
         <title>Ameya Patil</title>
     </head>
     
     <body onload="load_photo_gallery()" style="background-color: black;">
         <div class="container" id="photo-gallery" style="padding-top: 20px; padding-bottom: 20px;"></div>
+
+        <div id="photo-viewer">
+            <div id="photo-viewer-controls">
+                <button id="previous-photo" type="button" class="photo-viewer-control-button" onclick="previousPhoto()">&larr;</button>
+                <button id="next-photo" type="button" class="photo-viewer-control-button" onclick="nextPhoto()">&rarr;</button>
+                <button id="close-photo-viewer" type="button" class="photo-viewer-control-button" onclick="closePhotoViewer()">&times;</button>
+            </div>
+
+            <div id="photo-viewer-main">
+                <img id="expandedImg"></img>
+            </div>
+
+            <div id="photo-viewer-description">
+                <p id="caption" class="imgText"></p>
+                <p id="story" class="imgText"></p>
+                <p id="exif" class="imgText"></p>
+            </div>
+        </div>
     </body>
 </html>

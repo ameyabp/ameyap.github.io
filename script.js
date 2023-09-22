@@ -412,12 +412,12 @@ publications = {
     }
 }
 
-publication_keys = [
-    'whaleVisShort',
-    'whaleVis',
-    'dancing-bars',
-    'kdGan'
-]
+// publication_keys = [
+//     'whaleVisShort',
+//     'whaleVis',
+//     'dancing-bars',
+//     'kdGan'
+// ]
 
 function load_publications(data) {
     var publications_list = d3.select("#publications-list");
@@ -667,7 +667,10 @@ function shuffleArray(array) {
     }
        
     return array;
- }
+}
+
+var photo_strip = [];
+var current_photo = null;
 
 function load_photo_gallery() {
     // operates on the photography.html page
@@ -691,11 +694,17 @@ function load_photo_gallery() {
                 .data(portraits.slice(portrait_ctr, portrait_ctr+4))
                 .enter()
                 .append("figure")
-                .attr("class", "col-md-3 col-sm-12")
+                .attr("class", "col-md-3 col-sm-12 photo-gallery-image")
                 .append("img")
-                .attr("src", d => 'portraits/' + d)
+                .attr("src", function(d) {
+                    photo_strip.push('portraits/' + d);
+                    return 'portraits/' + d;
+                })
                 .attr("width", "100%")
-                .attr("loading", "lazy")
+                .attr("loading", portrait_ctr < 4 ? "eager" : "lazy")
+                .on("click", function(event, d) {
+                    loadPhotoInViewer('portraits/' + d);
+                });
         portrait_ctr = Math.min(portrait_ctr+4, portraits.length)
 
         var photo_div = container_div.append("div")
@@ -705,11 +714,17 @@ function load_photo_gallery() {
                 .data(landscapes.slice(landscape_ctr, landscape_ctr+2))
                 .enter()
                 .append("figure")
-                .attr("class", "col-md-6 col-sm-12")
+                .attr("class", "col-md-6 col-sm-12 photo-gallery-image")
                 .append("img")
-                .attr("src", d => 'landscapes/' + d)
+                .attr("src", function(d) {
+                    photo_strip.push('landscapes/' + d);
+                    return 'landscapes/' + d;
+                })
                 .attr("width", "100%")
-                .attr("loading", "lazy")
+                .attr("loading", landscape_ctr < 2 ? "eager" : "lazy")
+                .on("click", function(event, d) {
+                    loadPhotoInViewer('landscapes/' + d);
+                });
         landscape_ctr = Math.min(landscape_ctr+2, landscapes.length)
         
         if (panorama_ctr < panoramas.length) {
@@ -720,19 +735,99 @@ function load_photo_gallery() {
                 .data([panoramas[panorama_ctr]])
                 .enter()
                 .append("figure")
-                .attr("class", "col-md-12 col-sm-12")
+                .attr("class", "col-md-12 col-sm-12 photo-gallery-image")
                 .append("img")
-                .attr("src", d => 'panoramas/' + d)
+                .attr("src", function(d) {
+                    photo_strip.push('panoramas/' + d);
+                    return 'panoramas/' + d;
+                })
                 .attr("width", "100%")
-                .attr("loading", "lazy")
+                .attr("loading", panorama_ctr < 1 ? "eager": "lazy")
+                .on("click", function(event, d) {
+                    loadPhotoInViewer('panoramas/' + d);
+                });
             panorama_ctr += 1
         }
     }
 }
 
+function loadPhotoInViewer(photo_path) {
+    console.log(photo_path);
+    current_photo = photo_path;
+
+    d3.select("#photo-viewer")
+        .style("display", "block");
+
+    if (photo_path.includes('panoramas')) {
+        d3.select("#expandedImg")
+            .attr("src", photo_path)
+            .attr("width", "100%")
+            .attr("height", null);
+
+        d3.select("#caption")
+            .text("Caption");
+
+        d3.select("#story")
+            .text("Story");
+
+        d3.select("#exif")
+            .text("EXIF details");
+    }
+    else if (photo_path.includes('landscapes')) {
+        d3.select("#expandedImg")
+            .attr("src", photo_path)
+            .attr("width", null)
+            .attr("height", "100%");
+
+        d3.select("#caption")
+            .text("Caption");
+
+        d3.select("#story")
+            .text("Story");
+
+        d3.select("#exif")
+            .text("EXIF details");
+    }
+    else {
+        // photo_path.includes('portraits')
+        d3.select("#expandedImg")
+            .attr("src", photo_path)
+            .attr("height", "100%")
+            .attr("width", null);
+
+        d3.select("#caption")
+            .text("Caption");
+
+        d3.select("#story")
+            .text("Story");
+
+        d3.select("#exif")
+            .text("EXIF details");
+    }
+}
+
+function closePhotoViewer() {
+    console.log("closing photo viewer");
+
+    d3.select("#photo-viewer")
+        .style("display", "none");
+}
+
+function previousPhoto() {
+    var photo_sid = photo_strip.indexOf(current_photo);
+    photo_sid = (photo_sid == 0) ? photo_strip.length-1 : photo_sid-1;
+    loadPhotoInViewer(photo_strip[photo_sid]);
+}
+
+function nextPhoto() {
+    var photo_sid = photo_strip.indexOf(current_photo);
+    photo_sid = (photo_sid == photo_strip.length-1) ? 0 : photo_sid+1;
+    loadPhotoInViewer(photo_strip[photo_sid]);
+}
+
 function onload() {
     load_news()
-    load_publications(publication_keys)
+    load_publications(Object.keys(publications))
     load_projects(projects.slice(0,4))
     load_blogs()
     load_sample_photograph()
