@@ -548,99 +548,419 @@ window.onclick = function(event) {
 }
 
 photo_list = {
-    'landscapes': [
-        'DSC_0002.JPG',
-        'DSC_0004.JPG',
-        'DSC_0024.JPG',
-        'DSC_0025.JPG',
-        'DSC_0051.JPG',
-        'DSC_0109.JPG',
-        'DSC_0147.jpg',
-        'DSC_0166.JPG',
-        'DSC_0180.JPG',
-        'DSC_0193.JPG',
-        'DSC_0221.JPG',
-        'DSC_0261.JPG',
-        'DSC_0339.JPG',
-        'DSC_0392.jpg',
-        'DSC_0436.JPG',
-        'DSC_0446.jpg',
-        'DSC_0449.jpg',
-        'DSC_0463.JPG',
-        'DSC_0488.JPG',
-        'DSC_0569.JPG',
-        'DSC_0693.JPG',
-        'IMG_1702.jpg',
-        'IMG_1838.jpg',
-        'IMG_2166.jpg',
-        'IMG_2297.JPG',
-        'IMG_2785.jpg',
-        'IMG_2786.jpg',
-        'IMG_2805.jpg',
-        'IMG_2814.jpg',
-        'IMG_2874.jpg',
-        'IMG_3061.jpg',
-        'IMG_3265.jpg',
-        'IMG_3446.jpg',
-        'IMG_4063.jpg',
-        'IMG_4303.jpg',
-        'IMG_4306.jpg',
-        'IMG_4320.jpg',
-        'IMG_4325.jpg',
-        'IMG_5492-Edit.jpg',
-        'IMG_5637.jpg',
-        'IMG_5710.jpg',
-        'IMG_7341.jpg',
-        'PXL_20210708_182444148.jpg',
-        'PXL_20210716_180052945.jpg',
-        'PXL_20210716_185055994.jpg',
-        'PXL_20210730_103352598.jpg',
-        'PXL_20210801_152019626.jpg',
-        'PXL_20210801_154645341.jpg',
-        'IMG_8359.jpg',
-        'IMG_8734.jpg',
-        'IMG_8493.jpg',
-        'IMG_8689.jpg'
-    ],
-    'portraits': [
-        'DSC_0111.JPG',
-        'DSC_0118.JPG',
-        'DSC_0217.JPG',
-        'DSC_0277.JPG',
-        'IMG_1242.jpg',
-        'IMG_2354.jpg',
-        'IMG_2800.jpg',
-        'IMG_3465.jpg',
-        'IMG_4322.jpg',
-        'IMG_4411.jpg',
-        'IMG_5419.jpg',
-        'IMG_5585.jpg',
-        'IMG_5927.jpg',
-        'IMG_7356.jpg',
-        'PXL_20210815_074704088.jpg',
-        'PXL_20210918_071117160.jpg',
-        'PXL_20211216_183050367.jpg',
-        'IMG_8660.jpg'
-    ],
-    'panoramas': [
-        'DSC_0110_pano.jpg',
-        'IMG_2489_pano.jpg',
-        'IMG_2794_pano.jpg',
-        'IMG_3309_pano.jpg',
-        'IMG_4579_pano.jpg',
-        'IMG_5257_pano.jpg',
-        'IMG_5347_pano.jpg',
-        'IMG_5593_pano.jpg',
-        'IMG_8618_pano.jpg',
-        'IMG_9086_pano.jpg'
-    ]
+    'landscapes': {
+        'DSC_0002.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0004.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0024.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0025.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0051.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0109.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0147.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0166.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0180.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0193.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0221.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0261.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0339.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0392.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0436.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0446.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0449.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0463.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0488.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0569.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0693.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_1702.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_1838.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2166.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2297.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2785.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2786.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2805.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2814.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2874.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_3061.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_3265.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_3446.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4063.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4303.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4306.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4320.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4325.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5492-Edit.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5637.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5710.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_7341.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210708_182444148.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210716_180052945.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210716_185055994.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210730_103352598.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210801_152019626.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210801_154645341.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_8359.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_8734.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_8493.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_8689.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+    },
+    'portraits': {
+        'DSC_0111.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0118.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0217.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'DSC_0277.JPG': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_1242.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2354.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2800.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_3465.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4322.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4411.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5419.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5585.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5927.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_7356.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210815_074704088.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20210918_071117160.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'PXL_20211216_183050367.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_8660.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+    },
+    'panoramas': {
+        'DSC_0110_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2489_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_2794_pano.jpg': {
+            'Caption': 'Nestled',
+            'Story': 'This panorama was stitched from 3 photographs clicked from the chalk cliffs at Étretat, Normandie, France. The town of Étretat is set up cosily in a small valley, nestled in the protection of the chalk cliffs on either side.',
+            'EXIF Details': null
+        },
+        'IMG_3309_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_4579_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5257_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5347_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_5593_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_8618_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+        'IMG_9086_pano.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        },
+    }
 }
 
 function load_sample_photograph() {
     // select a panorama for the sample photograph
     var photo_paths = []
     for (var i=0; i<1; i++) {
-        var name = photo_list['panoramas'][Math.floor(Math.random() * photo_list['panoramas'].length)]
+        var name = Object.keys(photo_list['panoramas'])[Math.floor(Math.random() * Object.keys(photo_list['panoramas']).length)]
         photo_paths.push('./photography/panoramas/' + name)
     }
 
@@ -674,9 +994,9 @@ var current_photo = null;
 
 function load_photo_gallery() {
     // operates on the photography.html page
-    var portraits = shuffleArray(photo_list['portraits'])
-    var landscapes = shuffleArray(photo_list['landscapes'])
-    var panoramas = shuffleArray(photo_list['panoramas'])
+    var portraits = shuffleArray(Object.keys(photo_list['portraits']))
+    var landscapes = shuffleArray(Object.keys(photo_list['landscapes']))
+    var panoramas = shuffleArray(Object.keys(photo_list['panoramas']))
 
     var container_div = d3.select("#photo-gallery")
 
@@ -765,13 +1085,13 @@ function loadPhotoInViewer(photo_path) {
             .attr("height", null);
 
         d3.select("#caption")
-            .text("Caption");
+            .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['Caption']);
 
         d3.select("#story")
-            .text("Story");
+            .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['Story']);
 
         d3.select("#exif")
-            .text("EXIF details");
+            .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['EXIF Details']);
     }
     else if (photo_path.includes('landscapes')) {
         d3.select("#expandedImg")
@@ -780,13 +1100,13 @@ function loadPhotoInViewer(photo_path) {
             .attr("height", "100%");
 
         d3.select("#caption")
-            .text("Caption");
+            .text(photo_list['landscapes'][photo_path.substring(photo_path.indexOf('/')+1)]['Caption']);
 
         d3.select("#story")
-            .text("Story");
+            .text(photo_list['landscapes'][photo_path.substring(photo_path.indexOf('/')+1)]['Story']);
 
         d3.select("#exif")
-            .text("EXIF details");
+            .text(photo_list['landscapes'][photo_path.substring(photo_path.indexOf('/')+1)]['EXIF Details']);
     }
     else {
         // photo_path.includes('portraits')
@@ -796,13 +1116,13 @@ function loadPhotoInViewer(photo_path) {
             .attr("width", null);
 
         d3.select("#caption")
-            .text("Caption");
+            .text(photo_list['portraits'][photo_path.substring(photo_path.indexOf('/')+1)]['Caption']);
 
         d3.select("#story")
-            .text("Story");
+            .text(photo_list['portraits'][photo_path.substring(photo_path.indexOf('/')+1)]['Story']);
 
         d3.select("#exif")
-            .text("EXIF details");
+            .text(photo_list['portraits'][photo_path.substring(photo_path.indexOf('/')+1)]['EXIF Details']);
     }
 }
 
