@@ -904,19 +904,19 @@ photo_list = {
     },
     'panoramas': {
         'DSC_0110_pano.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Dawn',
+            'Story': 'Winter mornings at my native place - Koparde, Kolhapur, Maharashtra, India. The fog both subduing the early morning hues in the sky, and shrouding the setlements and farms below.',
+            'EXIF Details': 'Nikon D3200, 18-55m'
         },
         'IMG_2489_pano.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Medieval',
+            'Story': 'A dual biege-gray toned panoramic landscape of Saint-Émilion, a quaint little commune in the Nouvelle-Aquitaine region of France, showing the medieval era architecture of small town France.',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_2794_pano.jpg': {
             'Caption': 'Nestled',
             'Story': 'This panorama was stitched from 3 photographs clicked from the chalk cliffs at Étretat, Normandie, France. The town of Étretat is set up cosily in a small valley, nestled in the protection of the chalk cliffs on either side.',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_3309_pano.jpg': {
             'Caption': null,
