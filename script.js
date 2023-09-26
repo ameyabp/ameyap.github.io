@@ -919,9 +919,9 @@ photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_3309_pano.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Alpine',
+            'Story': 'View from the Schilthorn summit in the Swiss Alps facing north. Drättehorn summit on the left and the Bietenhorn peak near the end of the ridge on the right. Two ecosystems or vegetations are visible in this photograph - the bare peaks on the left and in the middle, and the bare ridge on the right showing the alpine ecosystem where no vegetation grows, and the green layer below the bare peaks representing the sub-alpine ecosystem which only has moss like vegetation growing only a few centimeters above ground.',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_4579_pano.jpg': {
             'Caption': null,
