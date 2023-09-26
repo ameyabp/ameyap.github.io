@@ -924,34 +924,34 @@ photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_4579_pano.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Seattle',
+            'Story': "Panoramic view of Seattle's skyline taken from the ferry ride to West Seattle. The sombre gray tones overpowering whatever cheerfulness other colors try to bring in, is typical of Seattle's weather for a majority of the year.",
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_5257_pano.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Sun & Blues',
+            'Story': 'A sunny day along the beach of Santa Cruz, California adorned with the blues in the sky and the water, and speckles of blue in the form of umbrellas on the beach',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_5347_pano.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Rugged',
+            'Story': 'Mountains of the Sequoia National Park, California, captured from Moro Rock looking eastwards. Peaks from left to right - Triple Divide Peak, Lion Rock, Mt. Stewart, Kaweah Queen, Black Kaweah, with Eagle Scout Peak in front of it, Lippincott Mountain and Mt. Eisen',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_5593_pano.jpg': {
             'Caption': null,
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_8618_pano.jpg': {
             'Caption': null,
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_9086_pano.jpg': {
             'Caption': null,
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
     }
 }
