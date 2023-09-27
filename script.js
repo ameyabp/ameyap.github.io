@@ -939,18 +939,18 @@ photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_5593_pano.jpg': {
-            'Caption': null,
-            'Story': null,
+            'Caption': 'Brickopolis',
+            'Story': 'Night life along the Bricktown Canal in the lively Bricktown neighborhood of Oklahoma City, Oklahoma. The place features a consistent red brick architectural theme in its buildings.',
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_8618_pano.jpg': {
-            'Caption': null,
-            'Story': null,
+            'Caption': 'A Mirror for the Skies',
+            'Story': 'Bierstadt Lake in the Rocky Mountains National Park, with the continental divide in the background. Notable features visible along the continental divide - the Sharkstooth, Otis Peak, Tyndall Glacier and Flattop Mountain ',
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
         'IMG_9086_pano.jpg': {
-            'Caption': null,
-            'Story': null,
+            'Caption': 'Contrast',
+            'Story': 'Atop Bear Peak in Boulder, Colorado. The Rocky Mountains Boulder foothills or front range passing through the center of the panoramic view looking south along the range, with the plains on the east and the contrasting hilly terrain of Rocky Mountains on the west. Boulder City and the NCAR Mesa Lab can be seen in the far left corner of the photograph.',
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
     }
