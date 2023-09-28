@@ -812,14 +812,14 @@ photo_list = {
     },
     'portraits': {
         'DSC_0111.JPG': {
-            'Caption': null,
+            'Caption': 'Soulful',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 1600; Shutter Speed: 1/80s; Aperture: ; Focal length: 100mm'
         },
         'DSC_0118.JPG': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Ripple',
+            'Story': 'The Oculus (New York City, USA) roof captured from inside, with light and shadow creating a ripple like pattern along the columns',
+            'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/800s; Aperture: f11; Focal length: 18mm'
         },
         'DSC_0217.JPG': {
             'Caption': null,
@@ -1072,26 +1072,43 @@ function load_photo_gallery() {
 }
 
 function loadPhotoInViewer(photo_path) {
-    console.log(photo_path);
+    // console.log(photo_path);
     current_photo = photo_path;
 
     d3.select("#photo-viewer")
         .style("display", "block");
 
     if (photo_path.includes('panoramas')) {
-        d3.select("#expandedImg")
-            .attr("src", photo_path)
-            .attr("width", "100%")
-            .attr("height", null);
+        const img = new Image();
+        img.src = photo_path;
+        img.onload = function() {
+            const imgWidth = img.width;
+            const imgHeight = img.height;
+            const imgAspectRatio = imgWidth/imgHeight;
 
-        d3.select("#caption")
-            .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['Caption']);
+            const divAspectRatio = d3.select("#photo-viewer-main").node().clientWidth/d3.select("#photo-viewer-main").node().clientHeight;
 
-        d3.select("#story")
-            .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['Story']);
+            console.log(imgAspectRatio)
+            console.log(divAspectRatio)
 
-        d3.select("#exif")
-            .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['EXIF Details']);
+            d3.select("#expandedImg")
+                .attr("src", photo_path)
+                .attr("width", function() {
+                    return divAspectRatio > imgAspectRatio ? null : "100%";
+                })
+                .attr("height", function() {
+                    return divAspectRatio > imgAspectRatio ? "100%" : null;
+                });
+
+            d3.select("#caption")
+                .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['Caption']);
+
+            d3.select("#story")
+                .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['Story']);
+
+            d3.select("#exif")
+                .text(photo_list['panoramas'][photo_path.substring(photo_path.indexOf('/')+1)]['EXIF Details']);
+        }
     }
     else if (photo_path.includes('landscapes')) {
         d3.select("#expandedImg")
@@ -1112,8 +1129,8 @@ function loadPhotoInViewer(photo_path) {
         // photo_path.includes('portraits')
         d3.select("#expandedImg")
             .attr("src", photo_path)
-            .attr("height", "100%")
-            .attr("width", null);
+            .attr("width", null)
+            .attr("height", "100%");
 
         d3.select("#caption")
             .text(photo_list['portraits'][photo_path.substring(photo_path.indexOf('/')+1)]['Caption']);
@@ -1127,8 +1144,6 @@ function loadPhotoInViewer(photo_path) {
 }
 
 function closePhotoViewer() {
-    console.log("closing photo viewer");
-
     d3.select("#photo-viewer")
         .style("display", "none");
 }
