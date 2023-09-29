@@ -1,4 +1,4 @@
-import { photo_list } from './photo_list.js'
+import { photo_list } from './photography/photo_list.js'
 
 const news = [
     {

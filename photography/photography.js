@@ -1,4 +1,4 @@
-import { photo_list } from '../photo_list.js'
+import { photo_list } from './photo_list.js'
 
 function load_photo_gallery() {
     // operates on the photography.html page
