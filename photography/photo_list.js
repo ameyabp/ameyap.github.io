@@ -288,9 +288,9 @@ export const photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 1/160s; Aperture: f5.6; Focal length: 135mm'
         },
         'IMG_2354.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Dazzle',
+            'Story': 'The famous Eiffel Tower (Tour Eiffel) photographed from Champs de Mars during twilight with xenon bulbs lighting up the tower.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 15s; Aperture: f22; Focal length: 92mm'
         },
         'IMG_2800.jpg': {
             'Caption': null,
