@@ -1,84 +1,14 @@
 import { photo_list } from './photography/photo_list.js'
+import { news_list } from './news_list.js'
+import { publications_list } from './publications_list.js';
+import { projects_list } from './projects_list.js';
+import { blogs_list } from './blogs_list.js';
 
-const news = [
-    {
-        'timestamp': 'August 2023',
-        'event': 'Short paper accepted at IEEE VIS 2023 - "WhaleVis: Visualizing the History of Commercial Whaling"'
-    },
-    {
-        'timestamp': 'August 2023',
-        'event': 'Presented a talk and poster for HydroVis - an interactive dashboard for understanding ensemble data assimilation forecasts for the WRF-Hydro hydrology model, at the National Center for Atmospheric Research (NCAR)'
-    },
-    {
-        'timestamp': 'May 2023 to September 2023',
-        'event': 'Summer internship in the SIParCS program at the National Center for Atmospheric Research (NCAR)'
-    },
-    {
-        'timestamp': 'April 2023',
-        'event': 'Presented my work - "WhaleVis: A New Visualization Tool for the IWC Catch Database" at the International Whaling Commission Scientific Committeee meeting'
-    },
-    {
-        'timestamp': 'October 2022',
-        'event': 'Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022 Oklahoma City'
-    },
-    {
-        'timestamp': 'July 2022',
-        'event': 'Paper accepted at IEEE VIS 2022 - "Studying Early Decision Making with Progressive Bar Charts"'
-    },
-    {
-        'timestamp': 'September 2021',
-        'event': 'Transferred to University of Washington, Seattle with Dr. Leilani Battle'
-    },
-    {
-        'timestamp': 'June 2021 to September 2021',
-        'event': 'Research Intern at INRIA Saclay, France with Dr. Jean-Daniel Fekete'
-    },
-    {
-        'timestamp': 'January 2021',
-        'event': 'Started PhD in Computer Science at the University of Maryland, College Park with Dr. Leilani Battle'
-    },
-    {
-        'timestamp': 'December 2020',
-        'event': 'Graduated with a Masters in Computer Science from the University of Maryland, College Park'
-    },
-    {
-        'timestamp': 'June 2019 to August 2019',
-        'event': 'Research Assistant Intern at Fraunhofer CESE, Maryland, USA with Dr. Marcel Schäfer'
-    },
-    {
-        'timestamp': 'August 2018',
-        'event': 'Started Masters in Computer Science at the University of Maryland, College Park'
-    },
-    {
-        'timestamp': 'July 2016 to July 2018',
-        'event': 'Software Developer at nVIDIA in the GeForce Experience Team'
-    },
-    {
-        'timestamp': 'August 2016',
-        'event': 'Graduated with a Bachelors in Computer Science from BITS-Pilani Goa Campus'
-    },
-    {
-        'timestamp': 'July 2015 to December 2015',
-        'event': 'Software Development Intern at nVIDIA in the GeForce Experience Team'
-    },
-    {
-        'timestamp': 'June 2015',
-        'event': 'Videography Intern at Zone Startups India'
-    },
-    {
-        'timestamp': 'June 2014 to August 2014',
-        'event': 'Web Development Intern at Infibeam Avenues'
-    },
-    {
-        'timestamp': 'August 2012',
-        'event': 'Started Bachelors in Computer Science at BITS-Pilani Goa Campus'
-    }
-]
-
+// NEWS SECTION
 function load_news() {
     d3.select("#news-list")
         .selectAll("li")
-        .data(news.slice(0,5), d => d.timestamp)
+        .data(news_list.slice(0,5), d => d.timestamp)
         .enter()
             .append("li")
             .attr("class", "list-group-item")
@@ -96,7 +26,7 @@ function expandContractNews() {
 
         d3.select("#news-list")
             .selectAll("li")
-            .data(news, d => d.event)
+            .data(news_list, d => d.event)
             .enter()
                 .append("li")
                 .attr("class", "list-group-item")
@@ -115,318 +45,14 @@ function expandContractNews() {
     }
 }
 
-const blogs = [
-    {
-        'title': 'Visualizing Historical Whaling Voyages over Time',
-        'url': 'https://dl.acm.org/doi/10.1145/3611650',
-        'authors': 'Leilani Battle, Ameya Patil, Zoe Rand, Trevor Branch'
-    },
-    {
-        'title': 'A Bifocal View of Data Visualization Research of the Past and Present',
-        'url': 'https://medium.com/hcil-at-umd/a-bifocal-view-data-visualization-research-of-the-past-and-present-46e23e24cba7',
-        'authors': 'Deepthi Raghunandan, Ameya Patil'
-    },
-    {
-        'title': 'Devkund - A Travelogue',
-        'url': 'https://ameyabp.wordpress.com/2017/06/09/devkund/',
-        'authors': 'Ameya Patil'
-    },
-    {
-        'title': 'The Secret of Cycling',
-        'url': 'https://ameyabp.wordpress.com/2016/12/03/the-secret-of-cycling/',
-        'authors': 'Ameya Patil'
-    },
-    {
-        'title': 'Of Humans and Festivals',
-        'url': 'https://ameyabp.wordpress.com/2016/10/16/of-humans-and-festivals/',
-        'authors': 'Ameya Patil'
-    },
-    {
-        'title': "Virat Kohli's Batting Nuances",
-        'url': 'https://ameyabp.wordpress.com/2016/10/01/kohlis-batting-nuances/',
-        'authors': 'Ameya Patil'
-    },
-    {
-        'title': 'The Humble Kachchh - A Travelogue',
-        'url': 'https://ameyabp.wordpress.com/2016/12/31/the-humble-kachchh/',
-        'authors': 'Ameya Patil'
-    },
-    {
-        'title': 'Amdavad - A Travelogue',
-        'url': 'https://ameyabp.wordpress.com/2016/09/18/amdavad/',
-        'authors': 'Ameya Patil'
-    },
-    {
-        'title': 'Himalayan Saga - A Travelogue',
-        'url': 'https://ameyabp.wordpress.com/2016/09/24/himalayan-saga/',
-        'authors': 'Ameya Patil'
-    },
-]
-
-function load_blogs() {
-    d3.select("#blogs-list")
-        .selectAll("li")
-        .data(blogs.slice(0,5), d => d.title)
-        .enter()
-            .append("li")
-            .attr("class", "list-group-item")
-            .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors);
-
-    d3.select("#blogs-expand-contract").node().addEventListener('click', expandContractBlogs);
-}
-
-function expandContractBlogs() {
-    var btn = d3.select("#blogs-expand-contract")
-    
-    if (btn.node().value === "contracted") {
-        btn.node().value = "expanded"
-        btn.text("-")
-
-        d3.select("#blogs-list")
-            .selectAll("li")
-            .data(blogs, d => d.title)
-            .enter()
-                .append("li")
-                .attr("class", "list-group-item")
-                .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors)
-    }
-    else {
-        btn.node().value = "contracted"
-        btn.text("+")
-
-        d3.select("#blogs-list")
-            .selectAll("li")
-            .select(function(d,i) {
-                return i > 4 ? this : null
-            })
-            .remove()            
-    }
-}
-
-const projects = [
-    {
-        'title': 'HydroVis',
-        'subtitle': 'Visualization Dashboard for Ensemble Data Assimilation Forecasting using WRF-Hydro',
-        'teaser': 'projects/hydroVis/teaser.png',
-        'teaser-alt-text': 'Snapshot of the HydroVis interface',
-        'description': 'Designed and implemented an interactive dashboard for analyzing ensemble data assimilation forecasts of freshwater floods in river systems. The forecasts are made using the WRF-Hydro hydrology model. This was an internship project in the Data Assimilation Research Section (DAReS) team at the National Center for Atmospheric Research (NCAR).',
-        'url': 'https://github.com/ameyabp/DART/tree/main/hydroVis',
-        'button-text': 'Code'
-    },
-    {
-        'title': 'WhaleVis',
-        'subtitle': 'Visualization Tool for the IWC Catch Database',
-        'teaser': 'projects/whaleVis/teaser.png',
-       ' teaser-alt-text': 'Snapshot of the WhaleVis interface',
-        'description': 'Created an interactive dashboard for visual analysis of historical commercial whale hunting. The dashboard is aimed to facilitate inferring spatial distribution of whale populations from the catch numbers and the whale search effort, eventually helping in whale conservation efforts.',
-        'url': 'https://observablehq.com/@whales/whale-vis-dashboard-expedition-routes',
-        'button-text': 'Dashboard'
-    },
-    {
-        'title': 'Lumos! - Board and Video Game',
-        'subtitle': 'Course Project for Game Design - INST728E',
-        'teaser': 'projects/lumos/teaser.png',
-       ' teaser-alt-text': 'Snapshots of the board and video game',
-        'description': 'Designed a board game and a video game based on the theme of propagating light in a 2D space.',
-        'url': 'projects/lumos/lumos.html',
-        'button-text': 'Details'
-    },
-    {
-        'title': 'Natural Calamities Visualization Tool',
-        'subtitle': 'Course Project for Interactive Data Analytics - CMSC828D',
-        'teaser': 'projects/calamities/teaser.png',
-       ' teaser-alt-text': 'Snapshot of the Natural Calamities Visualization Tool',
-        'description': 'Implemented a geo data analysis/visualization tool with interactions to understand the natural calamities that happened in the US over 20 years from 1950 to 2022. Front end was designed using d3, server was setup using python Flask and Postgres was used for backend.',
-        'url': 'projects/calamities/calamities.html',
-        'button-text': 'Details'
-    },
-    {
-        'title': 'Physically Based Clustering Visualization',
-        'subtitle': 'Course Project for Physically Based Modelling, Simulation and Animation - CMSC828X',
-        'teaser': 'projects/pbcv/teaser.png',
-       ' teaser-alt-text': 'Snapshot of the Physically Based Clustering Visualization Tool',
-        'description': 'Implemented a data analysis/visualization tool with interactions modelled on real-life physical forces using the D3-Force API. The specific use case targeted was evaluating word embeddings created by different methods, where words closer in the vector space belonged to the same cluster.',
-        'url': 'projects/pbcv/pbcv.html',
-        'button-text': 'Details'
-    },
-    {
-        'title': 'ShadowGAN',
-        'subtitle': 'Course Project for Advanced Computer Graphics - CMSC740',
-        'teaser': 'projects/shadowGan/teaser.png',
-       ' teaser-alt-text': 'Sample input and outputs for ShadowGAN',
-        'description': 'Trained a cGAN (Conditional Generative Adversarial Network) model to generate shadows in a scene, given the scene without shadows, the depth map and the lightsource position map. Used the pix2pixmodel for the task.',
-        'url': 'https://github.com/ameyabp/pytorch-CycleGAN-and-pix2pix',
-        'button-text': 'Details'
-    },
-    {
-        'title': 'Tunebox - Virtual Music Instrument Dashboard',
-        'subtitle': 'Course Project for Creative Multimedia - BITSF398',
-        'teaser': 'projects/tunebox/teaser.png',
-       ' teaser-alt-text': 'Snapshots of the board and video game',
-        'description': 'Created a gesture based virtual music instrument dashboard using LEAP Motion. Implemented string instruments like piano and harp, and percussion instrument like drums. Implementation done using Java Swing and LEAP Motion SDK',
-        'url': null,
-        'button-text': null
-    }
-]
-
-function load_projects(data) {
-    var project_cards_div = d3.select("#project-cards")
-
-    for (var i=0; i<data.length; i++) {
-        const project = data[i]
-
-        var card = project_cards_div.append("div")
-                                        .attr("class", "card col-md-6 col-sm-12 mb-3 mr-5 ml-5")
-
-        card.append("h5")
-            .attr("class", "card-header")
-            .text(project.title)
-
-        card.append("img")
-            .attr("class", "card-img-top mt-2")
-            .attr("src", project.teaser)
-            .attr("alt", project['teaser-alt-text'])
-
-        var card_body = card.append("div")
-                            .attr("class", "card-body")
-            
-        card_body.append("h6")
-                    .attr("class", "card-subtitle")
-                    .text(project.subtitle)
-        
-        card_body.append("br")
-
-        card_body.append("p")
-                    .attr("class", "card-text")
-                    .text(project.description)
-
-        if (project.url) {
-            card_body.append("a")
-                    .attr("href", project.url)
-                    .attr("class", "btn btn-primary")
-                    .attr("target", "_blank")
-                    .attr("rel", "noopener noreferrer")
-                    .text(project['button-text'])
-        }
-    }
-
-    d3.select("#projects-expand-contract").node().addEventListener('click', expandContractProjects);
-}
-
-function expandContractProjects() {
-    var btn = d3.select("#projects-expand-contract")
-    
-    if (btn.node().value === "contracted") {
-        btn.node().value = "expanded"
-        btn.text("-")
-
-        load_projects(projects.slice(4))
-    }
-    else {
-        btn.node().value = "contracted"
-        btn.text("+")
-
-        d3.select("#project-cards")
-            .selectAll(".card")
-            .select(function(d,i) {
-                return i > 3 ? this : null
-            })
-            .remove()            
-    }
-}
-
-const publications = {
-    'whaleVisShort': {
-        'title': 'WhaleVis: Visualizing the History of Commercial Whaling',
-        'venue': 'IEEE Transactions on Visualization and Computer Graphics, 2024',
-        'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
-        'doi': null,
-        'paper': 'https://arxiv.org/pdf/2308.04552.pdf',
-        'video': null,
-        'presentation': null,
-        'data': null,
-        'bibtex': '\n\
-            @misc{patil2023whalevis,\n\
-            title={WhaleVis: Visualizing the History of Commercial Whaling},\n\
-            author={Ameya Patil and Zoe Rand and Trevor Branch and Leilani Battle},\n\
-            year={2023},\n\
-            eprint={2308.04552},\n\
-            archivePrefix={arXiv},\n\
-            primaryClass={cs.DB}\n\
-        }'
-    },
-    'whaleVis': {
-        'title': 'WhaleVis: A New Visualization Tool for the IWC Catch Database',
-        'venue': 'International Whaling Commission, SC/69A/GDR/04, 2023',
-        'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
-        'doi': 'https://archive.iwc.int/?r=20005&k=46e2592325',
-        'paper': 'projects/whaleVis/SC_69A_GDR_04_Patil_etal.pdf',
-        'video': 'projects/whaleVis/whaleVis.mp4',
-        'presentation': null,
-        'data': null,
-        'bibtex': '\n\
-        @article{patil2023whalevis,\n\
-            title={WhaleVis: A new visualization tool for the IWC catch database.},\n\
-            author={Patil, Ameya and Rand, Zoe and Branch, Trevor and Battle, Leilani},\n\
-            journal={Scientific Committee of the International Whaling Commission},\n\
-            volume={SC/69A/GDR/04},\n\
-            year={2023}\n\
-        }'
-    },
-    'dancing-bars': {
-        'title': 'Studying Early Decision Making with Progressive Bar Charts',
-        'venue': 'IEEE Transactions on Visualization and Computer Graphics, 2023',
-        'authors': 'A. Patil, G. Richer, C. Jermaine, D. Moritz, J.-D. Fekete',
-        'doi': 'https://dx.doi.org/10.1109/TVCG.2022.3209426',
-        'paper': 'https://hal.archives-ouvertes.fr/hal-03738461/',
-        'video': 'https://youtu.be/ygpu92JMhA0',
-        'presentation': 'https://www.youtube.com/watch?v=L523gBLIM5c&t=10260s',
-        'data': 'https://osf.io/tn2ph/?view_only=5a25891ca4a8431085488a8f3e38affc',
-        'bibtex': '\n\
-        @ARTICLE{patil2023studying,\n\
-            author={Patil, Ameya and Richer, Gaëlle and Jermaine, Christopher and Moritz, Dominik and Fekete, Jean-Daniel},\n\
-            journal={IEEE Transactions on Visualization and Computer Graphics}, \n\
-            title={Studying Early Decision Making with Progressive Bar Charts}, \n\
-            year={2023},\n\
-            volume={29},\n\
-            number={1},\n\
-            pages={407-417},\n\
-            doi={10.1109/TVCG.2022.3209426}\n\
-        }'
-    },
-    'kdGan': {
-        'title': 'Compressing GANs using Knowledge Distillation',
-        'venue': 'CoRR, vol. abs/1902.00159, 2019.',
-        'authors': 'A. Aguinaldo, P.-Y. Chiang, A. Gain, A. Patil, K. Pearson and S. Feizi',
-        'doi': 'https://arxiv.org/abs/1902.00159',
-        'paper': 'https://arxiv.org/pdf/1902.00159.pdf',
-        'video': null,
-        'presentation': null,
-        'data': null,
-        'bibtex': '\n\
-        @article{aguinaldo2019compressing,\n\
-            author       = {Angeline Aguinaldo and Ping{-}Yeh Chiang and Alexander Gain and Ameya Patil and Kolten Pearson and Soheil Feizi},\n\
-            title        = {Compressing GANs using Knowledge Distillation},\n\
-            journal      = {CoRR},\n\
-            volume       = {abs/1902.00159},\n\
-            year         = {2019},\n\
-            url          = {http://arxiv.org/abs/1902.00159},\n\
-            eprinttype    = {arXiv},\n\
-            eprint       = {1902.00159},\n\
-            timestamp    = {Tue, 21 May 2019 18:03:39 +0200},\n\
-            biburl       = {https://dblp.org/rec/journals/corr/abs-1902-00159.bib},\n\
-            bibsource    = {dblp computer science bibliography, https://dblp.org}\n\
-        }'
-    }
-}
-
+// PUBLICATIONS SECTION
 function load_publications(data) {
-    var publications_list = d3.select("#publications-list");
+    var pubs_list = d3.select("#publications-list");
 
     for (var i=0; i<data.length; i++) {
-        const publication = publications[data[i]]
+        const publication = publications_list[data[i]]
 
-        var entry = publications_list.append("li")
+        var entry = pubs_list.append("li")
                                     .attr("class", "list-group-item")
 
         entry.append("h5")
@@ -531,7 +157,7 @@ function load_publications(data) {
 function openModal(publicationKey) {
     var modal = d3.select("#bibtex-modal-div").node()
     modal.style.display = "block";
-    d3.select("#bibtex").text(publications[publicationKey].bibtex)
+    d3.select("#bibtex").text(publications_list[publicationKey].bibtex)
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -548,6 +174,115 @@ window.onclick = function(event) {
     }
 }
 
+// PROJECTS SECTION
+function load_projects(data) {
+    var project_cards_div = d3.select("#project-cards")
+
+    for (var i=0; i<data.length; i++) {
+        const project = data[i]
+
+        var card = project_cards_div.append("div")
+                                        .attr("class", "card col-md-6 col-sm-12 mb-3 mr-5 ml-5")
+
+        card.append("h5")
+            .attr("class", "card-header")
+            .text(project.title)
+
+        card.append("img")
+            .attr("class", "card-img-top mt-2")
+            .attr("src", project.teaser)
+            .attr("alt", project['teaser-alt-text'])
+
+        var card_body = card.append("div")
+                            .attr("class", "card-body")
+            
+        card_body.append("h6")
+                    .attr("class", "card-subtitle")
+                    .text(project.subtitle)
+        
+        card_body.append("br")
+
+        card_body.append("p")
+                    .attr("class", "card-text")
+                    .text(project.description)
+
+        if (project.url) {
+            card_body.append("a")
+                    .attr("href", project.url)
+                    .attr("class", "btn btn-primary")
+                    .attr("target", "_blank")
+                    .attr("rel", "noopener noreferrer")
+                    .text(project['button-text'])
+        }
+    }
+
+    d3.select("#projects-expand-contract").node().addEventListener('click', expandContractProjects);
+}
+
+function expandContractProjects() {
+    var btn = d3.select("#projects-expand-contract")
+    
+    if (btn.node().value === "contracted") {
+        btn.node().value = "expanded"
+        btn.text("-")
+
+        load_projects(projects_list.slice(4))
+    }
+    else {
+        btn.node().value = "contracted"
+        btn.text("+")
+
+        d3.select("#project-cards")
+            .selectAll(".card")
+            .select(function(d,i) {
+                return i > 3 ? this : null
+            })
+            .remove()            
+    }
+}
+
+// BLOGS SECTION
+function load_blogs() {
+    d3.select("#blogs-list")
+        .selectAll("li")
+        .data(blogs_list.slice(0,5), d => d.title)
+        .enter()
+            .append("li")
+            .attr("class", "list-group-item")
+            .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors);
+
+    d3.select("#blogs-expand-contract").node().addEventListener('click', expandContractBlogs);
+}
+
+function expandContractBlogs() {
+    var btn = d3.select("#blogs-expand-contract")
+    
+    if (btn.node().value === "contracted") {
+        btn.node().value = "expanded"
+        btn.text("-")
+
+        d3.select("#blogs-list")
+            .selectAll("li")
+            .data(blogs_list, d => d.title)
+            .enter()
+                .append("li")
+                .attr("class", "list-group-item")
+                .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors)
+    }
+    else {
+        btn.node().value = "contracted"
+        btn.text("+")
+
+        d3.select("#blogs-list")
+            .selectAll("li")
+            .select(function(d,i) {
+                return i > 4 ? this : null
+            })
+            .remove()            
+    }
+}
+
+// PHOTOGRAPHY SECTION
 function load_sample_photograph() {
     // select a panorama for the sample photograph
     var photo_paths = []
@@ -567,8 +302,9 @@ function load_sample_photograph() {
         .attr("loading", "lazy")
 }
 
+// MAIN
 load_news();
-load_publications(Object.keys(publications));
-load_projects(projects.slice(0,4));
+load_publications(Object.keys(publications_list));
+load_projects(projects_list.slice(0,4));
 load_blogs();
 load_sample_photograph();
