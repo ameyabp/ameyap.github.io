@@ -83,6 +83,8 @@ function load_news() {
             .append("li")
             .attr("class", "list-group-item")
             .append("text").html(d => "<b>" + d.timestamp + "</b> - " + d.event)
+
+    d3.select("#news-expand-contract").node().addEventListener('click', expandContractNews);
 }
 
 function expandContractNews() {
@@ -168,7 +170,9 @@ function load_blogs() {
         .enter()
             .append("li")
             .attr("class", "list-group-item")
-            .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors)
+            .append("text").html(d => "<a href=" + d.url + " target=\"_blank\" rel=\"noopener noreferrer\">" + d.title + "</a><br>by " + d.authors);
+
+    d3.select("#blogs-expand-contract").node().addEventListener('click', expandContractBlogs);
 }
 
 function expandContractBlogs() {
@@ -305,6 +309,8 @@ function load_projects(data) {
                     .text(project['button-text'])
         }
     }
+
+    d3.select("#projects-expand-contract").node().addEventListener('click', expandContractProjects);
 }
 
 function expandContractProjects() {

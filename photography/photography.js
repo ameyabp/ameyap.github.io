@@ -77,6 +77,10 @@ function load_photo_gallery() {
             panorama_ctr += 1
         }
     }
+
+    d3.select("#previous-photo").node().addEventListener('click', previousPhoto);
+    d3.select("#next-photo").node().addEventListener('click', nextPhoto);
+    d3.select("#close-photo-viewer").node().addEventListener('click', closePhotoViewer);
 }
 
 var photo_strip = [];
@@ -184,9 +188,5 @@ function shuffleArray(array) {
        
     return array;
 }
-
-d3.select("#previous-photo").node().addEventListener('click', previousPhoto);
-d3.select("#next-photo").node().addEventListener('click', nextPhoto);
-d3.select("#close-photo-viewer").node().addEventListener('click', closePhotoViewer);
 
 load_photo_gallery();
