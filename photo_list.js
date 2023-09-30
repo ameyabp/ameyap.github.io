@@ -260,6 +260,11 @@ export const photo_list = {
             'Story': null,
             'EXIF Details': null
         },
+        'IMG_9406.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        }
     },
     'portraits': {
         'DSC_0111.JPG': {
@@ -352,6 +357,11 @@ export const photo_list = {
             'Story': null,
             'EXIF Details': null
         },
+        'PXL_20230909_041803564.jpg': {
+            'Caption': null,
+            'Story': null,
+            'EXIF Details': null
+        }
     },
     'panoramas': {
         'DSC_0110_pano.jpg': {
