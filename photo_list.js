@@ -265,7 +265,7 @@ export const photo_list = {
         'DSC_0111.JPG': {
             'Caption': 'Soulful',
             'Story': null,
-            'EXIF Details': 'Nikon D3200; ISO: 1600; Shutter Speed: 1/80s; Aperture: ; Focal length: 100mm'
+            'EXIF Details': 'Nikon D3200; ISO: 1600; Shutter Speed: 1/80s; Aperture: f7.1; Focal length: 100mm'
         },
         'DSC_0118.JPG': {
             'Caption': 'Ripple',
