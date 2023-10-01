@@ -211,9 +211,9 @@ export const photo_list = {
             'EXIF Details': null
         },
         'PXL_20210708_182444148.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Bristles',
+            'Story': 'Consistent repetitive patterns formed by leaves of Bank Haircap Moss (most probably) along the slopes of Bois de la Guyonnerie - Université Paris-Saclay, France',
+            'EXIF Details': 'Google Pixel4a; ISO: 1756; Shutter Speed: 0.02s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210716_180052945.jpg': {
             'Caption': null,
@@ -256,9 +256,9 @@ export const photo_list = {
             'EXIF Details': null
         },
         'IMG_8689.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Vista',
+            'Story': 'View of the Rocky Mountains Continental divide during the descent from Bierstadt Lake',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/320s; Aperture: f13; Focal length: 18mm'
         },
         'IMG_9406.jpg': {
             'Caption': 'Flow',
