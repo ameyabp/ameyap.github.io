@@ -262,11 +262,6 @@ export const photo_list = {
         },
     },
     'portraits': {
-        'DSC_0111.JPG': {
-            'Caption': 'Soulful',
-            'Story': null,
-            'EXIF Details': 'Nikon D3200; ISO: 1600; Shutter Speed: 1/80s; Aperture: ; Focal length: 100mm'
-        },
         'DSC_0118.JPG': {
             'Caption': 'Ripple',
             'Story': 'The Oculus (New York City, USA) roof captured from inside, with light and shadow creating a ripple like pattern along the columns',
