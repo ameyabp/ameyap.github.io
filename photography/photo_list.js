@@ -190,7 +190,7 @@ export const photo_list = {
             'Story': null,
             'EXIF Details': null
         },
-        'IMG_5492-Edit.jpg': {
+        'IMG_5492.jpg': {
             'Caption': null,
             'Story': null,
             'EXIF Details': null
@@ -259,6 +259,11 @@ export const photo_list = {
             'Caption': null,
             'Story': null,
             'EXIF Details': null
+        },
+        'IMG_9406.jpg': {
+            'Caption': 'Flow',
+            'Story': 'A slow shutter photograph capturing the flow of Grotto Falls and the smooth rocks weathered by it, amidst lush green forests of the Great Smoky Mountains National Park.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 100; Shutter Speed: 3.2s; Aperture: f22; Focal length: 18mm'
         },
     },
     'portraits': {
@@ -347,6 +352,11 @@ export const photo_list = {
             'Story': null,
             'EXIF Details': null
         },
+        'PXL_20230909_041803564.jpg': {
+            'Caption': 'रात बाकी, बात बाकी',
+            'Story': 'Nightlife and clubbing scenes in downtown Nashville',
+            'EXIF Details': 'Google Pixel4a; ISO: 49; Shutter Speed: 1/105s; Aperture: f1.7; Focal length: 4.4mm'
+        }
     },
     'panoramas': {
         'DSC_0110_pano.jpg': {
