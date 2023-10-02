@@ -46,7 +46,8 @@ function expandContractNews() {
 }
 
 // PUBLICATIONS SECTION
-function load_publications(data) {
+function load_publications() {
+    const data = Object.keys(publications_list);
     var pubs_list = d3.select("#publications-list");
 
     for (var i=0; i<data.length; i++) {
@@ -143,21 +144,24 @@ function load_publications(data) {
         .attr("id", "bibtex-button")
         .style("border", "none")
         .attr("type", "button")
-        .attr("onclick", "openModal('" + data[i] + "')")
         .append("img")
         .attr("src", "logos/cite.png")
         .attr("height", 22)
         .attr("class", "zoom")
+        .on("click", function(event, d) {
+            openModal(publication);
+        })
 
         entry.append("text").text(" Bibtex ")
     }
 }
 
 // When the user clicks on the button, open the modal
-function openModal(publicationKey) {
+function openModal(publication) {
     var modal = d3.select("#bibtex-modal-div").node()
     modal.style.display = "block";
-    d3.select("#bibtex").text(publications_list[publicationKey].bibtex)
+    d3.select("#bibtex").text(publication['bibtex'])
+    d3.select("#spanid").node().addEventListener("click", closeModal);
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -304,7 +308,7 @@ function load_sample_photograph() {
 
 // MAIN
 load_news();
-load_publications(Object.keys(publications_list));
+load_publications();
 load_projects(projects_list.slice(0,4));
 load_blogs();
 load_sample_photograph();

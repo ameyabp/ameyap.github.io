@@ -9,7 +9,7 @@ export const publications_list = {
         'presentation': null,
         'data': null,
         'bibtex': '\n\
-            @misc{patil2023whalevis,\n\
+        @misc{patil2023whalevis,\n\
             title={WhaleVis: Visualizing the History of Commercial Whaling},\n\
             author={Ameya Patil and Zoe Rand and Trevor Branch and Leilani Battle},\n\
             year={2023},\n\
