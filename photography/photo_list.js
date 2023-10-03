@@ -1,42 +1,42 @@
 export const photo_list = {
     'landscapes': {
         'DSC_0002.JPG': {
-            'Caption': null,
+            'Caption': 'इंतज़ार',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0004.JPG': {
-            'Caption': null,
+            'Caption': 'Digital',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0024.JPG': {
-            'Caption': null,
+            'Caption': 'Furball',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0025.JPG': {
-            'Caption': null,
+            'Caption': 'A Story in every Window',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0051.JPG': {
-            'Caption': null,
+            'Caption': 'Oversee',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0109.JPG': {
-            'Caption': null,
+            'Caption': 'गुलाबी',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0147.jpg': {
-            'Caption': null,
+            'Caption': 'Arrival of the Storm',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0166.JPG': {
-            'Caption': null,
+            'Caption': 'Silk',
             'Story': null,
             'EXIF Details': null
         },
@@ -293,22 +293,22 @@ export const photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 15s; Aperture: f22; Focal length: 92mm'
         },
         'IMG_2800.jpg': {
-            'Caption': null,
+            'Caption': 'Adventure',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_3465.jpg': {
-            'Caption': null,
+            'Caption': 'Eye',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_4322.jpg': {
-            'Caption': null,
+            'Caption': 'Blossom',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_4411.jpg': {
-            'Caption': null,
+            'Caption': 'A Walk in the Park',
             'Story': null,
             'EXIF Details': null
         },
@@ -318,19 +318,24 @@ export const photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/2000s; Aperture: f5; Focal length: 50mm'
         },
         'IMG_5585.jpg': {
-            'Caption': null,
+            'Caption': 'Scissortail',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_5927.jpg': {
-            'Caption': null,
+            'Caption': 'Emerge',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_7356.jpg': {
-            'Caption': null,
+            'Caption': 'Capitol',
             'Story': null,
             'EXIF Details': null
+        },
+        'IMG_8660.jpg': {
+            'Caption': 'Four Layers',
+            'Story': 'A cloudy day at the Bierstadt Lake in the Rocky Mountains National Park, Colorado, with the Continental Divide in the background. This portrait styled landscape shows four complementary layers of the glazed lake, the organized trees, the rugged mountains, and the blank sky.',
+            'EXIF Details': 'ISO: 400; Shutter Speed: 1/160s; Aperture: f9; Focal length: 115mm'
         },
         'PXL_20210815_074704088.jpg': {
             'Caption': "L'église",
@@ -338,17 +343,12 @@ export const photo_list = {
             'EXIF Details': 'Google Pixel 4a; ISO: 60; Shutter Speed: 0.000341s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210918_071117160.jpg': {
-            'Caption': 'Four Layers',
-            'Story': 'A cloudy day at the Bierstadt Lake in the Rocky Mountains National Park, Colorado, with the Continental Divide in the background. This portrait styled landscape shows four complementary layers of the glazed lake, the organized trees, the rugged mountains, and the blank sky.',
-            'EXIF Details': 'ISO: 400; Shutter Speed: 1/160s; Aperture: f9; Focal length: 115mm'
-        },
-        'PXL_20211216_183050367.jpg': {
-            'Caption': null,
+            'Caption': 'Glance',
             'Story': null,
             'EXIF Details': null
         },
-        'IMG_8660.jpg': {
-            'Caption': null,
+        'PXL_20211216_183050367.jpg': {
+            'Caption': 'Cascade',
             'Story': null,
             'EXIF Details': null
         },
