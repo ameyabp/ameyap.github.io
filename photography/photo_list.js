@@ -333,7 +333,7 @@ export const photo_list = {
             'EXIF Details': null
         },
         'PXL_20210815_074704088.jpg': {
-            'Caption': "L'eglise",
+            'Caption': "L'église",
             'Story': 'The picturesque stone built église (church) Saint-Ouen de Léry in the remote little town of Val-de-Reuil, Normandie, France.',
             'EXIF Details': 'Google Pixel 4a; ISO: 60; Shutter Speed: 0.000341s; Aperture: f1.7; Focal length: 4.4mm'
         },
