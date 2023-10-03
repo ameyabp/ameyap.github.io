@@ -161,9 +161,9 @@ export const photo_list = {
             'EXIF Details': null
         },
         'IMG_3446.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Neon',
+            'Story': 'The Public Market neon signboard at Pike Place, Seattle playing a perfect foil for the usual grim Seattle skies.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/500s; Aperture: f5; Focal length: 56mm'
         },
         'IMG_4063.jpg': {
             'Caption': null,
@@ -333,9 +333,9 @@ export const photo_list = {
             'EXIF Details': null
         },
         'PXL_20210815_074704088.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': "L'eglise",
+            'Story': 'The picturesque stone built église (church) Saint-Ouen de Léry in the remote little town of Val-de-Reuil, Normandie, France.',
+            'EXIF Details': 'Google Pixel 4a; ISO: 60; Shutter Speed: 0.000341s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210918_071117160.jpg': {
             'Caption': null,
