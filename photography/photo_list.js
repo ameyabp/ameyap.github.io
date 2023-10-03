@@ -313,9 +313,9 @@ export const photo_list = {
             'EXIF Details': null
         },
         'IMG_5419.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Diagonals',
+            'Story': 'Ornate residential buildings like these are a common feature throughout San Francisco and its suburbs in California. Here, the corner apartment lined up well with the criss-crossing electric overhead lines.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/2000s; Aperture: f5; Focal length: 50mm'
         },
         'IMG_5585.jpg': {
             'Caption': null,
@@ -338,9 +338,9 @@ export const photo_list = {
             'EXIF Details': 'Google Pixel 4a; ISO: 60; Shutter Speed: 0.000341s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210918_071117160.jpg': {
-            'Caption': null,
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Four Layers',
+            'Story': 'A cloudy day at the Bierstadt Lake in the Rocky Mountains National Park, Colorado, with the Continental Divide in the background. This portrait styled landscape shows four complementary layers of the glazed lake, the organized trees, the rugged mountains, and the blank sky.',
+            'EXIF Details': 'ISO: 400; Shutter Speed: 1/160s; Aperture: f9; Focal length: 115mm'
         },
         'PXL_20211216_183050367.jpg': {
             'Caption': null,
