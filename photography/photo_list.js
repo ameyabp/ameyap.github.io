@@ -41,27 +41,27 @@ export const photo_list = {
             'EXIF Details': null
         },
         'DSC_0180.JPG': {
-            'Caption': null,
+            'Caption': 'NYC',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0193.JPG': {
-            'Caption': null,
+            'Caption': 'हुतात्मा स्मारक',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0221.JPG': {
-            'Caption': null,
+            'Caption': 'Gush',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0261.JPG': {
-            'Caption': null,
+            'Caption': 'There once lived a Queen',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0339.JPG': {
-            'Caption': null,
+            'Caption': 'A Palette of Whites',
             'Story': null,
             'EXIF Details': null
         },
