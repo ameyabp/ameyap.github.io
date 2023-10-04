@@ -61,102 +61,102 @@ export const photo_list = {
             'EXIF Details': null
         },
         'DSC_0339.JPG': {
-            'Caption': 'A Palette of Whites',
+            'Caption': 'A Landscape in Whites',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0392.jpg': {
-            'Caption': null,
+            'Caption': 'Furball',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0436.JPG': {
-            'Caption': null,
+            'Caption': 'A Landscape in Greens',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0446.jpg': {
-            'Caption': null,
+            'Caption': 'Checkmate',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0449.jpg': {
-            'Caption': null,
+            'Caption': 'Earthen',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0463.JPG': {
-            'Caption': null,
+            'Caption': 'Meadows & Snow',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0488.JPG': {
-            'Caption': null,
+            'Caption': 'Highlight',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0569.JPG': {
-            'Caption': null,
+            'Caption': 'Repose',
             'Story': null,
             'EXIF Details': null
         },
         'DSC_0693.JPG': {
-            'Caption': null,
+            'Caption': 'Nest',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_1702.jpg': {
-            'Caption': null,
+            'Caption': 'Golden Hour',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_1838.jpg': {
-            'Caption': null,
+            'Caption': 'Mystic',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_2166.jpg': {
-            'Caption': null,
+            'Caption': 'Rouge',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_2297.JPG': {
-            'Caption': null,
+            'Caption': 'Streets of Paris',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_2785.jpg': {
-            'Caption': null,
+            'Caption': 'White & Blue',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_2786.jpg': {
-            'Caption': null,
+            'Caption': 'Pilgrims',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_2805.jpg': {
-            'Caption': null,
+            'Caption': 'A Day Out',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_2814.jpg': {
-            'Caption': null,
+            'Caption': 'Traveller',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_2874.jpg': {
-            'Caption': null,
+            'Caption': 'Green Journeys',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_3061.jpg': {
-            'Caption': null,
+            'Caption': 'Leaves',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_3265.jpg': {
-            'Caption': null,
+            'Caption': 'Grandeur',
             'Story': null,
             'EXIF Details': null
         },
