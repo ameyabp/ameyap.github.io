@@ -91,7 +91,7 @@ export const photo_list = {
             'EXIF Details': null
         },
         'DSC_0488.JPG': {
-            'Caption': 'Highlight',
+            'Caption': 'Purple',
             'Story': null,
             'EXIF Details': null
         },
@@ -166,47 +166,47 @@ export const photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/500s; Aperture: f5; Focal length: 56mm'
         },
         'IMG_4063.jpg': {
-            'Caption': null,
+            'Caption': 'Delicate',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_4303.jpg': {
-            'Caption': null,
+            'Caption': 'Desolate',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_4306.jpg': {
-            'Caption': null,
+            'Caption': 'Haze',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_4320.jpg': {
-            'Caption': null,
+            'Caption': 'Cherry Blossom',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_4325.jpg': {
-            'Caption': null,
+            'Caption': 'Carpet',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_5492.jpg': {
-            'Caption': null,
+            'Caption': 'Timestamp',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_5637.jpg': {
-            'Caption': null,
+            'Caption': 'Morning Glory',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_5710.jpg': {
-            'Caption': null,
+            'Caption': 'Tour',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_7341.jpg': {
-            'Caption': null,
+            'Caption': 'Chapel',
             'Story': null,
             'EXIF Details': null
         },
@@ -216,42 +216,42 @@ export const photo_list = {
             'EXIF Details': 'Google Pixel4a; ISO: 1756; Shutter Speed: 0.02s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210716_180052945.jpg': {
-            'Caption': null,
+            'Caption': 'Peek',
             'Story': null,
             'EXIF Details': null
         },
         'PXL_20210716_185055994.jpg': {
-            'Caption': null,
+            'Caption': 'Golden Woods',
             'Story': null,
             'EXIF Details': null
         },
         'PXL_20210730_103352598.jpg': {
-            'Caption': null,
+            'Caption': 'In Brugge',
             'Story': null,
             'EXIF Details': null
         },
         'PXL_20210801_152019626.jpg': {
-            'Caption': null,
+            'Caption': 'Mokum',
             'Story': null,
             'EXIF Details': null
         },
         'PXL_20210801_154645341.jpg': {
-            'Caption': null,
+            'Caption': '',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_8359.jpg': {
-            'Caption': null,
+            'Caption': 'Be Boulder.',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_8734.jpg': {
-            'Caption': null,
+            'Caption': 'Red Earth',
             'Story': null,
             'EXIF Details': null
         },
         'IMG_8493.jpg': {
-            'Caption': null,
+            'Caption': 'Monsoon Hikes',
             'Story': null,
             'EXIF Details': null
         },
