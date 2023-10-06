@@ -47,7 +47,7 @@ export const photo_list = {
         },
         'DSC_0193.JPG': {
             'Caption': 'हुतात्मा स्मारक',
-            'Story': 'The हुतात्मा स्मारक built to commemorate the people who fought for the creation of the separate Marathi speaking state of Maharashtra with Mumbai as a part of it. Another fallout of the misadventures of the brits who had no idea of the cultural diversity of the lands and people they exploited, drawing borders as if they were sketching on canvas.',
+            'Story': 'The हुतात्मा स्मारक built to commemorate the people who fought for the creation of the separate Marathi speaking state of Maharashtra with Mumbai as a part of it. Another fallout of the misadventures of the brits who were disgustingly ignorant of the cultural diversity of the lands and people they exploited, drawing borders as if they were sketching on canvas.',
             'EXIF Details': null
         },
         'DSC_0221.JPG': {
@@ -87,7 +87,7 @@ export const photo_list = {
         },
         'DSC_0463.JPG': {
             'Caption': 'Meadows & Snow',
-            'Story': null,
+            'Story': 'One more of the Kashmir landscapes combining the freshness of the meadows and trees, with the ruggedness of the snow capped mountains. Sonamarg, Jammu & Kashmir',
             'EXIF Details': null
         },
         'DSC_0488.JPG': {
@@ -96,7 +96,7 @@ export const photo_list = {
             'EXIF Details': null
         },
         'DSC_0569.JPG': {
-            'Caption': 'Repose',
+            'Caption': 'Siesta',
             'Story': null,
             'EXIF Details': null
         },
@@ -107,7 +107,7 @@ export const photo_list = {
         },
         'IMG_1702.jpg': {
             'Caption': 'Golden Hour',
-            'Story': null,
+            'Story': 'Crisp sunbaked evening scenes along the Niagara river near the Niagara waterfalls',
             'EXIF Details': null
         },
         'IMG_1838.jpg': {
@@ -117,7 +117,7 @@ export const photo_list = {
         },
         'IMG_2166.jpg': {
             'Caption': 'Rouge',
-            'Story': null,
+            'Story': 'Parisien street side cafes perfectly embodying the city of romance that is Paris, with bright red awnings and decorations. At the Champs de Mars, Paris',
             'EXIF Details': null
         },
         'IMG_2297.JPG': {
@@ -166,7 +166,7 @@ export const photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/500s; Aperture: f5; Focal length: 56mm'
         },
         'IMG_4063.jpg': {
-            'Caption': 'Delicate',
+            'Caption': 'Bridge',
             'Story': null,
             'EXIF Details': null
         },
@@ -192,7 +192,7 @@ export const photo_list = {
         },
         'IMG_5492.jpg': {
             'Caption': 'Timestamp',
-            'Story': null,
+            'Story': '',
             'EXIF Details': null
         },
         'IMG_5637.jpg': {
@@ -202,7 +202,7 @@ export const photo_list = {
         },
         'IMG_5710.jpg': {
             'Caption': 'Tour',
-            'Story': null,
+            'Story': 'A group of tourists taking a ride along the Bricktown canal on a sunny Sunday morning in Oklahoma City, Oklahoma',
             'EXIF Details': null
         },
         'IMG_7341.jpg': {
@@ -247,12 +247,12 @@ export const photo_list = {
         },
         'IMG_8734.jpg': {
             'Caption': 'Red Earth',
-            'Story': null,
+            'Story': 'A recreation of the brick and mud dwellings of ancient Pueblo tribes, native to what is today known as Colorado state. Colorado state was also subject to a whimsical demarcation of states by the americans, who were essentially just a bunch of brits. Funny how they kept making the same mistake all over the world.',
             'EXIF Details': null
         },
         'IMG_8493.jpg': {
             'Caption': 'Monsoon Hikes',
-            'Story': null,
+            'Story': 'Hiking down the Royal Arch trail in the Chautauqua State Park in Boulder, Colorado, as rain clouds begin gathering in the distance.',
             'EXIF Details': null
         },
         'IMG_8689.jpg': {
@@ -304,7 +304,7 @@ export const photo_list = {
         },
         'IMG_3465.jpg': {
             'Caption': 'Eye',
-            'Story': null,
+            'Story': 'A slow shutter exposure of the Seattle Great Wheel, forming an eye-like impression in the Indian tricolor scheme.',
             'EXIF Details': null
         },
         'IMG_4322.jpg': {
@@ -314,7 +314,7 @@ export const photo_list = {
         },
         'IMG_4411.jpg': {
             'Caption': 'A Walk in the Park',
-            'Story': null,
+            'Story': 'A family takes a walk in the Discovery Park on a sunny Seattle evening, with the Olympic mountains providing the backdrop',
             'EXIF Details': null
         },
         'IMG_5419.jpg': {
@@ -324,17 +324,17 @@ export const photo_list = {
         },
         'IMG_5585.jpg': {
             'Caption': 'Scissortail',
-            'Story': null,
+            'Story': 'The scissortail inspired architectural adornment on the Scissortail bridge in Oklahoma City, Oklahoma.',
             'EXIF Details': null
         },
         'IMG_5927.jpg': {
             'Caption': 'Emerge',
-            'Story': null,
+            'Story': 'The Seattle Streetcar getting ready to carry its next set of passengers',
             'EXIF Details': null
         },
         'IMG_7356.jpg': {
             'Caption': 'Capitol',
-            'Story': null,
+            'Story': '',
             'EXIF Details': null
         },
         'IMG_8660.jpg': {
