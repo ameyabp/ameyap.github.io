@@ -3,32 +3,32 @@ export const photo_list = {
         'DSC_0002.JPG': {
             'Caption': 'इंतज़ार',
             'Story': 'Rickshaw walas wait in a organised queue in their black and yellow rickshaws to find a passenger on a hot afternoon in Vasco-da-Gama, Goa, India.',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/100s; Aperture: f5; Focal length: 35mm'
         },
         'DSC_0004.JPG': {
             'Caption': 'Digital',
-            'Story': "A slow shutter exposure of a ferris wheel in downtown Riverside, California, on Christmas' Eve",
-            'EXIF Details': null
+            'Story': "A slow shutter exposure of a ferris wheel in downtown Riverside, California, on Christmas' Eve. The caption is inspired from its resemblance to the digital bits stored on a magnetic disk drive.",
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 5s; Aperture: f10; Focal length: 18mm'
         },
         'DSC_0024.JPG': {
             'Caption': 'Furball',
             'Story': 'This small furry stray kitten was snapped unfurling a big yawn on a lazy afternoon at Shanivaar Wada, Pune.',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/125s; Aperture: f5.6; Focal length: 55mm'
         },
         'DSC_0025.JPG': {
             'Caption': 'A Story in every Window',
             'Story': 'Passengers lost in thought as the BEST bus crawls through the traffic of monsoon time Mumbai',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/200s; Aperture: f5.6; Focal length: 55mm'
         },
         'DSC_0051.JPG': {
             'Caption': 'Oversee',
             'Story': '',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/160s; Aperture: f9; Focal length: 40mm'
         },
         'DSC_0109.JPG': {
-            'Caption': 'गुलाबी',
-            'Story': '',
-            'EXIF Details': null
+            'Caption': 'तांबड',
+            'Story': "Crack of dawn as seen through my father's eyes from one of his favorite spots in our village - Mahadev Khadi in Koparde, Malkapur, Kolhapur, Maharashtra, India",
+            'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/25s; Aperture: f4.5; Focal length: 22mm'
         },
         'DSC_0147.jpg': {
             'Caption': 'Arrival of the Storm',
@@ -264,6 +264,11 @@ export const photo_list = {
             'Caption': 'Flow',
             'Story': 'A slow shutter photograph capturing the flow of Grotto Falls and the smooth rocks weathered by it, amidst lush green forests of the Great Smoky Mountains National Park.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO 100; Shutter Speed: 3.2s; Aperture: f22; Focal length: 18mm'
+        },
+        'IMG_9464.jpg': {
+            'Caption': 'Lost in Thought',
+            'Story': 'A student taking a stroll around the Drumheller fountain, soaking in the nascent fall colors in the University of Washington campus, on a sunny evening in Seattle.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 400; Shutter Speed: 1/500s; Aperture: f5.6; Focal length: 121mm'
         },
     },
     'portraits': {
