@@ -2,32 +2,32 @@ export const photo_list = {
     'landscapes': {
         'DSC_0002.JPG': {
             'Caption': 'इंतज़ार',
-            'Story': null,
+            'Story': 'Rickshaw walas wait in a organised queue in their black and yellow rickshaws to find a passenger on a hot afternoon in Vasco-da-Gama, Goa, India.',
             'EXIF Details': null
         },
         'DSC_0004.JPG': {
             'Caption': 'Digital',
-            'Story': null,
+            'Story': "A slow shutter exposure of a ferris wheel in downtown Riverside, California, on Christmas' Eve",
             'EXIF Details': null
         },
         'DSC_0024.JPG': {
             'Caption': 'Furball',
-            'Story': null,
+            'Story': 'This small furry stray kitten was snapped unfurling a big yawn on a lazy afternoon at Shanivaar Wada, Pune.',
             'EXIF Details': null
         },
         'DSC_0025.JPG': {
             'Caption': 'A Story in every Window',
-            'Story': null,
+            'Story': 'Passengers lost in thought as the BEST bus crawls through the traffic of monsoon time Mumbai',
             'EXIF Details': null
         },
         'DSC_0051.JPG': {
             'Caption': 'Oversee',
-            'Story': null,
+            'Story': '',
             'EXIF Details': null
         },
         'DSC_0109.JPG': {
             'Caption': 'गुलाबी',
-            'Story': null,
+            'Story': '',
             'EXIF Details': null
         },
         'DSC_0147.jpg': {
@@ -42,12 +42,12 @@ export const photo_list = {
         },
         'DSC_0180.JPG': {
             'Caption': 'NYC',
-            'Story': null,
+            'Story': 'Nothing much, just the famous New York city skyline captured from the ferry en route Staten Island',
             'EXIF Details': null
         },
         'DSC_0193.JPG': {
             'Caption': 'हुतात्मा स्मारक',
-            'Story': null,
+            'Story': 'The हुतात्मा स्मारक built to commemorate the people who fought for the creation of the separate Marathi speaking state of Maharashtra with Mumbai as a part of it. Another fallout of the misadventures of the brits who had no idea of the cultural diversity of the lands and people they exploited, drawing borders as if they were sketching on canvas.',
             'EXIF Details': null
         },
         'DSC_0221.JPG': {
@@ -62,27 +62,27 @@ export const photo_list = {
         },
         'DSC_0339.JPG': {
             'Caption': 'A Landscape in Whites',
-            'Story': null,
+            'Story': 'A welcome morning at Sarchu after the cloudburst and snowfall in Himachal Pradesh in June 2013',
             'EXIF Details': null
         },
         'DSC_0392.jpg': {
             'Caption': 'Furball',
-            'Story': null,
+            'Story': 'A furry fiery orange colored stray dog getting ready for his afternoon nap at the outskirts of Leh city, Ladakh',
             'EXIF Details': null
         },
         'DSC_0436.JPG': {
             'Caption': 'A Landscape in Greens',
-            'Story': null,
+            'Story': 'Multicolored layers of shrubs and trees with the Himalayan mountains in the background, captured at Sonamarg, Kashmir',
             'EXIF Details': null
         },
         'DSC_0446.jpg': {
             'Caption': 'Checkmate',
-            'Story': null,
+            'Story': 'One of my earliest attempts at indoor studio scene setup, lit with a handheld torch',
             'EXIF Details': null
         },
         'DSC_0449.jpg': {
             'Caption': 'Earthen',
-            'Story': null,
+            'Story': 'A reverse lens macro photograph of a clay pot, the size of a 5 Rs coin',
             'EXIF Details': null
         },
         'DSC_0463.JPG': {
@@ -92,7 +92,7 @@ export const photo_list = {
         },
         'DSC_0488.JPG': {
             'Caption': 'Purple',
-            'Story': null,
+            'Story': '',
             'EXIF Details': null
         },
         'DSC_0569.JPG': {
@@ -102,7 +102,7 @@ export const photo_list = {
         },
         'DSC_0693.JPG': {
             'Caption': 'Nest',
-            'Story': null,
+            'Story': 'A squirrel sleeping in an empty plant pot it calls home, hanging from a ledge at the Sabarmati Ashram, Ahmedabad',
             'EXIF Details': null
         },
         'IMG_1702.jpg': {
