@@ -20,11 +20,6 @@ export const photo_list = {
             'Story': 'Passengers lost in thought as the BEST bus crawls through the traffic of monsoon time Mumbai',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/200s; Aperture: f5.6; Focal length: 55mm'
         },
-        'DSC_0051.JPG': {
-            'Caption': 'Oversee',
-            'Story': '',
-            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/160s; Aperture: f9; Focal length: 40mm'
-        },
         'DSC_0109.JPG': {
             'Caption': 'तांबड',
             'Story': "Crack of dawn as seen through my father's eyes from one of his favorite spots in our village - Mahadev Khadi in Koparde, Malkapur, Kolhapur, Maharashtra, India",
@@ -232,28 +227,28 @@ export const photo_list = {
         },
         'PXL_20210801_152019626.jpg': {
             'Caption': 'Mokum',
-            'Story': null,
-            'EXIF Details': null
+            'Story': 'Gliding along one of the numerous canals in a cold weather yet cozy city of Amsterdam, Netherlands',
+            'EXIF Details': 'Google Pixel4a; ISO: 48; Shutter Speed: 0.000383s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210801_154645341.jpg': {
-            'Caption': '',
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Royal Dutch',
+            'Story': 'The Koninklijk Paleis in Amsterdam, Netherlands captured on an overcast day nicely matching with the sombre colors of the palace itself.',
+            'EXIF Details': 'Google Pixel4a; ISO: 61; Shutter Speed: 0.000256s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'IMG_8359.jpg': {
             'Caption': 'Be Boulder.',
-            'Story': null,
-            'EXIF Details': null
+            'Story': 'A adventurous woman running over the First Flatiron in Boulder, Colorado. Clearly not for the faint hearted.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 1600; Shutter Speed: 1/320s; Aperture: f9; Focal length: 135mm'
         },
         'IMG_8734.jpg': {
             'Caption': 'Red Earth',
             'Story': 'A recreation of the brick and mud dwellings of ancient Pueblo tribes, native to what is today known as Colorado state. Colorado state was also subject to a whimsical demarcation of states by the americans, who were essentially just a bunch of brits. Funny how they kept making the same mistake all over the world.',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 800; Shutter Speed: 1/125s; Aperture: f20; Focal length: 18mm'
         },
         'IMG_8493.jpg': {
             'Caption': 'Monsoon Hikes',
             'Story': 'Hiking down the Royal Arch trail in the Chautauqua State Park in Boulder, Colorado, as rain clouds begin gathering in the distance.',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 1600; Shutter Speed: 1/640s; Aperture: f14; Focal length: 18mm'
         },
         'IMG_8689.jpg': {
             'Caption': 'Vista',
