@@ -28,132 +28,127 @@ export const photo_list = {
         'DSC_0147.jpg': {
             'Caption': 'Arrival of the Storm',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/640s; Aperture: f14; Focal length: 32mm'
         },
         'DSC_0166.JPG': {
             'Caption': 'Silk',
-            'Story': null,
-            'EXIF Details': null
+            'Story': 'Stunning three colored landscape adorned with green meadows, white ice and the blue sky, with sunlight rendering perfect Rembrandt style lighting to add a touch of drama to the frame.',
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/1000s; Aperture: f; Focal length: 55mm'
         },
         'DSC_0180.JPG': {
             'Caption': 'NYC',
             'Story': 'Nothing much, just the famous New York city skyline captured from the ferry en route Staten Island',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/200s; Aperture: f; Focal length: 55mm'
         },
         'DSC_0193.JPG': {
             'Caption': 'हुतात्मा स्मारक',
             'Story': 'The हुतात्मा स्मारक built to commemorate the people who fought for the creation of the separate Marathi speaking state of Maharashtra with Mumbai as a part of it. Another fallout of the misadventures of the brits who were disgustingly ignorant of the cultural diversity of the lands and people they exploited, drawing borders as if they were sketching on canvas.',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/400s; Aperture: f; Focal length: 46mm'
         },
         'DSC_0221.JPG': {
             'Caption': 'Gush',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/400s; Aperture: f; Focal length: 50mm'
         },
         'DSC_0261.JPG': {
             'Caption': 'There once lived a Queen',
-            'Story': null,
-            'EXIF Details': null
+            'Story': 'An ornate window balcony of the Aaina Mahal in Bhuj city, Kachchh region of Gujarat provking ideas of who must have lived there, peeping out of the grill. The Aaina Mahal built in the mid-18th century has survived the 2001 Bhuj earthquake, and provides a peek into the royal life of the Jadeja Rajput dynasty.',
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/1000s; Aperture: f; Focal length: 55mm'
         },
         'DSC_0339.JPG': {
             'Caption': 'A Landscape in Whites',
             'Story': 'A welcome morning at Sarchu after the cloudburst and snowfall in Himachal Pradesh in June 2013',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/250s; Aperture: f; Focal length: 18mm'
         },
         'DSC_0392.jpg': {
             'Caption': 'Furball',
             'Story': 'A furry fiery orange colored stray dog getting ready for his afternoon nap at the outskirts of Leh city, Ladakh',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/100s; Aperture: f11; Focal length: 270mm'
         },
         'DSC_0436.JPG': {
             'Caption': 'A Landscape in Greens',
             'Story': 'Multicolored layers of shrubs and trees with the Himalayan mountains in the background, captured at Sonamarg, Kashmir',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/250s; Aperture: f; Focal length: 55mm'
         },
         'DSC_0446.jpg': {
             'Caption': 'Checkmate',
             'Story': 'One of my earliest attempts at indoor studio scene setup, lit with a handheld torch',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 1600; Shutter Speed: 1/2s; Aperture: f; Focal length: 28mm'
         },
         'DSC_0449.jpg': {
             'Caption': 'Earthen',
             'Story': 'A reverse lens macro photograph of a clay pot, the size of a 5 Rs coin',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 800; Shutter Speed: 1/10s; Aperture: f; Focal length: 55mm'
         },
         'DSC_0463.JPG': {
             'Caption': 'Meadows & Snow',
             'Story': 'One more of the Kashmir landscapes combining the freshness of the meadows and trees, with the ruggedness of the snow capped mountains. Sonamarg, Jammu & Kashmir',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/320s; Aperture: f; Focal length: 55mm'
         },
         'DSC_0488.JPG': {
             'Caption': 'Purple',
             'Story': '',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/800s; Aperture: f; Focal length: 280mm'
         },
         'DSC_0569.JPG': {
             'Caption': 'Siesta',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/500s; Aperture: f; Focal length: 210mm'
         },
         'DSC_0693.JPG': {
             'Caption': 'Nest',
             'Story': 'A squirrel sleeping in an empty plant pot it calls home, hanging from a ledge at the Sabarmati Ashram, Ahmedabad',
-            'EXIF Details': null
+            'EXIF Details': 'Nikon D3200; ISO: 200; Shutter Speed: 1/100s; Aperture: f; Focal length: 185mm'
         },
         'IMG_1702.jpg': {
             'Caption': 'Golden Hour',
             'Story': 'Crisp sunbaked evening scenes along the Niagara river near the Niagara waterfalls',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/30s; Aperture: f22; Focal length: 18mm'
         },
         'IMG_1838.jpg': {
             'Caption': 'Mystic',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 1/1000s; Aperture: f3.5; Focal length: 22mm'
         },
         'IMG_2166.jpg': {
             'Caption': 'Rouge',
             'Story': 'Parisien street side cafes perfectly embodying the city of romance that is Paris, with bright red awnings and decorations. At the Champs de Mars, Paris',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/60s; Aperture: f13; Focal length: 62mm'
         },
         'IMG_2297.JPG': {
             'Caption': 'Streets of Paris',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/2500s; Aperture: f4; Focal length: 24mm'
         },
         'IMG_2785.jpg': {
             'Caption': 'White & Blue',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/250s; Aperture: f13; Focal length: 35mm'
         },
         'IMG_2786.jpg': {
             'Caption': 'Pilgrims',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/250s; Aperture: f13; Focal length: 97mm'
         },
         'IMG_2805.jpg': {
             'Caption': 'A Day Out',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 1/1250s; Aperture: f4; Focal length: 24mm'
         },
         'IMG_2814.jpg': {
-            'Caption': 'Traveller',
+            'Caption': 'Sailaani',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/3200s; Aperture: f3.5; Focal length: 18mm'
         },
         'IMG_2874.jpg': {
             'Caption': 'Green Journeys',
             'Story': null,
-            'EXIF Details': null
-        },
-        'IMG_3061.jpg': {
-            'Caption': 'Leaves',
-            'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/400s; Aperture: f8; Focal length: 24mm'
         },
         'IMG_3265.jpg': {
-            'Caption': 'Grandeur',
+            'Caption': 'Viraat',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 800; Shutter Speed: 1/200s; Aperture: f11; Focal length: 18mm'
         },
         'IMG_3446.jpg': {
             'Caption': 'Neon',
@@ -161,49 +156,49 @@ export const photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/500s; Aperture: f5; Focal length: 56mm'
         },
         'IMG_4063.jpg': {
-            'Caption': 'Bridge',
-            'Story': null,
-            'EXIF Details': null
+            'Caption': 'Delicate',
+            'Story': "Putting nature's might and human frailty into perspective with this bridge delicately built across a lagoon of the Columbia river near Multinomah falls, Oregon.",
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 1/80s; Aperture: f16; Focal length: 50mm'
         },
         'IMG_4303.jpg': {
             'Caption': 'Desolate',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f4.5; Focal length: 35mm'
         },
         'IMG_4306.jpg': {
             'Caption': 'Haze',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f3.2; Focal length: 50mm'
         },
         'IMG_4320.jpg': {
             'Caption': 'Cherry Blossom',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f16; Focal length: 59mm'
         },
         'IMG_4325.jpg': {
             'Caption': 'Carpet',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/80s; Aperture: f16; Focal length: 42mm'
         },
         'IMG_5492.jpg': {
             'Caption': 'Timestamp',
             'Story': '',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i Composite in Adobe Photoshop'
         },
         'IMG_5637.jpg': {
             'Caption': 'Morning Glory',
-            'Story': null,
-            'EXIF Details': null
+            'Story': 'Taking a stroll along the Scissortail Park on a cold winter morning in Oklahoma City, Oklahoma, as the sun rays burst through the tree leaves',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/40s; Aperture: f25; Focal length: 27mm'
         },
         'IMG_5710.jpg': {
             'Caption': 'Tour',
             'Story': 'A group of tourists taking a ride along the Bricktown canal on a sunny Sunday morning in Oklahoma City, Oklahoma',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/160s; Aperture: f16; Focal length: 24mm'
         },
         'IMG_7341.jpg': {
             'Caption': 'Chapel',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 800; Shutter Speed: 1/160s; Aperture: f16; Focal length: 59mm'
         },
         'PXL_20210708_182444148.jpg': {
             'Caption': 'Bristles',
@@ -212,18 +207,18 @@ export const photo_list = {
         },
         'PXL_20210716_180052945.jpg': {
             'Caption': 'Peek',
-            'Story': null,
-            'EXIF Details': null
+            'Story': 'An attempt to capture both nature and human constructs in this landscape, looking up at the sky through the narrow and homely streets of Versailles, France',
+            'EXIF Details': 'Google Pixel 4a; ISO: 61; Shutter Speed: 0.000597s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210716_185055994.jpg': {
             'Caption': 'Golden Woods',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Google Pixel 4a; ISO: 76; Shutter Speed: 0.001917s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210730_103352598.jpg': {
             'Caption': 'In Brugge',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Google Pixel 4a; ISO: 88; Shutter Speed: 0.000597s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210801_152019626.jpg': {
             'Caption': 'Mokum',
@@ -294,23 +289,23 @@ export const photo_list = {
         },
         'IMG_2800.jpg': {
             'Caption': 'Adventure',
-            'Story': null,
-            'EXIF Details': null
+            'Story': 'A woman enjoying stand-up paddling in the crystal blue waters of the english channel near the Chalk Cliffs at Etretat. The rugged cliffs on the left and right edges of the portrait further enhance the adventurous mood of the woman',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/250s; Aperture: f13; Focal length: 85mm'
         },
         'IMG_3465.jpg': {
             'Caption': 'Eye',
             'Story': 'A slow shutter exposure of the Seattle Great Wheel, forming an eye-like impression in the Indian tricolor scheme.',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 6s; Aperture: f14; Focal length: 18mm'
         },
         'IMG_4322.jpg': {
             'Caption': 'Blossom',
             'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f16; Focal length: 35mm'
         },
         'IMG_4411.jpg': {
             'Caption': 'A Walk in the Park',
             'Story': 'A family takes a walk in the Discovery Park on a sunny Seattle evening, with the Olympic mountains providing the backdrop',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/80s; Aperture: f16; Focal length: 79mm'
         },
         'IMG_5419.jpg': {
             'Caption': 'Diagonals',
@@ -320,17 +315,17 @@ export const photo_list = {
         'IMG_5585.jpg': {
             'Caption': 'Scissortail',
             'Story': 'The scissortail inspired architectural adornment on the Scissortail bridge in Oklahoma City, Oklahoma.',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 20s; Aperture: f18; Focal length: 18mm'
         },
         'IMG_5927.jpg': {
             'Caption': 'Emerge',
             'Story': 'The Seattle Streetcar getting ready to carry its next set of passengers',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 800; Shutter Speed: 1/500s; Aperture: f5; Focal length: 18mm'
         },
         'IMG_7356.jpg': {
             'Caption': 'Capitol',
             'Story': '',
-            'EXIF Details': null
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO: 3200; Shutter Speed: 1/20s; Aperture: f5.6; Focal length: 135mm'
         },
         'IMG_8660.jpg': {
             'Caption': 'Four Layers',
@@ -345,12 +340,7 @@ export const photo_list = {
         'PXL_20210918_071117160.jpg': {
             'Caption': 'Glance',
             'Story': null,
-            'EXIF Details': null
-        },
-        'PXL_20211216_183050367.jpg': {
-            'Caption': 'Cascade',
-            'Story': null,
-            'EXIF Details': null
+            'EXIF Details': 'Google Pixel 4a; ISO: 63; Shutter Speed: 0.00098s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20230909_041803564.jpg': {
             'Caption': 'रात बाकी, बात बाकी',
