@@ -1,5 +1,9 @@
 export const news_list = [
     {
+        'timestamp': 'October 2023',
+        'event': 'Presented my paper - "WhaleVis: Visualizing the History of Commercial Whaling" at IEEE VIS 2023 Melbourne, Australia'
+    },
+    {
         'timestamp': 'August 2023',
         'event': 'Short paper accepted at IEEE VIS 2023 - "WhaleVis: Visualizing the History of Commercial Whaling"'
     },
@@ -17,7 +21,7 @@ export const news_list = [
     },
     {
         'timestamp': 'October 2022',
-        'event': 'Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022 Oklahoma City'
+        'event': 'Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022 Oklahoma City, USA'
     },
     {
         'timestamp': 'July 2022',
