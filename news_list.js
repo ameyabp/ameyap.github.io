@@ -1,7 +1,7 @@
 export const news_list = [
     {
         'timestamp': 'October 2023',
-        'event': 'Presented my paper - "WhaleVis: Visualizing the History of Commercial Whaling" at IEEE VIS 2023 Melbourne, Australia'
+        'event': 'Presented my paper - "WhaleVis: Visualizing the History of Commercial Whaling" at IEEE VIS 2023 Narrm (Melbourne), Australia'
     },
     {
         'timestamp': 'August 2023',
