@@ -27,7 +27,7 @@ export const photo_list = {
         },
         'DSC_0147.jpg': {
             'Caption': 'Arrival of the Storm',
-            'Story': null,
+            'Story': 'Rain clouds rolling in during monsoon, in countryside Karnataka',
             'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/640s; Aperture: f14; Focal length: 32mm'
         },
         'DSC_0166.JPG': {
@@ -47,7 +47,7 @@ export const photo_list = {
         },
         'DSC_0221.JPG': {
             'Caption': 'Gush',
-            'Story': null,
+            'Story': "Barachukki waterfalls along the Kaveri river, in Shivanasamudram, Karnataka, India. Shivanasamudram houses one of Asia's first hydroelectric power plants, built in 1902.",
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/400s; Aperture: f; Focal length: 50mm'
         },
         'DSC_0261.JPG': {

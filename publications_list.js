@@ -1,9 +1,9 @@
 export const publications_list = {
     'whaleVisShort': {
         'title': 'WhaleVis: Visualizing the History of Commercial Whaling',
-        'venue': 'IEEE Transactions on Visualization and Computer Graphics, 2024',
+        'venue': 'IEEE VIS Short, 2024',
         'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
-        'doi': null,
+        'doi': 'https://doi.org/10.48550/arXiv.2308.04552',
         'paper': 'https://arxiv.org/pdf/2308.04552.pdf',
         'video': null,
         'presentation': null,
@@ -13,9 +13,11 @@ export const publications_list = {
             title={WhaleVis: Visualizing the History of Commercial Whaling},\n\
             author={Ameya Patil and Zoe Rand and Trevor Branch and Leilani Battle},\n\
             year={2023},\n\
+            booktitle = {IEEE VIS Short Papers},\n\
             eprint={2308.04552},\n\
             archivePrefix={arXiv},\n\
             primaryClass={cs.DB}\n\
+            url = {http://idl.cs.washington.edu/papers/whale-vis},\n\
         }'
     },
     'whaleVis': {
