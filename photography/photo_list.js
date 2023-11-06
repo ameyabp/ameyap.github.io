@@ -27,7 +27,7 @@ export const photo_list = {
         },
         'DSC_0147.jpg': {
             'Caption': 'Arrival of the Storm',
-            'Story': 'Rain clouds rolling in during monsoon, in countryside Karnataka',
+            'Story': 'Rain clouds rolling in during monsoon in countryside Karnataka, captured from atop Yadamadu hill',
             'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/640s; Aperture: f14; Focal length: 32mm'
         },
         'DSC_0166.JPG': {
@@ -47,7 +47,7 @@ export const photo_list = {
         },
         'DSC_0221.JPG': {
             'Caption': 'Gush',
-            'Story': "Barachukki waterfalls along the Kaveri river, in Shivanasamudram, Karnataka, India. Shivanasamudram houses one of Asia's first hydroelectric power plants, built in 1902.",
+            'Story': "Barachukki waterfalls along the Kaveri river, in Shivanasamudram, Karnataka, India. Shivanasamudram houses one of Asia's first hydroelectric power plants, built in 1902",
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/400s; Aperture: f; Focal length: 50mm'
         },
         'DSC_0261.JPG': {
@@ -87,7 +87,7 @@ export const photo_list = {
         },
         'DSC_0488.JPG': {
             'Caption': 'Purple',
-            'Story': '',
+            'Story': 'An African Daisy flower in the backyard of a house in Mount Abu, Rajasthan. Soft focus enhanced the dreamy feel of this frame with the greens in the garden providing a nice complimentary colored blurred background',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/800s; Aperture: f; Focal length: 280mm'
         },
         'DSC_0569.JPG': {
