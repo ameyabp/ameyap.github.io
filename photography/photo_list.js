@@ -92,7 +92,7 @@ export const photo_list = {
         },
         'DSC_0569.JPG': {
             'Caption': 'Siesta',
-            'Story': null,
+            'Story': 'Ducks taking an afternoon nap along the Shey lake in Leh city, Ladakh, India',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/500s; Aperture: f; Focal length: 210mm'
         },
         'DSC_0693.JPG': {
@@ -107,7 +107,7 @@ export const photo_list = {
         },
         'IMG_1838.jpg': {
             'Caption': 'Mystic',
-            'Story': null,
+            'Story': 'A close friend and amazing magician Aadesh Bagmar demonstrating one of his card tricks along the sparkling blue waters of river Niagara, providing a perfect magical backdrop',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 1/1000s; Aperture: f3.5; Focal length: 22mm'
         },
         'IMG_2166.jpg': {
@@ -117,12 +117,12 @@ export const photo_list = {
         },
         'IMG_2297.JPG': {
             'Caption': 'Streets of Paris',
-            'Story': null,
+            'Story': 'Soft light, blue sky, beige stone walls and gilded domed architectures of the Institut de France, taken from Rue Mazarine in Paris, France',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/2500s; Aperture: f4; Focal length: 24mm'
         },
         'IMG_2785.jpg': {
             'Caption': 'White & Blue',
-            'Story': null,
+            'Story': 'Overcast conditions, crystal blue waters, velvety green meadows and rugged white chalk cliffs create dramatic landscapes like these at Étretat, Normandie, France',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/250s; Aperture: f13; Focal length: 35mm'
         },
         'IMG_2786.jpg': {
@@ -132,12 +132,12 @@ export const photo_list = {
         },
         'IMG_2805.jpg': {
             'Caption': 'A Day Out',
-            'Story': null,
+            'Story': "A couple spends a calm afternoon on the lush green grass at the top of the chalk cliffs at Étretat, Normandie, France",
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 1/1250s; Aperture: f4; Focal length: 24mm'
         },
         'IMG_2814.jpg': {
             'Caption': 'Sailaani',
-            'Story': null,
+            'Story': "A friend and fellow companion soaking in the views while descending from the thrilling chalk cliffs hike at Étretat, Normandie, France",
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/3200s; Aperture: f3.5; Focal length: 18mm'
         },
         'IMG_2874.jpg': {
@@ -289,7 +289,7 @@ export const photo_list = {
         },
         'IMG_2800.jpg': {
             'Caption': 'Adventure',
-            'Story': 'A woman enjoying stand-up paddling in the crystal blue waters of the english channel near the Chalk Cliffs at Etretat. The rugged cliffs on the left and right edges of the portrait further enhance the adventurous mood of the woman',
+            'Story': 'A woman enjoying stand-up paddling in the crystal blue waters of the english channel near the Chalk Cliffs at Étretat, Normandie, France. The rugged cliffs on the left and right edges of the portrait further enhance the adventurous mood of the woman',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/250s; Aperture: f13; Focal length: 85mm'
         },
         'IMG_3465.jpg': {
