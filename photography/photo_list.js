@@ -127,7 +127,7 @@ export const photo_list = {
         },
         'IMG_2786.jpg': {
             'Caption': 'Pilgrims',
-            'Story': null,
+            'Story': "Pilgrims climb up the Falaise d'Amont cliff to reach the picturesquely placed and built chapel Notre Dame de la Garde. The frame provides good contrast between the light blue sky in the upper half and the green cliff in the lower half, with the chapel in the top right thirds. The inverted-S shaped curve of people walking along the stairs add dynamism and structure to the frame, and along with the poeple standing atop the cliff provide a sense of scale by standing out amidst the green grass and the backdrop of the blue sky.",
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/250s; Aperture: f13; Focal length: 97mm'
         },
         'IMG_2805.jpg': {
