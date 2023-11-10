@@ -142,12 +142,12 @@ export const photo_list = {
         },
         'IMG_2874.jpg': {
             'Caption': 'Green Journeys',
-            'Story': null,
+            'Story': 'Travelling down from Rigi Kulm to Vitznau in the cog wheel train, a famous tourist attraction in Switzerland.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/400s; Aperture: f8; Focal length: 24mm'
         },
         'IMG_3265.jpg': {
-            'Caption': 'Viraat',
-            'Story': null,
+            'Caption': 'विराट',
+            'Story': 'Morning view of the mighty mountains of Swiss alps - Schwarzmönch (middle) and Grasshorn (far right) captured from the Lauterbrunnen valley, Switzerland',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 800; Shutter Speed: 1/200s; Aperture: f11; Focal length: 18mm'
         },
         'IMG_3446.jpg': {
