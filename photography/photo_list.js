@@ -162,27 +162,27 @@ export const photo_list = {
         },
         'IMG_4303.jpg': {
             'Caption': 'Desolate',
-            'Story': null,
+            'Story': 'Foggy mornings at the Mt. Tabor Park in Portland, Oregon during early spring season. The trees yet to regrow their foliage add to the gloomy and desolate mood of the frame.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f4.5; Focal length: 35mm'
         },
         'IMG_4306.jpg': {
             'Caption': 'Haze',
-            'Story': null,
+            'Story': 'Foggy morning walks at the Mt. Tabor Park in Portland, Oregon. The tungsten street light stands as the only source of warmth and clarity in this otherwise cold, shrouded and hazy scene.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f3.2; Focal length: 50mm'
         },
         'IMG_4320.jpg': {
             'Caption': 'Cherry Blossom',
-            'Story': null,
+            'Story': 'Chinatown in Downtown Portland, Oregon dressed in reds and pinks perfectly coinciding with the arrival of the spring season cherry blossom bloom',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f16; Focal length: 59mm'
         },
         'IMG_4325.jpg': {
             'Caption': 'Carpet',
-            'Story': null,
+            'Story': 'Portland cherry blossom along the banks of Willamette river featuring a canopy of pink cherry blossoms perfectly complimented by the green grass carpet below.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/80s; Aperture: f16; Focal length: 42mm'
         },
         'IMG_5492.jpg': {
             'Caption': 'Timestamp',
-            'Story': '',
+            'Story': 'A composite of the windowed facade of the Colcord Hotel in Oklahoma City, Oklahoma capturing the different hues the facade portrays reflecting different times in a day.',
             'EXIF Details': 'Canon EOS Rebel T7i Composite in Adobe Photoshop'
         },
         'IMG_5637.jpg': {
@@ -197,7 +197,7 @@ export const photo_list = {
         },
         'IMG_7341.jpg': {
             'Caption': 'Chapel',
-            'Story': null,
+            'Story': "The temple of St. Paul's Catholic Student Center on the University of Wisconsin, Madison campus, portrayed in black and white more to handle the harsh shadows created by the setting sun, than to convey a mood",
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 800; Shutter Speed: 1/160s; Aperture: f16; Focal length: 59mm'
         },
         'PXL_20210708_182444148.jpg': {
@@ -212,12 +212,12 @@ export const photo_list = {
         },
         'PXL_20210716_185055994.jpg': {
             'Caption': 'Golden Woods',
-            'Story': null,
+            'Story': "Walking through the trees along the Pièce d'Eau des Suisses, a part of the Chateau de Versailles, France, during a golden sunset creating a stunning and dramatically lit landscape",
             'EXIF Details': 'Google Pixel 4a; ISO: 76; Shutter Speed: 0.001917s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210730_103352598.jpg': {
             'Caption': 'In Brugge',
-            'Story': null,
+            'Story': 'Small town vibes along the streets of Brugge, Belgium under rains. In frame - street Oude Gentweg',
             'EXIF Details': 'Google Pixel 4a; ISO: 88; Shutter Speed: 0.000597s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20210801_152019626.jpg': {
@@ -232,7 +232,7 @@ export const photo_list = {
         },
         'IMG_8359.jpg': {
             'Caption': 'Be Boulder.',
-            'Story': 'A adventurous woman running over the First Flatiron in Boulder, Colorado. Clearly not for the faint hearted.',
+            'Story': 'An adventurous woman running over the First Flatiron in Boulder, Colorado. Clearly not for the faint hearted.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 1600; Shutter Speed: 1/320s; Aperture: f9; Focal length: 135mm'
         },
         'IMG_8734.jpg': {
@@ -299,7 +299,7 @@ export const photo_list = {
         },
         'IMG_4322.jpg': {
             'Caption': 'Blossom',
-            'Story': null,
+            'Story': 'Chinatown in Downtown Portland, Oregon in a complete color harmony of reds and pinks',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 400; Shutter Speed: 1/125s; Aperture: f16; Focal length: 35mm'
         },
         'IMG_4411.jpg': {
@@ -324,7 +324,7 @@ export const photo_list = {
         },
         'IMG_7356.jpg': {
             'Caption': 'Capitol',
-            'Story': '',
+            'Story': 'Madison Captiol Hill captured with the night life hustle and vibrant energy of students along the State Street in the University of Wisconsin, Madison',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 3200; Shutter Speed: 1/20s; Aperture: f5.6; Focal length: 135mm'
         },
         'IMG_8660.jpg': {
@@ -339,7 +339,7 @@ export const photo_list = {
         },
         'PXL_20210918_071117160.jpg': {
             'Caption': 'Glance',
-            'Story': null,
+            'Story': "A glimpse of the east wing of the stunning building of Musée du Louvre from the staircase emerging from the Palais Royal -  Musée du Louvre metro station",
             'EXIF Details': 'Google Pixel 4a; ISO: 63; Shutter Speed: 0.00098s; Aperture: f1.7; Focal length: 4.4mm'
         },
         'PXL_20230909_041803564.jpg': {
