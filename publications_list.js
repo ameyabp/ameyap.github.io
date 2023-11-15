@@ -8,6 +8,7 @@ export const publications_list = {
         'video': null,
         'presentation': null,
         'data': null,
+        'news': 'https://www.washington.edu/news/2023/11/15/whalevis-turns-more-than-a-century-of-whaling-data-into-an-interactive-map/',
         'bibtex': '\n\
         @misc{patil2023whalevis,\n\
             title={WhaleVis: Visualizing the History of Commercial Whaling},\n\
@@ -29,6 +30,7 @@ export const publications_list = {
         'video': 'projects/whaleVis/whaleVis.mp4',
         'presentation': null,
         'data': null,
+        'news': 'https://www.washington.edu/news/2023/11/15/whalevis-turns-more-than-a-century-of-whaling-data-into-an-interactive-map/',
         'bibtex': '\n\
         @article{patil2023whalevis,\n\
             title={WhaleVis: A new visualization tool for the IWC catch database.},\n\
@@ -47,6 +49,7 @@ export const publications_list = {
         'video': 'https://youtu.be/ygpu92JMhA0',
         'presentation': 'https://www.youtube.com/watch?v=L523gBLIM5c&t=10260s',
         'data': 'https://osf.io/tn2ph/?view_only=5a25891ca4a8431085488a8f3e38affc',
+        'news': null,
         'bibtex': '\n\
         @ARTICLE{patil2023studying,\n\
             author={Patil, Ameya and Richer, Gaëlle and Jermaine, Christopher and Moritz, Dominik and Fekete, Jean-Daniel},\n\
@@ -68,6 +71,7 @@ export const publications_list = {
         'video': null,
         'presentation': null,
         'data': null,
+        'news': null,
         'bibtex': '\n\
         @article{aguinaldo2019compressing,\n\
             author       = {Angeline Aguinaldo and Ping{-}Yeh Chiang and Alexander Gain and Ameya Patil and Kolten Pearson and Soheil Feizi},\n\

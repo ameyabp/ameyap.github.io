@@ -12,7 +12,7 @@ function load_news() {
         .enter()
             .append("li")
             .attr("class", "list-group-item")
-            .append("text").html(d => "<b>" + d.timestamp + "</b> - " + d.event)
+            .append("text").html(d => "<b>" + d.timestamp + "</b> - " + d.event + (d.url ? "</b> - <a href=" + d.url + " target='_blank' rel='noopener noreferrer'>link</a>": ''))
 
     d3.select("#news-expand-contract").node().addEventListener('click', expandContractNews);
 }
@@ -137,6 +137,21 @@ function load_publications() {
             .attr("class", "zoom")
 
             entry.append("text").text(" Data ")
+        }
+
+        // news
+        if (publication.news) {
+            entry.append("a")
+            .attr("href", publication.news)
+            .attr("target", "_blank")
+            .attr("rel", "noopener noreferrer")
+            .attr("class", "tab")
+            .append("img")
+            .attr("src", "logos/news.png")
+            .attr("height", 22)
+            .attr("class", "zoom")
+
+            entry.append("text").text(" News ")
         }
 
         // bibtex
