@@ -1,5 +1,10 @@
 export const news_list = [
     {
+        'timestamp': 'November 2023',
+        'event': 'WhaleVis featured in University of Washington News',
+        'url': 'https://www.washington.edu/news/2023/11/15/whalevis-turns-more-than-a-century-of-whaling-data-into-an-interactive-map/'
+    },
+    {
         'timestamp': 'October 2023',
         'event': 'Presented my paper - "WhaleVis: Visualizing the History of Commercial Whaling" at IEEE VIS 2023 Narrm (Melbourne), Australia'
     },
@@ -9,7 +14,8 @@ export const news_list = [
     },
     {
         'timestamp': 'August 2023',
-        'event': 'Presented a talk and poster for HydroVis - an interactive dashboard for understanding ensemble data assimilation forecasts for the WRF-Hydro hydrology model, at the National Center for Atmospheric Research (NCAR)'
+        'event': 'Presented a talk and poster for HydroVis - an interactive dashboard for understanding ensemble data assimilation forecasts for the WRF-Hydro hydrology model, at the National Center for Atmospheric Research (NCAR)',
+        'url': 'https://youtu.be/2fqZ4aa82M4'
     },
     {
         'timestamp': 'May 2023 to September 2023',
@@ -21,7 +27,8 @@ export const news_list = [
     },
     {
         'timestamp': 'October 2022',
-        'event': 'Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022 Oklahoma City, USA'
+        'event': 'Presented my paper - "Studying Early Decision Making with Progressive Bar Charts" at IEEE VIS 2022 Oklahoma City, USA',
+        'url': 'https://www.youtube.com/watch?v=L523gBLIM5c&t=10260s'
     },
     {
         'timestamp': 'July 2022',
