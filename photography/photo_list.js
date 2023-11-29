@@ -260,6 +260,11 @@ export const photo_list = {
             'Story': 'A student taking a stroll around the Drumheller fountain, soaking in the nascent fall colors in the University of Washington campus, on a sunny evening in Seattle.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO 400; Shutter Speed: 1/500s; Aperture: f5.6; Focal length: 121mm'
         },
+        'IMG_9739.jpg': {
+            'Caption': 'In Remembrance',
+            'Story': 'The ANZAC memorial captured from the Sydney Eye Tower. The Australia New Zealand Army Corps memorial was built in remembrance of the numerous contributions of the armed forces of the two countries, and is ironically built on the land of the Gadigal Aboriginals whose land and resources were used in numerous wars without solicitation, to commemorate these wars and the soldiers. This grave backstory behind this photograph inspired the use of blue tones or cool colors when editing it.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 200; Shutter Speed: 1/400s; Aperture: f11; Focal length: 135mm'
+        },
     },
     'portraits': {
         'DSC_0118.JPG': {
@@ -351,6 +356,16 @@ export const photo_list = {
             'Caption': 'Weekday Blues',
             'Story': "An attempt to capture the monday blues mood of this lady, probably lost in thought, as she crossed Queen's bridge in Narrm (Melbourne). As I was walking along the Yarra river, I saw this perfect frame with the bridge railing creating a nice foreground for the subject, and the signboards, buildings and vehicles providing a nice background expressing the urban hustle. All I had to do then was wait for someone to walk the bridge and this lady gave me the perfect monday blues pensive emotion.",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 100; Shutter Speed: 1/125; Aperture: f7.1, Focal length: 135mm'
+        },
+        'IMG_9733': {
+            'Caption': 'Breathe easy',
+            'Story': "This overcast afternoon setting in a park reminds me of taking a step back from the intricate details, zooming out a bit, taking a breath easy and thinking about the bigger picture; something which has become quite important in today's busy life. Captured at the Domain Phillip Precinct, Sydney, Australia",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/320; Aperture: f5.6, Focal length: 79mm'
+        },
+        'IMG_9796': {
+            'Caption': 'Opera House',
+            'Story': "An attempt to capture a different perspective of the Sydney Opera House and the Sydney Harbor Bridge in a single frame. The skies do not put up as eye-catchy a show as during other days, so I had to improvise the framing and make it compact to avoid giving a lot of space to the sky, while capturing all the four important elements in this photograph - the Opera House, the Harbor Bridge, the sky and the Aboriginal and british flags of Australia",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/320; Aperture: f10, Focal length: 135mm'
         }
     },
     'panoramas': {
@@ -414,5 +429,10 @@ export const photo_list = {
             'Story': 'The calm and undistrubed surface of the Mowbray River flowing out of the Mowbray National Park in the tropical rainforest region of north-east Australia.',
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
+        'IMG_9791_pano.jpg': {
+            'Caption': 'Gadigal',
+            'Story': "A panoramic view of Sydney downtown as seen from the Royal Botanic Garden. Sydney also named as 'Eora' by the british, meaning 'here' or 'from this place', is home to the Gadigal Aboriginals.",
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
+        }
     }
 }
