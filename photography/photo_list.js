@@ -346,6 +346,11 @@ export const photo_list = {
             'Caption': 'रात बाकी, बात बाकी',
             'Story': 'Nightlife and clubbing scenes in downtown Nashville',
             'EXIF Details': 'Google Pixel4a; ISO: 49; Shutter Speed: 1/105s; Aperture: f1.7; Focal length: 4.4mm'
+        },
+        'IMG_9605': {
+            'Caption': 'Weekday Blues',
+            'Story': "An attempt to capture the monday blues mood of this lady, probably lost in thought, as she crossed Queen's bridge in Narrm (Melbourne). As I was walking along the Yarra river, I saw this perfect frame with the bridge railing creating a nice foreground for the subject, and the signboards, buildings and vehicles providing a nice background expressing the urban hustle. All I had to do then was wait for someone to walk the bridge and this lady gave me the perfect monday blues pensive emotion.",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 100; Shutter Speed: 1/125; Aperture: f7.1, Focal length: 135mm'
         }
     },
     'panoramas': {
@@ -397,6 +402,16 @@ export const photo_list = {
         'IMG_9086_pano.jpg': {
             'Caption': 'Contrast',
             'Story': 'Atop Bear Peak in Boulder, Colorado. The Rocky Mountains Boulder foothills or front range passing through the center of the panoramic view looking south along the range, with the plains on the east and the contrasting hilly terrain of Rocky Mountains on the west. Boulder City and the NCAR Mesa Lab can be seen in the far left corner of the photograph.',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
+        },
+        'IMG_9636_pano.jpg': {
+            'Caption': 'Tropical',
+            'Story': 'A view of Cairns, Australia from the Henry Ross Lookout enroute Kennedy Highway, on the way to Kuranda village. Being a tropical rainforest region, Cairns sees a considerable amount of rainfall and has a humid weather for a good part of the year. The panorama captures one such overcast and humid day in the tropical north-east parts of Australia.',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
+        },
+        'IMG_9714_pano.jpg': {
+            'Caption': 'Calm',
+            'Story': 'The calm and undistrubed surface of the Mowbray River flowing out of the Mowbray National Park in the tropical rainforest region of north-east Australia.',
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         },
     }
