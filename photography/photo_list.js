@@ -352,17 +352,17 @@ export const photo_list = {
             'Story': 'Nightlife and clubbing scenes in downtown Nashville',
             'EXIF Details': 'Google Pixel4a; ISO: 49; Shutter Speed: 1/105s; Aperture: f1.7; Focal length: 4.4mm'
         },
-        'IMG_9605': {
+        'IMG_9605.jpg': {
             'Caption': 'Weekday Blues',
             'Story': "An attempt to capture the monday blues mood of this lady, probably lost in thought, as she crossed Queen's bridge in Narrm (Melbourne). As I was walking along the Yarra river, I saw this perfect frame with the bridge railing creating a nice foreground for the subject, and the signboards, buildings and vehicles providing a nice background expressing the urban hustle. All I had to do then was wait for someone to walk the bridge and this lady gave me the perfect monday blues pensive emotion.",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 100; Shutter Speed: 1/125; Aperture: f7.1, Focal length: 135mm'
         },
-        'IMG_9733': {
+        'IMG_9733.jpg': {
             'Caption': 'Breathe easy',
             'Story': "This overcast afternoon setting in a park reminds me of taking a step back from the intricate details, zooming out a bit, taking a breath easy and thinking about the bigger picture; something which has become quite important in today's busy life. Captured at the Domain Phillip Precinct, Sydney, Australia",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/320; Aperture: f5.6, Focal length: 79mm'
         },
-        'IMG_9796': {
+        'IMG_9796.jpg': {
             'Caption': 'Opera House',
             'Story': "An attempt to capture a different perspective of the Sydney Opera House and the Sydney Harbor Bridge in a single frame. The skies do not put up as eye-catchy a show as during other days, so I had to improvise the framing and make it compact to avoid giving a lot of space to the sky, while capturing all the four important elements in this photograph - the Opera House, the Harbor Bridge, the sky and the Aboriginal and british flags of Australia",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/320; Aperture: f10, Focal length: 135mm'
