@@ -103,8 +103,8 @@ function loadPhotoInViewer(photo_path) {
 
             const divAspectRatio = d3.select("#photo-viewer-main").node().clientWidth/d3.select("#photo-viewer-main").node().clientHeight;
 
-            console.log(imgAspectRatio)
-            console.log(divAspectRatio)
+            // console.log(imgAspectRatio)
+            // console.log(divAspectRatio)
 
             d3.select("#expandedImg")
                 .attr("src", photo_path)

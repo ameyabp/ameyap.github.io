@@ -357,7 +357,7 @@ export const photo_list = {
             'Story': "An attempt to capture the monday blues mood of this lady, probably lost in thought, as she crossed Queen's bridge in Narrm (Melbourne). As I was walking along the Yarra river, I saw this perfect frame with the bridge railing creating a nice foreground for the subject, and the signboards, buildings and vehicles providing a nice background expressing the urban hustle. All I had to do then was wait for someone to walk the bridge and this lady gave me the perfect monday blues pensive emotion.",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 100; Shutter Speed: 1/125; Aperture: f7.1, Focal length: 135mm'
         },
-        'IMG_9733.jpg': {
+        'IMG_9773.jpg': {
             'Caption': 'Breathe easy',
             'Story': "This overcast afternoon setting in a park reminds me of taking a step back from the intricate details, zooming out a bit, taking a breath easy and thinking about the bigger picture; something which has become quite important in today's busy life. Captured at the Domain Phillip Precinct, Sydney, Australia",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/320; Aperture: f5.6, Focal length: 79mm'
