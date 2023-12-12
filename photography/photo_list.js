@@ -1,6 +1,6 @@
 export const photo_list = {
     'landscapes': {
-        'DSC_0002.JPG': {
+        'DSC_0002.jpg': {
             'Caption': 'इंतज़ार',
             'Story': 'Rickshaw walas wait in a organised queue in their black and yellow rickshaws to find a passenger on a hot afternoon in Vasco-da-Gama, Goa, India.',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/100s; Aperture: f5; Focal length: 35mm'
@@ -15,12 +15,12 @@ export const photo_list = {
             'Story': 'This small furry stray kitten was snapped unfurling a big yawn on a lazy afternoon at Shanivaar Wada, Pune.',
             'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/125s; Aperture: f5.6; Focal length: 55mm'
         },
-        'DSC_0025.JPG': {
+        'DSC_0025.jpg': {
             'Caption': 'A Story in every Window',
             'Story': 'Passengers lost in thought as the BEST bus crawls through the traffic of monsoon time Mumbai',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/200s; Aperture: f5.6; Focal length: 55mm'
         },
-        'DSC_0109.JPG': {
+        'DSC_0109.jpg': {
             'Caption': 'तांबड',
             'Story': "Crack of dawn as seen through my father's eyes from one of his favorite spots in our village - Mahadev Khadi in Koparde, Malkapur, Kolhapur, Maharashtra, India",
             'EXIF Details': 'Nikon D3200; ISO: 400; Shutter Speed: 1/25s; Aperture: f4.5; Focal length: 22mm'
@@ -35,17 +35,17 @@ export const photo_list = {
             'Story': 'Stunning three colored landscape adorned with green meadows, white ice and the blue sky, with sunlight rendering perfect Rembrandt style lighting to add a touch of drama to the frame.',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/1000s; Aperture: f; Focal length: 55mm'
         },
-        'DSC_0180.JPG': {
+        'DSC_0180.jpg': {
             'Caption': 'NYC',
             'Story': 'Nothing much, just the famous New York city skyline captured from the ferry en route Staten Island',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/200s; Aperture: f; Focal length: 55mm'
         },
-        'DSC_0193.JPG': {
+        'DSC_0193.jpg': {
             'Caption': 'हुतात्मा स्मारक',
             'Story': 'The हुतात्मा स्मारक built to commemorate the people who fought for the creation of the separate Marathi speaking state of Maharashtra with Mumbai as a part of it. Another fallout of the misadventures of the brits who were disgustingly ignorant of the cultural diversity of the lands and people they exploited, drawing borders as if they were sketching on canvas.',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/400s; Aperture: f; Focal length: 46mm'
         },
-        'DSC_0221.JPG': {
+        'DSC_0221.jpg': {
             'Caption': 'Gush',
             'Story': "Barachukki waterfalls along the Kaveri river, in Shivanasamudram, Karnataka, India. Shivanasamudram houses one of Asia's first hydroelectric power plants, built in 1902",
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/400s; Aperture: f; Focal length: 50mm'
@@ -95,7 +95,7 @@ export const photo_list = {
             'Story': 'Ducks taking an afternoon nap along the Shey lake in Leh city, Ladakh, India',
             'EXIF Details': 'Nikon D3200; ISO: 100; Shutter Speed: 1/500s; Aperture: f; Focal length: 210mm'
         },
-        'DSC_0693.JPG': {
+        'DSC_0693.jpg': {
             'Caption': 'Nest',
             'Story': 'A squirrel sleeping in an empty plant pot it calls home, hanging from a ledge at the Sabarmati Ashram, Ahmedabad',
             'EXIF Details': 'Nikon D3200; ISO: 200; Shutter Speed: 1/100s; Aperture: f; Focal length: 185mm'
@@ -115,7 +115,7 @@ export const photo_list = {
             'Story': 'Parisien street side cafes perfectly embodying the city of romance that is Paris, with bright red awnings and decorations. At the Champs de Mars, Paris',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/60s; Aperture: f13; Focal length: 62mm'
         },
-        'IMG_2297.JPG': {
+        'IMG_2297.jpg': {
             'Caption': 'Streets of Paris',
             'Story': 'Soft light, blue sky, beige stone walls and gilded domed architectures of the Institut de France, taken from Rue Mazarine in Paris, France',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/2500s; Aperture: f4; Focal length: 24mm'
@@ -136,7 +136,7 @@ export const photo_list = {
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 100; Shutter Speed: 1/1250s; Aperture: f4; Focal length: 24mm'
         },
         'IMG_2814.jpg': {
-            'Caption': 'Sailaani',
+            'Caption': 'सैलानी',
             'Story': "A friend and fellow companion soaking in the views while descending from the thrilling chalk cliffs hike at Étretat, Normandie, France",
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 200; Shutter Speed: 1/3200s; Aperture: f3.5; Focal length: 18mm'
         },
