@@ -16,39 +16,43 @@ function load_photo_gallery() {
             landscape_ctr < landscapes.length ||
             panorama_ctr < panoramas.length) {
         
-        var photo_div = container_div.append("div")
-                                    .attr("class", "row");
+        if (portrait_ctr < portraits.length) {
+            var photo_div = container_div.append("div")
+                                        .attr("class", "row");
 
-        photo_div.selectAll("figure")
-                .data(portraits.slice(portrait_ctr, portrait_ctr+4))
-                .enter()
-                .append("figure")
-                .attr("class", "col-md-3 col-sm-12 photo-gallery-image")
-                .append("img")
-                .attr("width", "100%")
-                .attr("class", "portrait")
-                .attr("loading", "lazy")
-                .on("click", function(event, d) {
-                    loadPhotoInViewer('portraits/' + d);
-                });
-        portrait_ctr = Math.min(portrait_ctr+4, portraits.length)
+            photo_div.selectAll("figure")
+                    .data(portraits.slice(portrait_ctr, portrait_ctr+4))
+                    .enter()
+                    .append("figure")
+                    .attr("class", "col-md-3 col-sm-12 photo-gallery-image")
+                    .append("img")
+                    .attr("width", "100%")
+                    .attr("class", "portrait")
+                    .attr("loading", "lazy")
+                    .on("click", function(event, d) {
+                        loadPhotoInViewer('portraits/' + d);
+                    });
+            portrait_ctr = Math.min(portrait_ctr+4, portraits.length)
+        }
 
-        var photo_div = container_div.append("div")
-                                    .attr("class", "row");
+        if (landscape_ctr < landscapes.length) {
+            var photo_div = container_div.append("div")
+                                        .attr("class", "row");
 
-        photo_div.selectAll("figure")
-                .data(landscapes.slice(landscape_ctr, landscape_ctr+2))
-                .enter()
-                .append("figure")
-                .attr("class", "col-md-6 col-sm-12 photo-gallery-image")
-                .append("img")
-                .attr("width", "100%")
-                .attr("class", "landscape")
-                .attr("loading", "lazy")
-                .on("click", function(event, d) {
-                    loadPhotoInViewer('landscapes/' + d);
-                });
-        landscape_ctr = Math.min(landscape_ctr+2, landscapes.length)
+            photo_div.selectAll("figure")
+                    .data(landscapes.slice(landscape_ctr, landscape_ctr+2))
+                    .enter()
+                    .append("figure")
+                    .attr("class", "col-md-6 col-sm-12 photo-gallery-image")
+                    .append("img")
+                    .attr("width", "100%")
+                    .attr("class", "landscape")
+                    .attr("loading", "lazy")
+                    .on("click", function(event, d) {
+                        loadPhotoInViewer('landscapes/' + d);
+                    });
+            landscape_ctr = Math.min(landscape_ctr+2, landscapes.length)
+        }
         
         if (panorama_ctr < panoramas.length) {
             var photo_div = container_div.append("div")
@@ -88,29 +92,51 @@ function load_photo_gallery() {
     d3.selectAll(".panorama").attr("height", panoramaImgHeight);
 
     // set image paths for the images to be actually loaded
-    d3.selectAll(".portrait")
+    d3.selectAll("img.portrait")
         .data(portraits)
-        .enter()
-        .attr("src", function(d) {
-            photo_strip.push('portraits/' + d);
-            return 'portraits/' + d;
-        });
+        .join(
+            function(enter) {
+                return enter;
+            },
 
-    d3.selectAll(".landscape")
+            function(update) {
+                return update.attr("src", function(d) {
+                    photo_strip.push('portraits/' + d);
+                    return 'portraits/' + d;
+                });
+            }
+        );
+
+    d3.selectAll("img.landscape")
         .data(landscapes)
-        .enter()
-        .attr("src", function(d) {
-            photo_strip.push('landscapes/' + d);
-            return 'landscapes/' + d;
-        });
+        .join(
+            function(enter) {
+                return enter;
+            },
+
+            function(update) {
+                return update.attr("src", function(d) {
+                    photo_strip.push('landscapes/' + d);
+                    return 'landscapes/' + d;
+                });
+            }
+        );
     
-    d3.selectAll(".panorama")
+    d3.selectAll("img.panorama")
         .data(panoramas)
-        .enter()
-        .attr("src", function(d) {
-            photo_strip.push('panoramas/' + d);
-            return 'panoramas/' + d;
-        });
+        .join(
+            function(enter) {
+                return enter;
+            },
+
+            function(update) {
+                return update.attr("height", null)
+                .attr("src", function(d) {
+                    photo_strip.push('panoramas/' + d);
+                    return 'panoramas/' + d;
+                });
+            }
+        );
 
     d3.select("#previous-photo").node().addEventListener('click', previousPhoto);
     d3.select("#next-photo").node().addEventListener('click', nextPhoto);
