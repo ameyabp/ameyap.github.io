@@ -3,22 +3,28 @@ export const publications_list = {
         'title': 'WhaleVis: Visualizing the History of Commercial Whaling',
         'venue': 'IEEE VIS Short, 2024',
         'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
-        'doi': 'https://doi.org/10.48550/arXiv.2308.04552',
+        'doi': 'https://doi.ieeecomputersociety.org/10.1109/VIS54172.2023.00028',
         'paper': 'https://arxiv.org/pdf/2308.04552.pdf',
         'video': null,
         'presentation': null,
         'data': null,
         'news': 'https://www.washington.edu/news/2023/11/15/whalevis-turns-more-than-a-century-of-whaling-data-into-an-interactive-map/',
         'bibtex': '\n\
-        @misc{patil2023whalevis,\n\
-            title={WhaleVis: Visualizing the History of Commercial Whaling},\n\
-            author={Ameya Patil and Zoe Rand and Trevor Branch and Leilani Battle},\n\
-            year={2023},\n\
-            booktitle = {IEEE VIS Short Papers},\n\
-            eprint={2308.04552},\n\
-            archivePrefix={arXiv},\n\
-            primaryClass={cs.DB}\n\
-            url = {http://idl.cs.washington.edu/papers/whale-vis},\n\
+        @inproceedings{patil_whalevis_2023,\n\
+            address = {Melbourne, Australia},\n\
+            title = {{WhaleVis}: {Visualizing} the {History} of {Commercial} {Whaling}},\n\
+            isbn = {9798350325577},\n\
+            shorttitle = {{WhaleVis}},\n\
+            url = {https://ieeexplore.ieee.org/document/10360933/},\n\
+            doi = {10.1109/VIS54172.2023.00028},\n\
+            urldate = {2024-01-16},\n\
+            booktitle = {2023 {IEEE} {Visualization} and {Visual} {Analytics} ({VIS})},\n\
+            publisher = {IEEE},\n\
+            author = {Patil, Ameya and Rand, Zoe and Branch, Trevor and Battle, Leilani},\n\
+            month = oct,\n\
+            year = {2023},\n\
+            pages = {96--100},\n\
+            file = {Submitted Version:/home/ameyap2/Zotero/storage/3NDZJPMS/Patil et al. - 2023 - WhaleVis Visualizing the History of Commercial Wh.pdf:application/pdf},\n\
         }'
     },
     'whaleVis': {
