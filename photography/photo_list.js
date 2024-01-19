@@ -366,6 +366,31 @@ export const photo_list = {
             'Caption': 'Opera House',
             'Story': "An attempt to capture a different perspective of the Sydney Opera House and the Sydney Harbor Bridge in a single frame. The skies do not put up as eye-catchy a show as during other days, so I had to improvise the framing and make it compact to avoid giving a lot of space to the sky, while capturing all the four important elements in this photograph - the Opera House, the Harbor Bridge, the sky and the Aboriginal and british flags of Australia",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/320; Aperture: f10, Focal length: 135mm'
+        },
+        'IMG_8469.jpg': {
+            'Caption': 'Perched',
+            'Story': "View of the famous NCAR Mesa Lab perched atop Table Mesa from the Royal Arch in the Boulder Flatirons, Colorado. The frame was composed with specific attention to the different types of lines - diagonal for tree line, wavy for the access road to Table Mesa and the structured straight lines of the Mesa Lab and the roads in the distance, while the trees provide a nice texture",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 400; Shutter Speed: 1/160; Aperture: f18, Focal length: 76mm'
+        },
+        'IMG_8470.jpg': {
+            'Caption': 'Perspective',
+            'Story': "Every hike usually ends with scenes like these - people trying to get disconnect from their daily struggles, connect with their roots, gain some perspective on life, to prepare themselves better for the next day. Captured from the Royal Arch in the Boulder Flatirons, Colorado.",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 100; Shutter Speed: 1/500; Aperture: f5, Focal length: 64mm'
+        },
+        'IMG_8539.jpg': {
+            'Caption': 'Tungsten',
+            'Story': "Scorching sun and summer afternoon mood in donwtown Boulder, Colorado. Harsh light is usually not ideal for photography, but along with the golden hues in this case, it brings out the desired mood in the frame.",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 100; Shutter Speed: 1/800; Aperture: f5.6, Focal length: 97mm'
+        },
+        'IMG_9615.jpg': {
+            'Caption': 'Chiaroscuro',
+            'Story': "The clock tower of the Flinder's Street Station in Melbourne downtown. Focus lights along with the contours of the structure provided some dramatic light and shadow patterns on the clock tower.",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 800; Shutter Speed: 1/25; Aperture: f5, Focal length: 35mm'
+        },
+        'IMG_9723.jpg': {
+            'Caption': 'Sydney Eye',
+            'Story': "The Sydney Eye Tower in downtown Sydney, Australia. The composition, and the three color scheme of blue, golden and red in this frame makes it simple yet eye-catching.",
+            'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/640; Aperture: f11, Focal length: 122mm'
         }
     },
     'panoramas': {
