@@ -374,7 +374,7 @@ export const photo_list = {
         },
         'IMG_8470.jpg': {
             'Caption': 'Perspective',
-            'Story': "Every hike usually ends with scenes like these - people trying to get disconnect from their daily struggles, connect with their roots, gain some perspective on life, to prepare themselves better for the next day. Captured from the Royal Arch in the Boulder Flatirons, Colorado.",
+            'Story': "Every hike usually ends with scenes like these - people trying to disconnect from their daily struggles, connect with their roots, gain some perspective on life, to prepare themselves better for the next day. Captured from the Royal Arch in the Boulder Flatirons, Colorado.",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 100; Shutter Speed: 1/500; Aperture: f5, Focal length: 64mm'
         },
         'IMG_8539.jpg': {

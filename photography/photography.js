@@ -1,5 +1,8 @@
 import { photo_list } from './photo_list.js'
 
+var photo_strip = [];
+var current_photo = null;
+
 function load_photo_gallery() {
     // operates on the photography.html page
     var portraits = shuffleArray(Object.keys(photo_list['portraits']))
@@ -27,7 +30,10 @@ function load_photo_gallery() {
                     .attr("class", "col-md-3 col-sm-12 photo-gallery-image")
                     .append("img")
                     .attr("width", "100%")
-                    .attr("class", "portrait")
+                    .attr("class", function(d) {
+                        photo_strip.push("portraits/" + d);
+                        return "portrait";
+                    })
                     .attr("loading", "lazy")
                     .on("click", function(event, d) {
                         loadPhotoInViewer('portraits/' + d);
@@ -46,7 +52,10 @@ function load_photo_gallery() {
                     .attr("class", "col-md-6 col-sm-12 photo-gallery-image")
                     .append("img")
                     .attr("width", "100%")
-                    .attr("class", "landscape")
+                    .attr("class", function(d) {
+                        photo_strip.push("landscapes/" + d);
+                        return "landscape";
+                    })
                     .attr("loading", "lazy")
                     .on("click", function(event, d) {
                         loadPhotoInViewer('landscapes/' + d);
@@ -65,7 +74,10 @@ function load_photo_gallery() {
                 .attr("class", "col-md-12 col-sm-12 photo-gallery-image")
                 .append("img")
                 .attr("width", "100%")
-                .attr("class", "panorama")
+                .attr("class", function(d) {
+                    photo_strip.push("panoramas/" + d);
+                    return "panorama";
+                })
                 .attr("loading", "lazy")
                 .on("click", function(event, d) {
                     loadPhotoInViewer('panoramas/' + d);
@@ -101,7 +113,6 @@ function load_photo_gallery() {
 
             function(update) {
                 return update.attr("src", function(d) {
-                    photo_strip.push('portraits/' + d);
                     return 'portraits/' + d;
                 });
             }
@@ -116,7 +127,6 @@ function load_photo_gallery() {
 
             function(update) {
                 return update.attr("src", function(d) {
-                    photo_strip.push('landscapes/' + d);
                     return 'landscapes/' + d;
                 });
             }
@@ -132,7 +142,6 @@ function load_photo_gallery() {
             function(update) {
                 return update.attr("height", null)
                 .attr("src", function(d) {
-                    photo_strip.push('panoramas/' + d);
                     return 'panoramas/' + d;
                 });
             }
@@ -141,10 +150,9 @@ function load_photo_gallery() {
     d3.select("#previous-photo").node().addEventListener('click', previousPhoto);
     d3.select("#next-photo").node().addEventListener('click', nextPhoto);
     d3.select("#close-photo-viewer").node().addEventListener('click', closePhotoViewer);
-}
 
-var photo_strip = [];
-var current_photo = null;
+    console.log(photo_strip);
+}
 
 function loadPhotoInViewer(photo_path) {
     // console.log(photo_path);
