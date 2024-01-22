@@ -24,7 +24,6 @@ export const publications_list = {
             month = oct,\n\
             year = {2023},\n\
             pages = {96--100},\n\
-            file = {Submitted Version:/home/ameyap2/Zotero/storage/3NDZJPMS/Patil et al. - 2023 - WhaleVis Visualizing the History of Commercial Wh.pdf:application/pdf},\n\
         }'
     },
     'whaleVis': {
