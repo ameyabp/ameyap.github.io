@@ -458,6 +458,11 @@ export const photo_list = {
             'Caption': 'Gadigal',
             'Story': "A panoramic view of Sydney downtown as seen from the Royal Botanic Garden. Sydney also named as 'Eora' by the british, meaning 'here' or 'from this place', is home to the Gadigal Aboriginals.",
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
+        },
+        'IMG_9536_pano.jpg': {
+            'Caption': 'Larches and Lilac',
+            'Story': "The setting sun painting the mountains of the North Cascades mountain ranges lilac, with the larch trees painting eye-catching yellow green patterns of their own, in the backdrop of the blue sky. Captured from the Cutthroat pass, on the right is the Hinkhouse peak, with the Silver Star mountain in the center, adjoining to which is the Vasiliki ridge on its right.",
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         }
     }
 }
