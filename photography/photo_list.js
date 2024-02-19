@@ -463,6 +463,11 @@ export const photo_list = {
             'Caption': 'Larches and Lilac',
             'Story': "The setting sun painting the mountains of the North Cascades mountain ranges lilac, with the larch trees painting eye-catching yellow green patterns of their own, in the backdrop of the blue sky. Captured from the Cutthroat pass, on the right is the Hinkhouse peak, with the Silver Star mountain in the center, adjoining to which is the Vasiliki ridge on its right.",
             'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
+        },
+        'IMG_9933_pano.jpg': {
+            'Caption': 'Fall & Blues',
+            'Story': "Late fall colors stand out between a sandwich of blues of the sky and the water along the English Bay Beach in Vancouver, Canada.",
+            'EXIF Details': 'Canon EOS Rebel T7i, 50mm'
         }
     }
 }
