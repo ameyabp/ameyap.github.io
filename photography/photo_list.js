@@ -466,7 +466,7 @@ export const photo_list = {
         },
         'IMG_9933_pano.jpg': {
             'Caption': 'Fall & Blues',
-            'Story': "Late fall colors stand out between a sandwich of blues of the sky and the water along the English Bay Beach in Vancouver, Canada.",
+            'Story': "Late fall colors in Vanier Park stand out between a sandwich of blues of the sky and the water along the Flase Creek in Vancouver, Canada.",
             'EXIF Details': 'Canon EOS Rebel T7i, 50mm'
         }
     }
