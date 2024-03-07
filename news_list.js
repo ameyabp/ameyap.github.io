@@ -6,11 +6,13 @@ export const news_list = [
     },
     {
         'timestamp': 'October 2023',
-        'event': 'Presented my paper - "WhaleVis: Visualizing the History of Commercial Whaling" at IEEE VIS 2023 Narrm (Melbourne), Australia'
+        'event': 'Presented my paper - "WhaleVis: Visualizing the History of Commercial Whaling" at IEEE VIS 2023 Narrm (Melbourne), Australia',
+        'url': 'https://youtu.be/sY-x-TVt-ds'
     },
     {
         'timestamp': 'August 2023',
-        'event': 'Short paper accepted at IEEE VIS 2023 - "WhaleVis: Visualizing the History of Commercial Whaling"'
+        'event': 'Short paper accepted at IEEE VIS 2023 - "WhaleVis: Visualizing the History of Commercial Whaling"',
+        'url': 'https://arxiv.org/pdf/2308.04552.pdf'
     },
     {
         'timestamp': 'August 2023',
@@ -19,11 +21,13 @@ export const news_list = [
     },
     {
         'timestamp': 'May 2023 to September 2023',
-        'event': 'Summer internship in the SIParCS program at the National Center for Atmospheric Research (NCAR)'
+        'event': 'Summer internship in the SIParCS program at the National Center for Atmospheric Research (NCAR)',
+        'url': 'https://www2.cisl.ucar.edu/outreach/internships/2023projects'
     },
     {
         'timestamp': 'April 2023',
-        'event': 'Presented my work - "WhaleVis: A New Visualization Tool for the IWC Catch Database" at the International Whaling Commission Scientific Committeee meeting'
+        'event': 'Presented my work - "WhaleVis: A New Visualization Tool for the IWC Catch Database" at the International Whaling Commission Scientific Committeee meeting',
+        'url': 'https://ameyabp.github.io/projects/whaleVis/SC_69A_GDR_04_Patil_etal.pdf'
     },
     {
         'timestamp': 'October 2022',
@@ -32,7 +36,8 @@ export const news_list = [
     },
     {
         'timestamp': 'July 2022',
-        'event': 'Paper accepted at IEEE VIS 2022 - "Studying Early Decision Making with Progressive Bar Charts"'
+        'event': 'Paper accepted at IEEE VIS 2022 - "Studying Early Decision Making with Progressive Bar Charts"',
+        'url': 'https://hal.archives-ouvertes.fr/hal-03738461/'
     },
     {
         'timestamp': 'September 2021',

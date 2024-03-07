@@ -30,7 +30,7 @@ function expandContractNews() {
             .enter()
                 .append("li")
                 .attr("class", "list-group-item")
-                .append("text").html(d => "<b>" + d.timestamp + "</b> - " + d.event)
+                .append("text").html(d => "<b>" + d.timestamp + "</b> - " + d.event + (d.url ? "</b> - <a href=" + d.url + " target='_blank' rel='noopener noreferrer'>link</a>": ''))
     }
     else {
         btn.node().value = "contracted"
@@ -225,13 +225,17 @@ function load_projects(data) {
                     .attr("class", "card-text")
                     .text(project.description)
 
-        if (project.url) {
-            card_body.append("a")
-                    .attr("href", project.url)
-                    .attr("class", "btn btn-primary")
-                    .attr("target", "_blank")
-                    .attr("rel", "noopener noreferrer")
-                    .text(project['button-text'])
+        if (project.buttons) {
+            project.buttons.forEach(element => {
+                card_body.append("a")
+                        .attr("href", element.url)
+                        .attr("class", "btn btn-primary")
+                        .attr("target", "_blank")
+                        .attr("rel", "noopener noreferrer")
+                        .text(element.text)
+
+                card_body.append("text").html("&nbsp");
+            });
         }
     }
 
