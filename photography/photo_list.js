@@ -265,6 +265,11 @@ export const photo_list = {
             'Story': 'The ANZAC memorial captured from the Sydney Eye Tower. The Australia New Zealand Army Corps memorial was built in remembrance of the numerous contributions of the armed forces of the two countries, and is ironically built on the land of the Gadigal Aboriginals whose land and resources were used in numerous wars without solicitation, to commemorate these wars and the soldiers. This grave backstory behind this photograph inspired the use of blue tones or cool colors when editing it.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO 200; Shutter Speed: 1/400s; Aperture: f11; Focal length: 135mm'
         },
+        'IMG_9852.jpg': {
+            'Caption': 'Histogram',
+            'Story': 'Clumps of buildings captured from Granville Island, Vancouver, Canada, resembling a histogram, depicting the peculiar crowded busy life of big cities.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 100; Shutter Speed: 1/400s; Aperture: f7.1; Focal length: 50mm'
+        }
     },
     'portraits': {
         'DSC_0118.JPG': {
@@ -391,6 +396,16 @@ export const photo_list = {
             'Caption': 'Sydney Eye',
             'Story': "The Sydney Eye Tower in downtown Sydney, Australia. The composition, and the three color scheme of blue, golden and red in this frame makes it simple yet eye-catching.",
             'EXIF Details': 'Canon EOS Rebel T7i, ISO: 200; Shutter Speed: 1/640; Aperture: f11, Focal length: 122mm'
+        },
+        'IMG_0306.jpg': {
+            'Caption': 'Truss',
+            'Story': 'An attempt at abstract photography with the crown-like trusses of BC Place Stadium roof in Vancouver, Canada.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 100; Shutter Speed: 1/500s; Aperture: f10; Focal length: 50mm'
+        },
+        'IMG_9911.jpg': {
+            'Caption': 'Morning Hustle',
+            'Story': 'Another portrait showcasing the dynamism attributed by the S-shaped curve of the road, along with the structure of the buildings along the road, and the interplay of light and shadow. This photograph depicts a busy morning along Pacific Blvd in Vancouver, Canada.',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 100; Shutter Speed: 1/200s; Aperture: f5; Focal length: 59mm'
         }
     },
     'panoramas': {
@@ -468,6 +483,16 @@ export const photo_list = {
             'Caption': 'Fall & Blues',
             'Story': "Late fall colors in Vanier Park stand out between a sandwich of blues of the sky and the water along the Flase Creek in Vancouver, Canada.",
             'EXIF Details': 'Canon EOS Rebel T7i, 50mm'
+        },
+        'IMG_0148_pano.jpg': {
+            'Caption': 'Glisten',
+            'Story': 'Panoramic view of West Vancouver in the golden hours of sunset, captured from Stanley Park across the Burrard Inlet',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
+        },
+        'IMG_0340_pano.jpg': {
+            'Caption': 'Crown & Concrete',
+            'Story': 'Vancouver skyline captured along the Pacific Blvd featuring from left to right - the Harbor Event and Convention Center, BC Place Stadium, Cirque du Soleil and Rogers Arena, with the backdrop of highrises in the Chinatown neighborhood',
+            'EXIF Details': 'Canon EOS Rebel T7i, 18-135mm'
         }
     }
 }
