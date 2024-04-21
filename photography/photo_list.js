@@ -197,7 +197,7 @@ export const photo_list = {
         },
         'IMG_7341.jpg': {
             'Caption': 'Chapel',
-            'Story': "The temple of St. Paul's Catholic Student Center on the University of Wisconsin, Madison campus, portrayed in black and white more to handle the harsh shadows created by the setting sun, than to convey a mood",
+            'Story': "The temple of St. Paul's Catholic Student Center on the University of Wisconsin, Madison campus, portrayed in black and white more to handle the harsh shadows created by the setting sun, than to convey a hallow yet sombre mood",
             'EXIF Details': 'Canon EOS Rebel T7i; ISO: 800; Shutter Speed: 1/160s; Aperture: f16; Focal length: 59mm'
         },
         'PXL_20210708_182444148.jpg': {
@@ -481,7 +481,7 @@ export const photo_list = {
         },
         'IMG_9933_pano.jpg': {
             'Caption': 'Fall & Blues',
-            'Story': "Late fall colors in Vanier Park stand out between a sandwich of blues of the sky and the water along the Flase Creek in Vancouver, Canada.",
+            'Story': "Late fall colors in Vanier Park stand out between a sandwich of blues of the sky and the water along the False Creek in Vancouver, Canada.",
             'EXIF Details': 'Canon EOS Rebel T7i, 50mm'
         },
         'IMG_0148_pano.jpg': {
