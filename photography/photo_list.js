@@ -406,6 +406,11 @@ export const photo_list = {
             'Caption': 'Morning Hustle',
             'Story': 'Another portrait showcasing the dynamism attributed by the S-shaped curve of the road, along with the structure of the buildings along the road, and the interplay of light and shadow. This photograph depicts a busy morning along Pacific Blvd in Vancouver, Canada.',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO 100; Shutter Speed: 1/200s; Aperture: f5; Focal length: 59mm'
+        },
+        'IMG_4611.jpg': {
+            'Caption': 'Entering the Concrete Jungle',
+            'Story': 'An attempt to capture the overwhelming feeling of entering the busy downtown area of a big city. In this case, the city of Seattle captured along 4th Ave S near Lumen Field',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 400; Shutter Speed: 1/100s; Aperture: f9; Focal length: 50mm'
         }
     },
     'panoramas': {
