@@ -1,5 +1,10 @@
 export const blogs_list = [
     {
+        'title': 'The House of Blues: Chicago',
+        'url': 'https://ameyabp.wordpress.com/2024/05/14/the-house-of-blues-chicago/',
+        'authors': 'Ameya Patil'
+    },
+    {
         'title': 'Visualizing Historical Whaling Voyages over Time',
         'url': 'https://dl.acm.org/doi/10.1145/3611650',
         'authors': 'Leilani Battle, Ameya Patil, Zoe Rand, Trevor Branch'
