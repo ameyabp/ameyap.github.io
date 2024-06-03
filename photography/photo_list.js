@@ -411,6 +411,12 @@ export const photo_list = {
             'Caption': 'Entering the Concrete Jungle',
             'Story': 'An attempt to capture the overwhelming feeling of entering the busy downtown area of a big city. In this case, the city of Seattle captured along 4th Ave S near Lumen Field',
             'EXIF Details': 'Canon EOS Rebel T7i; ISO 400; Shutter Speed: 1/100s; Aperture: f9; Focal length: 50mm'
+        },
+        'IMG_8904.jpg': {
+            'Caption': 'Textures',
+            'Story': 'From rugged and barren mountains, to lush green meadows, to uniformly dense forests, to the smooth glassy lake, textures were abound enroute the scenic Trail Ridge Route through the Rocky Mountains National Park in Colorado, USA',
+            'EXIF Details': 'Canon EOS Rebel T7i; ISO 400; Shutter Speed: 1/80s; Aperture: f22; Focal length: 97mm'
+            
         }
     },
     'panoramas': {
