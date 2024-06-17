@@ -11,6 +11,11 @@ export const news_list = [
     },
     {
         'timestamp': 'August 2023',
+        'event': 'WhaleVis featured in ACM Interactions magazine',
+        'url': 'https://dl.acm.org/doi/10.1145/3611650'
+    },
+    {
+        'timestamp': 'August 2023',
         'event': 'Short paper accepted at IEEE VIS 2023 - "WhaleVis: Visualizing the History of Commercial Whaling"',
         'url': 'https://arxiv.org/pdf/2308.04552.pdf'
     },
