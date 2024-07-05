@@ -1,5 +1,9 @@
 export const news_list = [
     {
+        'timestamp': 'June 2024',
+        'event': 'Thesis proposal accepted at the IEEE VIS 2024 Doctoral Colloquium, St. Pete Beach, Florida USA'
+    },
+    {
         'timestamp': 'November 2023',
         'event': 'WhaleVis featured in University of Washington News',
         'url': 'https://www.washington.edu/news/2023/11/15/whalevis-turns-more-than-a-century-of-whaling-data-into-an-interactive-map/'
