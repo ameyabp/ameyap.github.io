@@ -1,7 +1,7 @@
 export const news_list = [
     {
         'timestamp': 'July 2024',
-        'event': 'Participated in Research to Impact Collaborative at, and attending ACM Compass 2024, New Delhi, India.'
+        'event': 'Participated in Research to Impact Collaborative at ACM Compass 2024, New Delhi, India.'
     },
     {
         'timestamp': 'June 2024',
