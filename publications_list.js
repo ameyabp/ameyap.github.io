@@ -32,7 +32,7 @@ export const publications_list = {
         'authors': 'A. Patil, Z. Rand, T. Branch, L. Battle',
         'doi': 'https://archive.iwc.int/?r=20005&k=46e2592325',
         'paper': 'projects/whaleVis/SC_69A_GDR_04_Patil_etal.pdf',
-        'video': 'projects/whaleVis/whaleVis.mp4',
+        'video': 'https://youtu.be/STuzmQNAIJo',
         'presentation': null,
         'data': null,
         'news': 'https://www.washington.edu/news/2023/11/15/whalevis-turns-more-than-a-century-of-whaling-data-into-an-interactive-map/',

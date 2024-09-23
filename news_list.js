@@ -20,7 +20,7 @@ export const news_list = [
     {
         'timestamp': 'August 2023',
         'event': 'WhaleVis featured in ACM Interactions magazine',
-        'url': 'https://dl.acm.org/doi/10.1145/3611650'
+        'url': 'https://ameyabp.github.io/projects/whaleVis/acm_interactions.pdf'
     },
     {
         'timestamp': 'August 2023',

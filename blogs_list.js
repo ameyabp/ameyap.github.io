@@ -6,7 +6,7 @@ export const blogs_list = [
     },
     {
         'title': 'Visualizing Historical Whaling Voyages over Time',
-        'url': 'https://dl.acm.org/doi/10.1145/3611650',
+        'url': 'https://ameyabp.github.io/projects/whaleVis/acm_interactions.pdf',
         'authors': 'Leilani Battle, Ameya Patil, Zoe Rand, Trevor Branch'
     },
     {
