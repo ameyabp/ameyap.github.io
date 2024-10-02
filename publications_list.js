@@ -1,4 +1,16 @@
 export const publications_list = {
+    'hydroVis': {
+        'title': "Interactive Visualization of Ensemble Data Assimilation Forecasts for Freshwater Floods",
+        'venue': "IEEE VIS Viz 4 Climate + Sustainability Workshop Demo, 2024",
+        'authors': 'A. Patil, M. Smith, H. Kershaw, M. Gharamti',
+        'doi': null,
+        'paper': 'projects/hydroVis/IEEE_VIS_2024_Viz4Climate_Sustainability_Workshop.pdf',
+        'video': null,
+        'presentation': null,
+        'data': null,
+        'news': null,
+        'bibtex': null
+    },
     'whaleVisShort': {
         'title': 'WhaleVis: Visualizing the History of Commercial Whaling',
         'venue': 'IEEE VIS Short, 2024',

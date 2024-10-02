@@ -1,5 +1,9 @@
 export const news_list = [
     {
+        'timestamp': 'September 2024',
+        'event': 'Demo accepted at IEEE VIS 2024 Viz 4 Climate + Sustainability workshop - "Interactive Visualization of Ensemble Data Assimilation Forecasts for Freshwater Floods"'
+    },
+    {
         'timestamp': 'July 2024',
         'event': 'Participated in Research to Impact Collaborative at ACM Compass 2024, New Delhi, India.'
     },
