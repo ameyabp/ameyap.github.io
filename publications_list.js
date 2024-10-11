@@ -1,4 +1,16 @@
 export const publications_list = {
+    'bcds': {
+        'title': "Behavior Matters: An Alternative Perspective on Promoting Responsible Data Science",
+        'venue': "ACM Conference on Computer-Supported Cooperative Work and Social Computing, 2025",
+        'authors': 'Z. Dong, A. Patil, Y. Shoda, L. Battle, E. Wall',
+        'doi': null,
+        'paper': 'projects/bcds/Behavior_Matters__An_Alternative_Perspective_on_Promoting_Responsible_Data_Science.pdf',
+        'video': null,
+        'presentation': null,
+        'data': null,
+        'news': null,
+        'bibtex': null
+    },
     'hydroVis': {
         'title': "Interactive Visualization of Ensemble Data Assimilation Forecasts for Freshwater Floods",
         'venue': "IEEE VIS Viz 4 Climate + Sustainability Workshop Demo, 2024",

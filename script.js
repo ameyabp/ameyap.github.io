@@ -50,39 +50,48 @@ function load_publications() {
     const data = Object.keys(publications_list);
     var pubs_list = d3.select("#publications-list");
 
-    for (var i=0; i<data.length; i++) {
+    for (var i=0; i<Math.min(data.length, 5); i++) {
         const publication = publications_list[data[i]]
+        addPublication(pubs_list, publication);
+    }
+    
+    if (data.length > 5) {
+        d3.select("#publications-expand-contract").node().addEventListener('click', expandContractPublications);
+    }
+}
 
-        var entry = pubs_list.append("li")
-                                    .attr("class", "list-group-item")
+function addPublication(pubs_list, publication) {
 
-        entry.append("h5")
-            .text(publication.title)
+    var entry = pubs_list.append("li")
+                        .attr("class", "list-group-item")
 
-        entry.append("i")
-            .text(publication.venue)
+    entry.append("h5")
+        .text(publication.title)
 
-        entry.append("br")
-        entry.append("text").text(publication.authors)
-        entry.append("br")
+    entry.append("i")
+        .text(publication.venue)
 
-        // doi
-        if (publication.doi) {
-            entry.append("a")
-                .attr("href", publication.doi)
-                .attr("target", "_blank")
-                .attr("rel", "noopener noreferrer")
-                .attr("class", "tab")
-                .append("img")
-                .attr("src", "logos/doi.png")
-                .attr("height", 22)
-                .attr("class", "zoom")
+    entry.append("br")
+    entry.append("text").text(publication.authors)
+    entry.append("br")
 
-            entry.append("text").text(" DOI ")
-        }
-
-        // paper
+    // doi
+    if (publication.doi) {
         entry.append("a")
+            .attr("href", publication.doi)
+            .attr("target", "_blank")
+            .attr("rel", "noopener noreferrer")
+            .attr("class", "tab")
+            .append("img")
+            .attr("src", "logos/doi.png")
+            .attr("height", 22)
+            .attr("class", "zoom")
+
+        entry.append("text").text(" DOI ")
+    }
+
+    // paper
+    entry.append("a")
         .attr("href", publication.paper)
         .attr("target", "_blank")
         .attr("rel", "noopener noreferrer")
@@ -92,11 +101,11 @@ function load_publications() {
         .attr("height", 22)
         .attr("class", "zoom")
 
-        entry.append("text").text(" Paper ")
+    entry.append("text").text(" Paper ")
 
-        // video
-        if (publication.video) {
-            entry.append("a")
+    // video
+    if (publication.video) {
+        entry.append("a")
             .attr("href", publication.video)
             .attr("target", "_blank")
             .attr("rel", "noopener noreferrer")
@@ -107,11 +116,11 @@ function load_publications() {
             .attr("class", "zoom")
 
             entry.append("text").text(" Video ")
-        }
+    }
 
-        // presentation
-        if (publication.presentation) {
-            entry.append("a")
+    // presentation
+    if (publication.presentation) {
+        entry.append("a")
             .attr("href", publication.presentation)
             .attr("target", "_blank")
             .attr("rel", "noopener noreferrer")
@@ -122,11 +131,11 @@ function load_publications() {
             .attr("class", "zoom")
 
             entry.append("text").text(" Presentation ")
-        }
+    }
 
-        // data
-        if (publication.data) {
-            entry.append("a")
+    // data
+    if (publication.data) {
+        entry.append("a")
             .attr("href", publication.data)
             .attr("target", "_blank")
             .attr("rel", "noopener noreferrer")
@@ -137,11 +146,11 @@ function load_publications() {
             .attr("class", "zoom")
 
             entry.append("text").text(" Data ")
-        }
+    }
 
-        // news
-        if (publication.news) {
-            entry.append("a")
+    // news
+    if (publication.news) {
+        entry.append("a")
             .attr("href", publication.news)
             .attr("target", "_blank")
             .attr("rel", "noopener noreferrer")
@@ -152,10 +161,10 @@ function load_publications() {
             .attr("class", "zoom")
 
             entry.append("text").text(" News ")
-        }
+    }
 
-        // bibtex
-        entry.append("button")
+    // bibtex
+    entry.append("button")
         .attr("id", "bibtex-button")
         .style("border", "none")
         .attr("type", "button")
@@ -167,8 +176,7 @@ function load_publications() {
             openModal(publication);
         })
 
-        entry.append("text").text(" Bibtex ")
-    }
+    entry.append("text").text(" Bibtex ")
 }
 
 // When the user clicks on the button, open the modal
@@ -190,6 +198,33 @@ window.onclick = function(event) {
     var modal = d3.select("#bibtex-modal-div").node()
     if (event.target == modal) {
         modal.style.display = "none";
+    }
+}
+
+function expandContractPublications() {
+    var btn = d3.select("#publications-expand-contract")
+    
+    const data = Object.keys(publications_list);
+    var pubs_list = d3.select("#publications-list");
+    
+    if (btn.node().value === "contracted") {
+        btn.node().value = "expanded";
+        btn.text("-");
+
+        for (var i=5; i<data.length; i++) {
+            const publication = publications_list[data[i]];
+            addPublication(pubs_list, publication);
+        }
+    }
+    else {
+        btn.node().value = "contracted"
+        btn.text("+")
+
+        pubs_list.selectAll(".list-group-item")
+            .select(function(d,i) {
+                return i > 4 ? this : null
+            })
+            .remove()             
     }
 }
 

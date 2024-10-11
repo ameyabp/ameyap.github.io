@@ -1,5 +1,10 @@
 export const news_list = [
     {
+        'timestamp': 'October 2024',
+        'event': 'Paper accepted at ACM CSCW 2025 - "Behavior Matters: An Alternative Perspective on Promoting Responsible Data Science"',
+        'url': 'https://ameyabp.github.io/projects/bcds/Behavior_Matters__An_Alternative_Perspective_on_Promoting_Responsible_Data_Science.pdf'
+    },
+    {
         'timestamp': 'September 2024',
         'event': 'Demo accepted at IEEE VIS 2024 Viz 4 Climate + Sustainability workshop - "Interactive Visualization of Ensemble Data Assimilation Forecasts for Freshwater Floods"',
         'link': 'https://visforclimateaction.github.io/papers/1033-doc.pdf'
