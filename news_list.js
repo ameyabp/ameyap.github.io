@@ -1,6 +1,15 @@
 export const news_list = [
     {
         'timestamp': 'October 2024',
+        'event': 'Presented my work - "Interactive Visualization of Ensemble Data Assimilation Forecasts for Freshwater Floods" virtually at IEEE VIS 2024 Viz 4 Climate + Sustainability workshop, St.Pete Beach, Florida, USA',
+        'url': 'https://visforclimateaction.github.io/papers/1033-doc.pdf'
+    },
+    {
+        'timestamp': 'October 2024',
+        'event': 'Presented virtually at the IEEE VIS 2024 Doctoral Colloquium, St. Pete Beach, Florida USA'
+    },
+    {
+        'timestamp': 'October 2024',
         'event': 'Paper accepted at ACM CSCW 2025 - "Behavior Matters: An Alternative Perspective on Promoting Responsible Data Science"',
         'url': 'https://ameyabp.github.io/projects/bcds/Behavior_Matters__An_Alternative_Perspective_on_Promoting_Responsible_Data_Science.pdf'
     },
@@ -12,10 +21,6 @@ export const news_list = [
     {
         'timestamp': 'July 2024',
         'event': 'Participated in Research to Impact Collaborative at ACM Compass 2024, New Delhi, India.'
-    },
-    {
-        'timestamp': 'June 2024',
-        'event': 'Thesis proposal accepted at the IEEE VIS 2024 Doctoral Colloquium, St. Pete Beach, Florida USA'
     },
     {
         'timestamp': 'November 2023',

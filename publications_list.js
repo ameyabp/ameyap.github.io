@@ -23,11 +23,11 @@ export const publications_list = {
     'hydroVis': {
         'title': "Interactive Visualization of Ensemble Data Assimilation Forecasts for Freshwater Floods",
         'venue': "IEEE VIS Viz 4 Climate + Sustainability Workshop Demo, 2024",
-        'authors': 'A. Patil, M. Smith, H. Kershaw, M. Gharamti',
-        'doi': 'https://visforclimateaction.github.io/papers/1033-doc.pdf',
+        'authors': 'A. Patil, M. Smith, H. Kershaw, M. El Gharamti',
+        'doi': null,
         'paper': 'projects/hydroVis/IEEE_VIS_2024_Viz4Climate_Sustainability_Workshop.pdf',
-        'video': null,
-        'presentation': null,
+        'video': 'https://youtu.be/hqkGGSkeyeI',
+        'presentation': 'https://www.cisl.ucar.edu/sites/default/files/2023-10/Patil_Ameya_Slides.pdf',
         'data': null,
         'news': null,
         'bibtex': '\n\
