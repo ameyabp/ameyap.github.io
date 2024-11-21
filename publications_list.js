@@ -4,12 +4,21 @@ export const publications_list = {
         'venue': "ACM Conference on Computer-Supported Cooperative Work and Social Computing, 2025",
         'authors': 'Z. Dong, A. Patil, Y. Shoda, L. Battle, E. Wall',
         'doi': null,
-        'paper': 'projects/bcds/Behavior_Matters__An_Alternative_Perspective_on_Promoting_Responsible_Data_Science.pdf',
+        'paper': 'https://arxiv.org/pdf/2410.17273',
         'video': null,
         'presentation': null,
         'data': null,
         'news': null,
-        'bibtex': null
+        'bibtex': '\n\
+            @misc{dong2024behaviormattersalternativeperspective,\n\
+            title={Behavior Matters: An Alternative Perspective on Promoting Responsible Data Science},\n\
+            author={Ziwei Dong and Ameya Patil and Yuichi Shoda and Leilani Battle and Emily Wall},\n\
+            year={2024},\n\
+            eprint={2410.17273},\n\
+            archivePrefix={arXiv},\n\
+            primaryClass={cs.CY},\n\
+            url={https://arxiv.org/abs/2410.17273},\n\
+        }'
     },
     'hydroVis': {
         'title': "Interactive Visualization of Ensemble Data Assimilation Forecasts for Freshwater Floods",
